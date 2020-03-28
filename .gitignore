@@ -1,0 +1,15 @@
+.vim/
+.cache/
+snap/
+__pycache__/
+.bashrc
+.bash_history
+.bash_profile
+.vimrc
+.viminfo
+.viminfo
+.ssh/
+.profile
+.gitconfig
+.digitalocean_password
+.cloud-locale-test.skip

@@ -1,0 +1,101 @@
+import pyodbc
+
+server = '186.46.45.30'
+database = 'desarrollo'
+username = 'sa'
+password = 'Fedenaligas2017'
+driver='{ODBC Driver 17 for SQL Server}'
+
+test = pyodbc.connect('DRIVER='+driver+';SERVER='+server+';PORT=1443;DATABASE='+database+';UID='+username+';PWD='+password)
+print(test)
+cursor = test.cursor()
+tsql = "SELECT * FROM sys.databases;"
+tsql2 = "go"
+
+#with cursor.execute(tsql):
+#	print(67)
+with cursor.execute(tsql):
+	row = cursor.fetchone()
+	while row : 
+		#print(row[0])
+		row = cursor.fetchone()
+
+def get_productos(empresa):
+    command = "SELECT empresa_id,codigo_art,nombre_art FROM articu"
+    row = ''
+    with cursor.execute(command):
+        row = cursor.fetchall()
+    #print (row)
+    return row
+
+def get_docume():
+    #command = "SELECT * FROM sys.columns WHERE object_id = OBJECT_ID('dbo.productos')"
+    command = "SELECT * FROM docume"
+    row = ''
+    with cursor.execute(command):
+        row = cursor.fetchall()
+    #print (row)
+    return row
+def get_usuari():
+    #command = "SELECT * FROM sys.columns WHERE object_id = OBJECT_ID('dbo.productos')"
+    command = "SELECT codigo_usu,clave_usu FROM usuari"
+    row = ''
+    with cursor.execute(command):
+        row = cursor.fetchall()
+    #print (row)
+    return row
+
+def get_client():
+    #command = "SELECT * FROM sys.columns WHERE object_id = OBJECT_ID('dbo.productos')"
+    command = "SELECT * FROM client"
+    row = ''
+    with cursor.execute(command):
+        row = cursor.fetchall()
+    #print (row)
+    return row
+
+
+
+def get_empres():
+    #command = "SELECT * FROM sys.columns WHERE object_id = OBJECT_ID('dbo.productos')"
+    command = "SELECT * FROM empres"
+    row = ''
+    with cursor.execute(command):
+        row = cursor.fetchall()
+    #print (row)
+    return row
+
+def get_empresas():
+    #command = "SELECT * FROM sys.columns WHERE object_id = OBJECT_ID('dbo.productos')"
+    #command = "SELECT empresa_id,razsoc_emp, FROM empres"
+    command = "select empresa_id, razsoc_emp, ambien_emp,ruc_emp, direcc_emp from empres"
+    row = ''
+    with cursor.execute(command):
+        row = cursor.fetchall()
+    #print (row)
+    return row
+def get_agencia(empresa):
+    #command = "SELECT * FROM sys.columns WHERE object_id = OBJECT_ID('dbo.productos')"
+    command = "SELECT agenci_id,direcc_age,nombre_age FROM agenci WHERE(empresa_id="+empresa+")"
+    print(command)
+    row = ''
+    with cursor.execute(command):
+        row = cursor.fetchall()
+    #print (row)
+    return row
+
+def get_client(cliente, empresaid):
+    #command = "SELECT * FROM sys.columns WHERE object_id = OBJECT_ID('dbo.productos')"
+    command = "select * from client where (rucci_cli like '%"
+    command+= cliente+"%' or codigo_cli LIKE'%"+cliente+"%' or nombre_cli like '%"+cliente+"%' and empresa_id="+empresaid+" )"
+    print(command)
+    row = ''
+    with cursor.execute(command):
+        row = cursor.fetchall()
+    #print (row)
+    return row
+
+
+
+
+

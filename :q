@@ -1,0 +1,289 @@
+from flask import Flask, request, jsonify
+import json
+import helpersigner
+import sql_test
+from flask import send_file
+import pdfcreator
+import random
+import urllib.request
+#import firmador_enviador
+
+app = Flask(__name__)
+
+app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
+
+"""
+@app.after_request
+def add_header(response):
+    response.headers['X-UA-Compatible'] = 'IE=Edge,chrome=1'
+    if ('Cache-Control' not in response.headers):
+        response.headers['Cache-Control'] = 'public, max-age=600'
+    return response
+"""
+
+@app.route("/services/mssql/getproductos", methods=["GET", "POST"])
+def get_productos():
+    #empresa = request.json['empresa_id']
+    r = sql_test.get_productos()
+    res = []
+    for e in r:
+        empresa_id,codigo_art, nombre_art = e# e[1],e[2]
+        #empresa,cod_principal,cod_corregir,nombre_principal,rgb,color,accion,observaciones,codificacion,des_codificacion,aux = e
+        #print(e)
+        #print(nombre_art)
+        temp = {
+                "codigo_art": str(codigo_art).upper(),
+                "nombre_art": str(nombre_art).upper(),
+               # "cod_corregir": str(cod_corregir),
+                #"nombre_principal": str(nombre_principal),
+                #"rgb":str(rgb),
+                #"color":str(color),
+                #"accion":str(accion),
+                #"observaciones":str(observaciones),
+                #"codificacion":str(codificacion),
+                #"des_codificacion":str(des_codificacion),
+                #"aux":str(aux)
+                }
+        res.append(temp)
+
+    return json.dumps(res)  #str(res)
+
+
+@app.route("/services/mssql/getprice", methods=["GET","POST"])
+def get_price():
+    cod = request.json['codigo']
+    r = sql_test.get_price(cod)
+    res=[]
+    for e in r:
+        codpre_arp,precio_arp=e
+        temp = {
+	    "codpre_arp":str(codpre_arp),
+            "precio_arp":str(precio_arp)
+	}
+        res.append(temp)
+    return json.dumps(res)
+
+@app.route("/services/mssql/getimpuesto", methods=["GET","POST"])
+def get_impuesto():
+    cod = request.json['codigo']
+    cod = str(cod)
+    print("codigo es >  " + cod)
+    r = sql_test.get_impuesto(cod)
+    res=[]
+    for e in r:
+        descrip_tim,porcen_tim=e
+        temp = {
+	    "descrip_tim":str(descrip_tim),
+            "porcen_tim":str(porcen_tim)
+	}
+        res.append(temp)
+    return json.dumps(res)
+
+#firma y envia 
+@app.route("/services/mssql/send", methods=["GET","POST"])
+def send_xml():
+    respuesta = ""
+    
+    cod = request.form.get('empresa_id')
+    xml = request.form.get('xml')
+    cod = str(cod)
+    xml = str(xml)
+    print(cod)
+    print(xml)
+    # print("codigo es >  " + cod)
+    y = str(random.random())
+    y = y[2:]
+    e = sql_test.get_link_p12(cod)
+    print(e)
+    print(e[0])
+    (url_p12, url_pwd) = e[0] #sql_test.get_link_p12(cod)
+    print(url_p12)
+    url = ""
+    res = []
+    #for e in r:
+    #    url = e
+    url = str(url)
+    print (url)
+    urllib.request.urlretrieve(url_p12,y+".p12")
+    #primero instala la clave
+    #xml = helpersigner.genera_clave(xml)
+    #procede a firmar
+    xml_firmado = helpersigner.firmador(xml,"/root/"+y+".p12", url_pwd)
+    #sql_test.update_secuencial()#en db sql server
+    #respuesta=helpersigner.enviador(xml_firmado, ambiente) #envia a sri
+    #res.append(temp)
+    return str(xml_firmado)
+#
+@app.route("/services/mssql/getdocume")
+def get_docume():
+    r = sql_test.get_docume()
+    res = []
+    for e in r:
+        empresa_id,codigo_doc,descrip_doc,numero_doc = e[0],e[2],e[3],e[9]
+        #print(e)
+        temp = {
+                "empresa_id": str(empresa_id),
+                "codigo_doc": str(codigo_doc),
+                "descrip_doc": str(descrip_doc),
+                "numero_doc": str(numero_doc),
+                }
+        res.append(temp)
+    return json.dumps(res) 
+
+@app.route("/services/mssql/getusuari")
+def get_usuari():
+    r = sql_test.get_usuari()
+    res = []
+    for e in r:
+        codigo_usu,clave_usu = e
+        #print(e)
+        temp = {
+                "codigo_usu": str(codigo_usu),
+                "clave_usu": str(clave_usu),
+                }
+        res.append(temp)
+
+    return json.dumps(res) 
+
+@app.route("/services/mssql/getempresas")
+def get_empresas():
+    r = sql_test.get_empresas()
+    res = []
+    for e in r:
+        empresa_id,razsoc_emp,ambien_emp,ruc_emp,direcc_emp = e
+        #print(e)
+        temp = {
+                "empresa_id": str(empresa_id),
+                "razsoc_emp": str(razsoc_emp),
+                "ambien_emp": str(ambien_emp),
+                "ruc_emp": str(ruc_emp),
+                "direcc_emp": str(direcc_emp),
+                }
+        res.append(temp)
+
+    return json.dumps(res) 
+
+@app.route("/services/mssql/getagenci",methods=["GET","POST"])
+def get_agencia():
+    empresa = request.json['empresa']
+    print(empresa)
+    r = sql_test.get_agencia(empresa)
+    res = []
+    for e in r:
+        agenci_id,direcc_age,nombre_age = e
+        #print(e)
+        temp = {
+                "agenci_id": str(agenci_id),
+                "direcc_age": str(direcc_age),
+                "nombre_age": str(nombre_age),
+                }
+        res.append(temp)
+
+    return json.dumps(res) 
+
+@app.route("/services/mssql/sign",methods=["GET","POST"])
+def sign():
+
+    xml = request.json['xml']
+    
+    print(xml)
+    #se pone a firma el xml
+    r = firmador_enviador.executor(empresa)
+    return json.dumps(res) 
+
+#solo ejemplo
+@app.route('/download', methods=["GET","POST"])
+def downloadFile ():
+    #For windows you need to use drive name [ex: F:/Example.pdf]
+    path = request.json['filename'] #"/Examples.pdf"
+    return send_file(path, as_attachment=True)
+
+@app.route('/getpdfticketname', methods=["GET","POST"])
+def getpdfticketname():
+    #print(filename+" || >> creado")
+    filename = pdfcreator.crear_ticket()
+    cod = request.form.get('empresa_id')
+    razSoc = request.form.get('razonSocialComprador')
+    totalCon = request.form.get('totalCon')
+    totalSin = request.form.get('totalSin')
+    conceptos = request.form.get('conceptos')
+    total = requets.form.get('total')
+
+    #xml = request.json['xml']
+    print("datos para pdf >>> ")
+    print (conceptos)
+    print (cod)
+    print (razSoc)
+    print (totalCon)
+    print (totalSin)
+    print (conceptos)
+    print (total)
+    #print (conceptos)
+
+    #xml = helpersigner.xmlconclave(xml)
+    
+    # clave = request.json['clave']
+    #filename = pdfcreator.crear_ticket()
+    #response.headers['Cache-Control'] = 'no-cache, no-store, must-revalidate'
+    #response.headers['Pragma'] = 'no-cache'
+    #response.headers['Pragma'] = 'no-cache'
+    #response.headers['Cache-Control'] = 'no-cache, no-store, must-revalidate'
+    return filename
+
+
+
+@app.route('/getpdfticket/<string:filename>', methods=["GET","POST"])
+#@no_cache
+def getpdfticket(filename):
+    #response.headers['Cache-Control'] = 'no-cache, no-store, must-revalidate'
+    return send_file(filename)
+
+@app.route("/services/mssql/getempres")
+def get_empres():
+    r = sql_test.get_empres()
+    res = []
+    for e in r:
+        empresa_id,nombre_emp,razsoc_emp,razcom_emp,ruc_emp,direcc_emp,telef1_emp,repres_emp = e[0],e[1],e[2],e[3],e[4],e[5],[6],e[7]
+        #print(e)
+        temp = {
+                "empresa_id": str(empresa_id),
+                "nombre_emp": str(nombre_emp),
+                "razsoc_emp": str(razsoc_emp),
+                "razcom_emp": str(razcom_emp),
+                "ruc_emp": str(ruc_emp),
+                "direcc_emp": str(direcc_emp),
+                "telef1_emp": str(telef1_emp),
+                "repres_emp": str(repres_emp),
+                }
+        res.append(temp)
+
+    return json.dumps(res) 
+
+
+
+@app.route("/services/mssql/getclient", methods=["GET","POST"])
+def get_client(): 
+    cliente = request.json['client']
+    empresaid = request.json['empresa_id']
+    print(str(cliente),str(empresaid))
+    r = sql_test.get_client(cliente, empresaid)
+    res = []
+    for e in r:
+        codigo_cli,nombre_cli,razsoc_cli,rucci_cli,direcc_cli,telefo_cli=e[1],e[2],e[3],e[5],e[13],e[14]
+        #print(e)
+        temp = {
+                "codigo_cli": str(codigo_cli),
+                "nombre_cli": str(nombre_cli),
+                "razsoc_cli": str(razsoc_cli),
+                "rucci_cli": str(rucci_cli),
+                "direcc_cli": str(direcc_cli),
+                "telefo_cli": str(telefo_cli),
+                }
+        res.append(temp)
+    return json.dumps(res)
+
+
+
+
+#if __name__ == "__main__":
+#    app.run(host='0.0.0.0')
