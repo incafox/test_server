@@ -1,5 +1,6 @@
 from flask import Flask, request, jsonify
 import json
+import email_server
 import helpersigner
 import sql_test
 from flask import send_file
@@ -63,6 +64,26 @@ def get_price():
         res.append(temp)
     return json.dumps(res)
 
+@app.route("/services/mssql/getdescuento", methods=["GET","POST"])
+def get_descuento():
+    cod = request.json['codigo']
+    r = sql_test.get_descuento(cod)
+    res=[]
+    for e in r:
+        #tipo no se usa es solo pa llenar
+        #por defecto ya bota en porcentaje noma
+        porcentaje,tipo=e[0],e[1]
+        temp = {
+	    "porcentaje":str(porcentaje),
+            "tipo":str(tipo)
+	}
+        res.append(temp)
+    return json.dumps(res)
+
+
+
+
+
 @app.route("/services/mssql/getimpuesto", methods=["GET","POST"])
 def get_impuesto():
     cod = request.json['codigo']
@@ -83,19 +104,21 @@ def get_impuesto():
 @app.route("/services/mssql/send", methods=["GET","POST"])
 def send_xml():
     respuesta = ""
-    
     cod = request.form.get('empresa_id')
     xml = request.form.get('xml')
+    ambiente = request.form.get('ambiente')
+    archivo = open("ultimo.xml", "w+")
+    archivo.write(xml)
     cod = str(cod)
     xml = str(xml)
-    print(cod)
-    print(xml)
+    #print(cod)
+    #print(xml)
     # print("codigo es >  " + cod)
     y = str(random.random())
     y = y[2:]
     e = sql_test.get_link_p12(cod)
-    print(e)
-    print(e[0])
+    #print(e)
+    #print(e[0])
     (url_p12, url_pwd) = e[0] #sql_test.get_link_p12(cod)
     print(url_p12)
     url = ""
@@ -103,16 +126,31 @@ def send_xml():
     #for e in r:
     #    url = e
     url = str(url)
-    print (url)
+    #print (url)
     urllib.request.urlretrieve(url_p12,y+".p12")
     #primero instala la clave
     #xml = helpersigner.genera_clave(xml)
     #procede a firmar
     xml_firmado = helpersigner.firmador(xml,"/root/"+y+".p12", url_pwd)
+    archivo2 = open("ultimo-firmado.xml", "w+")
+    archivo2.write(xml_firmado.decode())
     #sql_test.update_secuencial()#en db sql server
     #respuesta=helpersigner.enviador(xml_firmado, ambiente) #envia a sri
     #res.append(temp)
-    return str(xml_firmado)
+    #procede a enviar
+    respuesta = helpersigner.enviador(xml_firmado.decode(), ambiente)
+    print (respuesta)
+    return str(respuesta)
+
+
+#usar solo en caso de que la factura sea exitosa
+@app.route("/services/mssql/save_invoice")
+def save_invoice():
+    json_data = request.json
+    sql_test.save_invoice(json_data)
+    return "listo"
+ 
+
 #
 @app.route("/services/mssql/getdocume")
 def get_docume():
@@ -211,21 +249,22 @@ def getpdfticketname():
     total = request.json['total']
 
     #xml = request.json['xml']
-    print("datos para pdf >>> ")
-    print ("[conceptos] "+conceptos)
-    print ("[empresa] "+cod)
-    print ("[razon social] "+razSoc)
-    print ("[total con] "+totalCon)
-    print ("[total sin] "+totalSin)
+    #print("datos para pdf >>> ")
+    #print ("[conceptos] "+conceptos)
+    #print ("[empresa] "+cod)
+    #print ("[razon social] "+razSoc)
+    #print ("[total con] "+totalCon)
+    #print ("[total sin] "+totalSin)
     #print ("[]"+conceptos)
-    print ("[total] "+total)
-    print ("[json] "+ str(request.json))
+    #print ("[total] "+total)
+    #print ("[json] "+ str(request.json))
     #print (conceptos)
 
     #entrega el json completo
     if (tipo=='1'):
         filename = pdfcreator.crear_ticket(request.json)
-    else:
+    else: #para pdf factura grande
+        #fecha = request.json['fecha']
         filename = pdfcreator.crear_factura(request.json)
     #xml = helpersigner.xmlconclave(xml)
     # clave = request.json['clave']
@@ -271,7 +310,42 @@ def get_empres():
 def get_client(): 
     cliente = request.json['client']
     empresaid = request.json['empresa_id']
-    print(str(cliente),str(empresaid))
+    #print(str(cliente),str(empresaid))
+    r = sql_test.get_client(cliente, empresaid)
+    res = []
+    for e in r:
+        codigo_cli,nombre_cli,razsoc_cli,rucci_cli,direcc_cli,telefo_cli,email_cli=e[1],e[2],e[3],e[5],e[13],e[14],e[17]
+        #print(e)
+        temp = {
+                "codigo_cli": str(codigo_cli),
+                "nombre_cli": str(nombre_cli),
+                "razsoc_cli": str(razsoc_cli),
+                "rucci_cli": str(rucci_cli),
+                "direcc_cli": str(direcc_cli),
+                "telefo_cli": str(telefo_cli),
+                "email_cli": str(email_cli),
+                }
+        res.append(temp)
+    print (json.dumps(res))
+    return json.dumps(res)
+
+@app.route("/services/mssql/get_secuencial", methods=["GET","POST"])
+def get_secuencial(): 
+    secuencial = ""
+    codDoc = request.json['codDoc']
+    empresa = request.json['empresa_id']
+    agencia = request.json['agenci_id']
+    secuencial = sql_test.get_secuencial(codDoc, empresa, agencia)
+    #secuencial = secuencial[0]
+    final =""
+    for e in secuencial:
+        final = str(e [0])
+    print (final)
+    return final
+    #if (request.method == 'POST'):
+        ##prcesa
+    #    pass
+    """
     r = sql_test.get_client(cliente, empresaid)
     res = []
     for e in r:
@@ -287,9 +361,31 @@ def get_client():
                 }
         res.append(temp)
     return json.dumps(res)
+    """
 
-
-
+@app.route("/services/mssql/update_secuencial", methods=["GET","POST"])
+def update_secuencial(): 
+    #secuencial = ""
+    codDoc = request.json['codDoc']
+    empresa = request.json['empresa_id']
+    agencia = request.json['agenci_id']
+    #if (request.method == 'POST'):
+    res = sql_test.update_secuencial(codDoc, empresa, agencia)
+    return str(res)
+ 
+@app.route("/services/mssql/add_user", methods=["GET","POST"])
+def add_user(): 
+    #if (request.method == 'POST'):
+    data = request.json
+    res = sql_test.add_user(data)
+    return str(res)
+ 
+@app.route("/services/mssql/send_email", methods=["GET","POST"])
+def send_email(): 
+    data = request.json
+    res = sql_test.add_user(data)
+    return str(res)
+ 
 
 #if __name__ == "__main__":
 #    app.run(host='0.0.0.0')

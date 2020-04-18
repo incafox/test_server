@@ -28,15 +28,64 @@ def get_productos():
     #print (row)
     return row
 
-def get_secuencial(empresa,agencia,coddoc): #01 para solo factura
-    command = "select numero_doc from docume where(codigo_doc = 001 and empresa_id = "+empresa+" and agenci_id="+agencia+")" 
+#recpge solo porcentaje
+def get_descuentos(codigo):
+    command = """
+    SELECT valor_arb,codtbo_arb, condic_arb
+    FROM artbon
+	inner join bonifi ON codigo_bon=codtbo_arb 
+	WHERE artbon.empresa_id = '10001'
+	  and artbon.codart_arb = '"""+codigo+"""'
+	  and artbon.condic_arb = '01'
+    """
+    row = ''
+    with cursor.execute(command):
+        row = cursor.fetchall()
+    #print (row)
+    return row
+
+
+
+def get_secuencial(codDoc, empresa, agencia): #01 para solo factura
+    command = "select numero_doc from docume where(codigo_doc = "+codDoc+" and empresa_id = "+empresa+" and agenci_id="+agencia+")" 
     row = ''
     with cursor.execute(command):
         row = cursor.fetchall()
     print("[get secuencial] >> " + str(row))
     return row
 
-def update_secuencial(empresa,agencia,coddoc):
+#suma una unidad al secuencial actual
+def update_secuencial(codDoc, empresa, agencia): #01 para solo factura
+    actual = get_secuencial(codDoc, empresa, agencia)
+    sec_actual= ""
+    for e in actual:
+        sec_actual = str(e[0])
+
+    sec_actual = int(sec_actual)
+    print (sec_actual)
+    sec_actual += 1
+    sec_actual = str(sec_actual)
+    zeros_len = 9-len(sec_actual)
+    zeros = []
+    zeros_cadena = ""
+    for e in range(zeros_len):
+        zeros_cadena+="0"
+    #pone todo junto
+    sec_final = zeros_cadena + sec_actual
+    print ("secfinal >>>" + sec_final)
+    #command = "select numero_doc from docume where(codigo_doc = "+codDoc+" and empresa_id = "+empresa+" and agenci_id="+agencia+")" 
+    command = "update docume set numero_doc = '"+sec_final+"' where(codigo_doc = "+codDoc+" and empresa_id = "+empresa+" and agenci_id="+agencia+")"
+    row = ''
+    with cursor.execute(command):
+        pass
+        #row = cursor.fetchall()
+    #print("[update secuencial] >> " + str(row))
+    pass
+
+
+
+#no usado
+def updatexxx_secuencial(empresa,agencia,coddoc):
     num = get_secuencial(empresa,agencia,coddoc)
     print ("[set_]")
     nuevo = int(num)
@@ -49,6 +98,34 @@ def update_secuencial(empresa,agencia,coddoc):
         row = cursor.fetchall()
     print ("[set_secuencial] >> "+str(row))
     pass
+
+
+def add_user(data_json):
+    na = data_json['nombre']
+    em = data_json['email']
+    ru = data_json['ruc']
+    numero = data_json['numero']
+    pass
+
+
+def save_invoice(json_data):
+    #extarct the data
+    command = ""
+    row=''
+    with cursor.execute(command):
+        row = cursor.fetchall()
+    return row
+
+
+def get_image(empresa_id):
+    #extarct the data
+    print("empresa imagen >> "+empresa_id)
+    command = "select logo_emp from empres where(empresa_id = "+empresa_id+")"
+    row=''
+    with cursor.execute(command):
+        row = cursor.fetchall()
+    return row
+
 
 
 def get_link_p12(empresa_id):

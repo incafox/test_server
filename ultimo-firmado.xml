@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><factura id="comprobante" version="1.0.0">
+    <infoTributaria>
+    <ambiente>1</ambiente>
+    <tipoEmision>1</tipoEmision>
+    <razonSocial>MATADERO Y CARNES FRIAS MACAFRI CIA. LTDA</razonSocial>
+    <ruc>1791842413001</ruc>
+    <claveAcceso>0904202001179184241300110010010000000181234567810</claveAcceso>
+    <codDoc>01</codDoc>
+    <estab>001</estab>
+    <ptoEmi>001</ptoEmi>
+    <secuencial>000000018</secuencial>
+    <dirMatriz>Francelana, Guayacanes N58-118 y José Bustos.</dirMatriz>
+  </infoTributaria>
+        <infoFactura>
+    <fechaEmision>09/04/2020</fechaEmision>
+    <dirEstablecimiento>Francelana, Guayacanes N58-118 y José Bustos.</dirEstablecimiento>
+    <obligadoContabilidad>SI</obligadoContabilidad>
+    <tipoIdentificacionComprador>07</tipoIdentificacionComprador>
+    <razonSocialComprador>9999999999999</razonSocialComprador>
+    <identificacionComprador>9999999999999</identificacionComprador>
+    <totalSinImpuestos>2.35</totalSinImpuestos>
+    <totalDescuento>0.00</totalDescuento>
+    <totalConImpuestos>
+      <totalImpuesto>
+        <codigo>2</codigo>
+        <codigoPorcentaje>2</codigoPorcentaje>
+        <baseImponible>2.35</baseImponible>
+        <tarifa>12</tarifa>
+        <valor>0.0</valor>
+      </totalImpuesto>
+    </totalConImpuestos>
+    <propina>0</propina>
+    <importeTotal>2.35</importeTotal>
+    <moneda>dolar</moneda>
+    <pagos>
+      <pago>
+        <formaPago>01</formaPago>
+        <total>2.35</total>
+      </pago>
+    </pagos>
+  </infoFactura>
+    <detalles>                          <detalle>
+                          <codigoPrincipal>7861012505449</codigoPrincipal>
+                          <descripcion>YOGURT TONI FRUTILLA 200 GR</descripcion>
+                          <cantidad>1</cantidad>
+                          <precioUnitario>0.75</precioUnitario>
+                          <descuento>0</descuento>
+                          <precioTotalSinImpuesto>0.75</precioTotalSinImpuesto>
+                          <impuestos>
+                            <impuesto>
+                              <codigo>2</codigo>
+                              <codigoPorcentaje>2</codigoPorcentaje>
+                              <tarifa>0.0</tarifa>
+                              <baseImponible>0.75</baseImponible>
+                              <valor>0.0</valor>
+                            </impuesto>
+                          </impuestos>
+                        </detalle>
+                                                    <detalle>
+                          <codigoPrincipal> 7861012509805</codigoPrincipal>
+                          <descripcion>YOGURT TONI MIX DURAZNO</descripcion>
+                          <cantidad>1</cantidad>
+                          <precioUnitario>0.85</precioUnitario>
+                          <descuento>0</descuento>
+                          <precioTotalSinImpuesto>0.85</precioTotalSinImpuesto>
+                          <impuestos>
+                            <impuesto>
+                              <codigo>2</codigo>
+                              <codigoPorcentaje>2</codigoPorcentaje>
+                              <tarifa>0.0</tarifa>
+                              <baseImponible>0.85</baseImponible>
+                              <valor>0.0</valor>
+                            </impuesto>
+                          </impuestos>
+                        </detalle>
+                                                    <detalle>
+                          <codigoPrincipal>7861012505456</codigoPrincipal>
+                          <descripcion>YOGURT TONI MORA 200G</descripcion>
+                          <cantidad>1</cantidad>
+                          <precioUnitario>0.75</precioUnitario>
+                          <descuento>0</descuento>
+                          <precioTotalSinImpuesto>0.75</precioTotalSinImpuesto>
+                          <impuestos>
+                            <impuesto>
+                              <codigo>2</codigo>
+                              <codigoPorcentaje>2</codigoPorcentaje>
+                              <tarifa>0.0</tarifa>
+                              <baseImponible>0.75</baseImponible>
+                              <valor>0.0</valor>
+                            </impuesto>
+                          </impuestos>
+                        </detalle>
+                          </detalles> 
+ <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:etsi="http://uri.etsi.org/01903/v1.3.2#" Id="Signature427439">
+<ds:SignedInfo Id="Signature-SignedInfo319732">
+<ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+<ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+<ds:Reference Id="SignedPropertiesID995200" Type="http://uri.etsi.org/01903#SignedProperties" URI="#Signature427439-SignedProperties311009">
+<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+<ds:DigestValue>TljivMv9tEg7nADIzhkOZjwrqgc=</ds:DigestValue>
+</ds:Reference>
+<ds:Reference URI="#Certificate1578589">
+<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+<ds:DigestValue>0yx+NYtHF+qyLvxugf+uGd+wsi8=</ds:DigestValue>
+</ds:Reference>
+<ds:Reference Id="Reference-ID-373595" URI="#comprobante">
+<ds:Transforms>
+<ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+</ds:Transforms>
+<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+<ds:DigestValue>s2tiM6HzRLmXHrZjhpjHaasrzhM=</ds:DigestValue>
+</ds:Reference>
+</ds:SignedInfo>
+<ds:SignatureValue Id="SignatureValue53223">
+cQhYbze9rRXY6hDm3kP2ddE2trqPP5kGGrHuxRXKOUUwA89FZRPaFQ02SCevtnnTCN5aNoo5udA6
+frKaTHSvrk7GqSCRmUK+s/8msqlkwO7cel2bR/YjQeru58o7ZrxW5jr0PwRTj253l1ThTOzphR4G
+7hlGSiUFOehaMpkB88c8sTh6bf+sOWIlefwAttBMuDBxqY+Td7gq4IwhDPo9C6qcD59CM8Uf7Esv
+vh3K8Jbow+c3glHefpMffUO776Knc0/NlfjP5crgircCJmE5zN/r5/8ad1yGKElOf9SNur7cmxUa
+9elNtA25D7D18C2VjLjbDfdeIfW57IFC8iQANA==
+</ds:SignatureValue>
+<ds:KeyInfo Id="Certificate1578589">
+<ds:X509Data>
+<ds:X509Certificate>
+MIIJWDCCB0CgAwIBAgIEW17h4zANBgkqhkiG9w0BAQsFADCBoTELMAkGA1UEBhMCRUMxIjAgBgNV
+BAoTGUJBTkNPIENFTlRSQUwgREVMIEVDVUFET1IxNzA1BgNVBAsTLkVOVElEQUQgREUgQ0VSVElG
+SUNBQ0lPTiBERSBJTkZPUk1BQ0lPTi1FQ0lCQ0UxDjAMBgNVBAcTBVFVSVRPMSUwIwYDVQQDExxB
+QyBCQU5DTyBDRU5UUkFMIERFTCBFQ1VBRE9SMB4XDTE5MDIyNjEzMDQwM1oXDTIxMDIyNjEzMzQw
+M1owga4xCzAJBgNVBAYTAkVDMSIwIAYDVQQKExlCQU5DTyBDRU5UUkFMIERFTCBFQ1VBRE9SMTcw
+NQYDVQQLEy5FTlRJREFEIERFIENFUlRJRklDQUNJT04gREUgSU5GT1JNQUNJT04tRUNJQkNFMQ4w
+DAYDVQQHEwVRVUlUTzEyMBEGA1UEBRMKMDAwMDM1NTQxOTAdBgNVBAMTFkVSTUVMIEVESVNPTiBS
+T01PIExJTUEwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDCb5vxqsiRUt5b4FZ+ridM
+rPEnhwCB3vOiq+Zv3++yLm9Kwo0D7aQmwZiugETxcU/0TmfKqwDw63jCupgrXtvKgpmUvPQiNt7D
+dS7nsU4uoos6Ts+2pmYT0431G8nc0MOT1Osttl4paw+dyY1iYnQYYmrfwYHb+0z2jMZWlHl9hvFy
+/b1SszjWCpnxD0qehasilI/3t53PWO8HJTHtXbtNBTpzYYW+8CCT1FCC2L3y3rvSs0BKa4BR3AeQ
+8mko/ug2/7WMeCRNqgSKWsfY5PmcLikXUiyLN7sFVFV83wRo1cqhZkinm5I7WTAPxnwZMxU0xUjh
+noLgLTIuPvXaeG+/AgMBAAGjggSHMIIEgzALBgNVHQ8EBAMCBSAwgZEGCCsGAQUFBwEBBIGEMIGB
+MD4GCCsGAQUFBzABhjJodHRwOi8vb2NzcC5lY2kuYmNlLmVjL2VqYmNhL3B1YmxpY3dlYi9zdGF0
+dXMvb2NzcDA/BggrBgEFBQcwAYYzaHR0cDovL29jc3AxLmVjaS5iY2UuZWMvZWpiY2EvcHVibGlj
+d2ViL3N0YXR1cy9vY3NwMDgGCisGAQQBgqg7AwoEKhMoTUFUQURFUk8gWSBDQVJORVMgRlJJQVMg
+TUFDQUZSSSBDSUEgTFREQTAdBgorBgEEAYKoOwMLBA8TDTE3OTE4NDI0MTMwMDEwGgYKKwYBBAGC
+qDsDAQQMEwoxNzA5MDMxMzA0MBwGCisGAQQBgqg7AwIEDhMMRVJNRUwgRURJU09OMBQGCisGAQQB
+gqg7AwMEBhMEUk9NTzAUBgorBgEEAYKoOwMEBAYTBExJTUEwFwYKKwYBBAGCqDsDBQQJEwdHRVJF
+TlRFMC4GCisGAQQBgqg7AwcEIBMeR1VBWUFDQU5FUyAgTjU4MTE4IEpPU0UgQlVTVE9TMBkGCisG
+AQQBgqg7AwgECxMJMDIzMjgyMjI0MBUGCisGAQQBgqg7AwkEBxMFUXVpdG8wFwYKKwYBBAGCqDsD
+DAQJEwdFQ1VBRE9SMCAGCisGAQQBgqg7AzMEEhMQU09GVFdBUkUtQVJDSElWTzAiBgNVHREEGzAZ
+gRdlZGlzb24ucm9tb0BtYWNhZnJpLmNvbTCCAd8GA1UdHwSCAdYwggHSMIIBzqCCAcqgggHGhoHV
+bGRhcDovL2JjZXFsZGFwc3VicDEuYmNlLmVjL2NuPUNSTDcyNCxjbj1BQyUyMEJBTkNPJTIwQ0VO
+VFJBTCUyMERFTCUyMEVDVUFET1IsbD1RVUlUTyxvdT1FTlRJREFEJTIwREUlMjBDRVJUSUZJQ0FD
+SU9OJTIwREUlMjBJTkZPUk1BQ0lPTi1FQ0lCQ0Usbz1CQU5DTyUyMENFTlRSQUwlMjBERUwlMjBF
+Q1VBRE9SLGM9RUM/Y2VydGlmaWNhdGVSZXZvY2F0aW9uTGlzdD9iYXNlhjRodHRwOi8vd3d3LmVj
+aS5iY2UuZWMvQ1JML2VjaV9iY2VfZWNfY3JsZmlsZWNvbWIuY3JspIG1MIGyMQswCQYDVQQGEwJF
+QzEiMCAGA1UEChMZQkFOQ08gQ0VOVFJBTCBERUwgRUNVQURPUjE3MDUGA1UECxMuRU5USURBRCBE
+RSBDRVJUSUZJQ0FDSU9OIERFIElORk9STUFDSU9OLUVDSUJDRTEOMAwGA1UEBxMFUVVJVE8xJTAj
+BgNVBAMTHEFDIEJBTkNPIENFTlRSQUwgREVMIEVDVUFET1IxDzANBgNVBAMTBkNSTDcyNDAfBgNV
+HSMEGDAWgBQY+fD75jIcmWY5KsqLsml9SSe/zjAdBgNVHQ4EFgQURjSL0bGs3+lteXnXpvYkH3+G
+P2YwCQYDVR0TBAIwADAZBgkqhkiG9n0HQQAEDDAKGwRWOC4xAwIEsDANBgkqhkiG9w0BAQsFAAOC
+AgEAj73BDHeaQwqEtaQb7QbiNUTna2Pmg5GISURpkx9hcuhBXPSStoco7/ogD1AbBzcEbmcM3vEm
+U1WmVp80Ljqrk9SYZIsZZ3PWGPNqn2ah+W25Et/8vvzyT1Rnl8AnbDJrT5AanDXSy/nAW+sDGv4c
+h6OQ4w40G7fWJSgtgMloqmpMukJViSsWoMVeIx2B0s40yvJTYjKvZiiU0aqXyKnvyO/dnYeNUDAD
+//Ntga2EdZjiTb+STrERRiWz0XlOZFHRKtb4KwNu6fPKj1ohSSJBHH3N/00getJlu5PDGJ4WOxYn
+GQu5skqSoqBHNpWCsfvK7X2231qqVJhs6vzLgCtvo8rSVI3/JFuQSl+OKwcGEIA3f0C+pyNS4s0/
+XoHBmvFgCnctS0eJ6TYJTT3/HdYC6OFQf8n5I2Zs7U8eAVvn80Qnubu8jP8Q5CtetOocSJeqYZAL
+3h+9XJkjap0jD9wr9VNjKBYbkiSIXctBfmRwNVUmM3Blc1Z3NpI34H+ZtJWgM1kfncLkjeM3xwAN
+W1VKh6QSAiFWhwQTczHkXgpPnLtKlOVjma4K0hE0IJTH2wXJA6HeyXqhU3s7KJzLTziOgMnc6msN
+8HqUoHXaNRyYGSxX8jrktKNa237ZeFVAWuskbe++IKRPvm5e1q6xoHR3qZk0UryY46G5sF7lZfcx
+iug=
+</ds:X509Certificate>
+</ds:X509Data>
+<ds:KeyValue>
+<ds:RSAKeyValue>
+<ds:Modulus>
+wm+b8arIkVLeW+BWfq4nTKzxJ4cAgd7zoqvmb9/vsi5vSsKNA+2kJsGYroBE8XFP9E5nyqsA8Ot4
+wrqYK17byoKZlLz0Ijbew3Uu57FOLqKLOk7PtqZmE9ON9RvJ3NDDk9TrLbZeKWsPncmNYmJ0GGJq
+38GB2/tM9ozGVpR5fYbxcv29UrM41gqZ8Q9KnoWrIpSP97edz1jvByUx7V27TQU6c2GFvvAgk9RQ
+gti98t670rNASmuAUdwHkPJpKP7oNv+1jHgkTaoEilrH2OT5nC4pF1Isize7BVRVfN8EaNXKoWZI
+p5uSO1kwD8Z8GTMVNMVI4Z6C4C0yLj712nhvvw==
+</ds:Modulus>
+<ds:Exponent>AQAB</ds:Exponent>
+</ds:RSAKeyValue>
+</ds:KeyValue>
+</ds:KeyInfo>
+<ds:Object Id="Signature427439-Object481352"><etsi:QualifyingProperties Target="#Signature427439"><etsi:SignedProperties Id="Signature427439-SignedProperties311009"><etsi:SignedSignatureProperties><etsi:SigningTime>2020-04-10T00:57:34+00:00</etsi:SigningTime><etsi:SigningCertificate><etsi:Cert><etsi:CertDigest><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><ds:DigestValue>C8nnxXUuG9sLK2m2BKyOVJQqt6w=</ds:DigestValue></etsi:CertDigest><etsi:IssuerSerial><ds:X509IssuerName>CN=AC BANCO CENTRAL DEL ECUADOR,L=QUITO,OU=ENTIDAD DE CERTIFICACION DE INFORMACION-ECIBCE,O=BANCO CENTRAL DEL ECUADOR,C=EC</ds:X509IssuerName><ds:X509SerialNumber>1532944867</ds:X509SerialNumber></etsi:IssuerSerial></etsi:Cert></etsi:SigningCertificate></etsi:SignedSignatureProperties><etsi:SignedDataObjectProperties><etsi:DataObjectFormat ObjectReference="#Reference-ID-373595"><etsi:Description>contenido comprobante</etsi:Description><etsi:MimeType>text/xml</etsi:MimeType></etsi:DataObjectFormat></etsi:SignedDataObjectProperties></etsi:SignedProperties></etsi:QualifyingProperties></ds:Object></ds:Signature></factura>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<factura id="comprobante" version="1.0.0">
+    <infoTributaria>
+    <ambiente>1</ambiente>
+    <tipoEmision>1</tipoEmision>
+    <razonSocial>MATADERO Y CARNES FRIAS MACAFRI CIA. LTDA</razonSocial>
+    <ruc>1791842413001</ruc>
+    <claveAcceso>0904202001179184241300110010010000000181234567810</claveAcceso>
+    <codDoc>01</codDoc>
+    <estab>001</estab>
+    <ptoEmi>001</ptoEmi>
+    <secuencial>000000018</secuencial>
+    <dirMatriz>Francelana, Guayacanes N58-118 y José Bustos.</dirMatriz>
+  </infoTributaria>
+        <infoFactura>
+    <fechaEmision>09/04/2020</fechaEmision>
+    <dirEstablecimiento>Francelana, Guayacanes N58-118 y José Bustos.</dirEstablecimiento>
+    <obligadoContabilidad>SI</obligadoContabilidad>
+    <tipoIdentificacionComprador>07</tipoIdentificacionComprador>
+    <razonSocialComprador>9999999999999</razonSocialComprador>
+    <identificacionComprador>9999999999999</identificacionComprador>
+    <totalSinImpuestos>2.35</totalSinImpuestos>
+    <totalDescuento>0.00</totalDescuento>
+    <totalConImpuestos>
+      <totalImpuesto>
+        <codigo>2</codigo>
+        <codigoPorcentaje>2</codigoPorcentaje>
+        <baseImponible>2.35</baseImponible>
+        <tarifa>12</tarifa>
+        <valor>0.0</valor>
+      </totalImpuesto>
+    </totalConImpuestos>
+    <propina>0</propina>
+    <importeTotal>2.35</importeTotal>
+    <moneda>dolar</moneda>
+    <pagos>
+      <pago>
+        <formaPago>01</formaPago>
+        <total>2.35</total>
+      </pago>
+    </pagos>
+  </infoFactura>
+    <detalles>                          <detalle>
+                          <codigoPrincipal>7861012505449</codigoPrincipal>
+                          <descripcion>YOGURT TONI FRUTILLA 200 GR</descripcion>
+                          <cantidad>1</cantidad>
+                          <precioUnitario>0.75</precioUnitario>
+                          <descuento>0</descuento>
+                          <precioTotalSinImpuesto>0.75</precioTotalSinImpuesto>
+                          <impuestos>
+                            <impuesto>
+                              <codigo>2</codigo>
+                              <codigoPorcentaje>2</codigoPorcentaje>
+                              <tarifa>0.0</tarifa>
+                              <baseImponible>0.75</baseImponible>
+                              <valor>0.0</valor>
+                            </impuesto>
+                          </impuestos>
+                        </detalle>
+                                                    <detalle>
+                          <codigoPrincipal> 7861012509805</codigoPrincipal>
+                          <descripcion>YOGURT TONI MIX DURAZNO</descripcion>
+                          <cantidad>1</cantidad>
+                          <precioUnitario>0.85</precioUnitario>
+                          <descuento>0</descuento>
+                          <precioTotalSinImpuesto>0.85</precioTotalSinImpuesto>
+                          <impuestos>
+                            <impuesto>
+                              <codigo>2</codigo>
+                              <codigoPorcentaje>2</codigoPorcentaje>
+                              <tarifa>0.0</tarifa>
+                              <baseImponible>0.85</baseImponible>
+                              <valor>0.0</valor>
+                            </impuesto>
+                          </impuestos>
+                        </detalle>
+                                                    <detalle>
+                          <codigoPrincipal>7861012505456</codigoPrincipal>
+                          <descripcion>YOGURT TONI MORA 200G</descripcion>
+                          <cantidad>1</cantidad>
+                          <precioUnitario>0.75</precioUnitario>
+                          <descuento>0</descuento>
+                          <precioTotalSinImpuesto>0.75</precioTotalSinImpuesto>
+                          <impuestos>
+                            <impuesto>
+                              <codigo>2</codigo>
+                              <codigoPorcentaje>2</codigoPorcentaje>
+                              <tarifa>0.0</tarifa>
+                              <baseImponible>0.75</baseImponible>
+                              <valor>0.0</valor>
+                            </impuesto>
+                          </impuestos>
+                        </detalle>
+                          </detalles> 
+ </factura>

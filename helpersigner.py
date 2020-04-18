@@ -1,9 +1,13 @@
 import os
+from sri import main2
 from sri import xades
 from sri import mod11
 #from sri import mainFinal
 import base64
-
+import zeep
+#import hlp
+import requests
+#
 
 
 d_fecha = ""
@@ -73,7 +77,7 @@ def leeCampo(cadena):
 def creaclaveAcceso(c48digs):
     clave = c48digs
     print("[creaclaveAcceso clave] > "+ c48digs)
-    temp = mod11.numero_verificador(clave)
+    temp = "1212"#mod11.numero_verificador(clave)
     print ("[creaclaveAcceso]> "+ temp)
     clave+=str(temp)
     #print ("creaclaveAcceso> "+clave)
@@ -84,7 +88,7 @@ def creaclaveAcceso(c48digs):
 def getXMLconCA(cadena):
     xmlConClaveFinal=""
     c48xxx,ambiente = leeCampo(cadena)
-    print("[c48xxx] > "+c48xxx)
+    #print("[c48xxx] > "+c48xxx)
 
     clave = creaclaveAcceso(c48xxx)
     print ("[get xml con ca ] >>" + clave)
@@ -117,6 +121,33 @@ def setClave(xml):
     return finxml, ambiente, clave
 
 
+#los ultimos 
+def enviador(xmlcadena, ambiente):
+    respuesta = ""
+    #ambientes de prueba (1):
+    wsdl_prueba_recepcion = 'https://celcer.sri.gob.ec/comprobantes-electronicos-ws/RecepcionComprobantesOffline?wsdl'
+    wsdl_prueba_autorizacion = "https://celcer.sri.gob.ec/comprobantes-electronicos-ws/AutorizacionComprobantesOffline?wsdl"
+    #ambientes de produccion (2):
+    wsdl_produccion_recepcion = "https://cel.sri.gob.ec/comprobantes-electronicos-ws/RecepcionComprobantesOffline?wsdl"
+    wsdl_produccion_autorizacion = "https://cel.sri.gob.ec/comprobantes-electronicos-ws/AutorizacionComprobantesOffline?wsdl"
+    #respuesta=""
+    # pruebas >> 1 --- produccion >> 2
+    if (ambiente == '1'):
+        #wsdl = 'https://celcer.sri.gob.ec/comprobantes-electronicos-ws/RecepcionComprobantesOffline?wsdl'
+        client_1_r = zeep.Client(wsdl=wsdl_prueba_recepcion)
+        print ("[enviador > ]")
+        #return (client_1_r.service.validarComprobante(xmlcadena.encode()))
+        r =  (client_1_r.service.validarComprobante(str(xmlcadena).encode()))
+        print (r)
+        respuesta =  r
+    elif (ambiente == '2'):
+        #wsdl = 'https://celcer.sri.gob.ec/comprobantes-electronicos-ws/RecepcionComprobantesOffline?wsdl'
+        client_2_r = zeep.Client(wsdl=wsdl_produccion_recepcion)
+        #print ("[procesando ambiente de produccion]")
+        respuesta = (client_2_r.service.validarComprobante(xmlcadena.encode()))
+    #respuesta = main2.enviaFactura(xml, ambiente)
+    return respuesta
+
 def firmador(xml, pathP12, pwd):
     pwd_t = pwd
     pathP12_t =  pathP12
@@ -129,7 +160,8 @@ def firmador(xml, pathP12, pwd):
     print ("[se procesara : xml ] > " + xml)
     print ("[se procesara : path12 ] > " + pathP12)
     print ("[se procesara : pwd ] > " + pwd)
-    xml_completo, ambiente, claveAcceso = getXMLconCA(xml)
+    #xml_completo, ambiente, claveAcceso = getXMLconCA(xml)
+    xml_completo = xml
     pwd_biteado = base64.b64encode(pwd_enc)
     pathP12_biteado = base64.b64encode(pathP12_enc)
     #pwd_biteado = bytes(pwd, "utf-8")
