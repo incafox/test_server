@@ -7,7 +7,7 @@ password = 'Fedenaligas2017'
 driver='{ODBC Driver 17 for SQL Server}'
 
 test = pyodbc.connect('DRIVER='+driver+';SERVER='+server+';PORT=1443;DATABASE='+database+';UID='+username+';PWD='+password)
-print(test)
+#print(test)
 cursor = test.cursor()
 tsql = "SELECT * FROM sys.databases;"
 tsql2 = "go"
@@ -51,7 +51,7 @@ def get_secuencial(codDoc, empresa, agencia): #01 para solo factura
     row = ''
     with cursor.execute(command):
         row = cursor.fetchall()
-    print("[get secuencial] >> " + str(row))
+    #print("[get secuencial] >> " + str(row))
     return row
 
 #suma una unidad al secuencial actual
@@ -62,7 +62,7 @@ def update_secuencial(codDoc, empresa, agencia): #01 para solo factura
         sec_actual = str(e[0])
 
     sec_actual = int(sec_actual)
-    print (sec_actual)
+    #print (sec_actual)
     sec_actual += 1
     sec_actual = str(sec_actual)
     zeros_len = 9-len(sec_actual)
@@ -72,7 +72,7 @@ def update_secuencial(codDoc, empresa, agencia): #01 para solo factura
         zeros_cadena+="0"
     #pone todo junto
     sec_final = zeros_cadena + sec_actual
-    print ("secfinal >>>" + sec_final)
+    #print ("secfinal >>>" + sec_final)
     #command = "select numero_doc from docume where(codigo_doc = "+codDoc+" and empresa_id = "+empresa+" and agenci_id="+agencia+")" 
     command = "update docume set numero_doc = '"+sec_final+"' where(codigo_doc = "+codDoc+" and empresa_id = "+empresa+" and agenci_id="+agencia+")"
     row = ''
@@ -87,16 +87,16 @@ def update_secuencial(codDoc, empresa, agencia): #01 para solo factura
 #no usado
 def updatexxx_secuencial(empresa,agencia,coddoc):
     num = get_secuencial(empresa,agencia,coddoc)
-    print ("[set_]")
+    #print ("[set_]")
     nuevo = int(num)
-    print("[set_secuencial] >> "+str(nuevo))
+    #print("[set_secuencial] >> "+str(nuevo))
     nuevo = nuevo+1
     command = "update docume set numero_doc = "+str(nuevo)+" where(codigo_doc = 001 and empresa_id ="
     command+=empresa+"and agenci_id="+agencia+")"
-    print ("[set_secuencial] >> "+command)
+    #print ("[set_secuencial] >> "+command)
     with cursor.execute(command):
         row = cursor.fetchall()
-    print ("[set_secuencial] >> "+str(row))
+    #print ("[set_secuencial] >> "+str(row))
     pass
 
 
@@ -119,7 +119,7 @@ def save_invoice(json_data):
 
 def get_image(empresa_id):
     #extarct the data
-    print("empresa imagen >> "+empresa_id)
+    #print("empresa imagen >> "+empresa_id)
     command = "select logo_emp from empres where(empresa_id = "+empresa_id+")"
     row=''
     with cursor.execute(command):
@@ -219,7 +219,7 @@ def get_empresas():
 def get_agencia(empresa):
     #command = "SELECT * FROM sys.columns WHERE object_id = OBJECT_ID('dbo.productos')"
     command = "SELECT agenci_id,direcc_age,nombre_age FROM agenci WHERE(empresa_id="+empresa+")"
-    print(command)
+    #print(command)
     row = ''
     with cursor.execute(command):
         row = cursor.fetchall()
@@ -230,7 +230,7 @@ def get_client(cliente, empresaid):
     #command = "SELECT * FROM sys.columns WHERE object_id = OBJECT_ID('dbo.productos')"
     command = "select * from client where (rucci_cli like '%"
     command+= cliente+"%' or codigo_cli LIKE'%"+cliente+"%' or nombre_cli like '%"+cliente+"%' and empresa_id="+empresaid+" )"
-    print(command)
+    #print(command)
     row = ''
     with cursor.execute(command):
         row = cursor.fetchall()

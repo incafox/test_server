@@ -23,31 +23,31 @@ def leeCampo(cadena):
     campo = "<ambiente>"
     indx = cadena.index(campo) + len(campo)
     d_tipoambiente = cadena[indx:indx+1]
-    print ("ambiente > "+d_tipoambiente)
+    #print ("ambiente > "+d_tipoambiente)
 #elif (campo == "<tipoEmision>"):
 #if ("<tipoEmision>" in cadena):
     campo = "<tipoEmision>"
     indx = cadena.index(campo) + len(campo)
     d_tipoemision  = cadena[indx:indx+1]
-    print ("tipo emision >" +d_tipoemision)
+    #print ("tipo emision >" +d_tipoemision)
 #elif (campo == "<ruc>"):
 #if ("<ruc>" in cadena):
     campo = "<ruc>"
     indx = cadena.index(campo) + len(campo)
     d_ruc = cadena[indx:indx+13]
-    print ("ruc >"+d_ruc)
+    #print ("ruc >"+d_ruc)
 #elif (campo == "<codDoc>"):  #COD DOG ES TIPO DE EMISION
 #if ("<codDoc>" in cadena):
     campo = "<codDoc>"
     indx = cadena.index(campo) + len(campo)
     d_tipocomprobante = cadena[indx:indx+2]
-    print ("tipo comprobante > "+d_tipocomprobante)
+    #print ("tipo comprobante > "+d_tipocomprobante)
 #elif (campo == "<secuencial>"):
 #if ("<secuencial>" in cadena):
     campo = "<secuencial>"
     indx = cadena.index(campo) + len(campo)
     d_numerosecuencial = cadena[indx:indx+9]
-    print ("<secuencial> "+ d_numerosecuencial)
+    #print ("<secuencial> "+ d_numerosecuencial)
 #"""para serie"""
 #elif (campo == "<ptoEmi>"):
 #if ("<ptoEmi>" in cadena):
@@ -60,14 +60,14 @@ def leeCampo(cadena):
     campo = "<estab>"
     indx = cadena.index(campo) + len(campo)
     d_serie += cadena[indx:indx+3]
-    print ("<estab> "+d_serie)
+    #print ("<estab> "+d_serie)
 #---fecha---
 #elif (campo == "<fechaEmision>"):
 #if ("<fechaEmision>" in cadena):
     campo = "<fechaEmision>"
     indx = cadena.index(campo) + len(campo)
     d_fecha = cadena[indx:indx+10]
-    print ("<fechaEmision>"+d_fecha)
+    #print ("<fechaEmision>"+d_fecha)
     d_fecha=d_fecha.replace("/","")
     #print (d_fecha)
     return d_fecha+d_tipocomprobante+d_ruc+d_tipoambiente+d_serie+d_numerosecuencial+d_codigonumerico+"12345678"+d_tipoemision, d_tipoambiente
@@ -76,9 +76,9 @@ def leeCampo(cadena):
 
 def creaclaveAcceso(c48digs):
     clave = c48digs
-    print("[creaclaveAcceso clave] > "+ c48digs)
+    #print("[creaclaveAcceso clave] > "+ c48digs)
     temp = "1212"#mod11.numero_verificador(clave)
-    print ("[creaclaveAcceso]> "+ temp)
+    #print ("[creaclaveAcceso]> "+ temp)
     clave+=str(temp)
     #print ("creaclaveAcceso> "+clave)
     return clave
@@ -91,7 +91,7 @@ def getXMLconCA(cadena):
     #print("[c48xxx] > "+c48xxx)
 
     clave = creaclaveAcceso(c48xxx)
-    print ("[get xml con ca ] >>" + clave)
+    #print ("[get xml con ca ] >>" + clave)
     #print ("getxml..> "+clave)
     if ("<claveAcceso>" in cadena):
         indx = cadena.index("<claveAcceso>") + len("<claveAcceso>")
@@ -135,10 +135,10 @@ def enviador(xmlcadena, ambiente):
     if (ambiente == '1'):
         #wsdl = 'https://celcer.sri.gob.ec/comprobantes-electronicos-ws/RecepcionComprobantesOffline?wsdl'
         client_1_r = zeep.Client(wsdl=wsdl_prueba_recepcion)
-        print ("[enviador > ]")
+        #print ("[enviador > ]")
         #return (client_1_r.service.validarComprobante(xmlcadena.encode()))
         r =  (client_1_r.service.validarComprobante(str(xmlcadena).encode()))
-        print (r)
+        #print (r)
         respuesta =  r
     elif (ambiente == '2'):
         #wsdl = 'https://celcer.sri.gob.ec/comprobantes-electronicos-ws/RecepcionComprobantesOffline?wsdl'
@@ -151,15 +151,15 @@ def enviador(xmlcadena, ambiente):
 def firmador(xml, pathP12, pwd):
     pwd_t = pwd
     pathP12_t =  pathP12
-    print ("[path de centiifcado] > " + pathP12_t)
+    #print ("[path de centiifcado] > " + pathP12_t)
 
     pwd_enc = pwd_t.encode('ascii')
     pathP12_enc = pathP12_t.encode('ascii')
 
     respuesta=""
-    print ("[se procesara : xml ] > " + xml)
-    print ("[se procesara : path12 ] > " + pathP12)
-    print ("[se procesara : pwd ] > " + pwd)
+    #print ("[se procesara : xml ] > " + xml)
+    #print ("[se procesara : path12 ] > " + pathP12)
+    #print ("[se procesara : pwd ] > " + pwd)
     #xml_completo, ambiente, claveAcceso = getXMLconCA(xml)
     xml_completo = xml
     pwd_biteado = base64.b64encode(pwd_enc)

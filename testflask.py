@@ -88,7 +88,7 @@ def get_descuento():
 def get_impuesto():
     cod = request.json['codigo']
     cod = str(cod)
-    print("codigo es >  " + cod)
+    #print("codigo es >  " + cod)
     r = sql_test.get_impuesto(cod)
     res=[]
     for e in r:
@@ -120,7 +120,7 @@ def send_xml():
     #print(e)
     #print(e[0])
     (url_p12, url_pwd) = e[0] #sql_test.get_link_p12(cod)
-    print(url_p12)
+    #print(url_p12)
     url = ""
     res = []
     #for e in r:
@@ -139,7 +139,7 @@ def send_xml():
     #res.append(temp)
     #procede a enviar
     respuesta = helpersigner.enviador(xml_firmado.decode(), ambiente)
-    print (respuesta)
+    #print (respuesta)
     return str(respuesta)
 
 
@@ -204,7 +204,7 @@ def get_empresas():
 @app.route("/services/mssql/getagenci",methods=["GET","POST"])
 def get_agencia():
     empresa = request.json['empresa']
-    print(empresa)
+    #print(empresa)
     r = sql_test.get_agencia(empresa)
     res = []
     for e in r:
@@ -224,7 +224,7 @@ def sign():
 
     xml = request.json['xml']
     
-    print(xml)
+    #print(xml)
     #se pone a firma el xml
     r = firmador_enviador.executor(empresa)
     return json.dumps(res) 
@@ -240,6 +240,7 @@ def downloadFile ():
 def getpdfticketname():
     #print(filename+" || >> creado")
     #filename = pdfcreator.crear_ticket()
+    #print (request.json) 
     tipo = request.json['tipo_pdf']
     cod = request.json['empresa_id']
     razSoc = request.json['razonSocialComprador']
@@ -247,7 +248,6 @@ def getpdfticketname():
     totalSin = request.json['totalSin']
     conceptos = request.json['conceptos']
     total = request.json['total']
-
     #xml = request.json['xml']
     #print("datos para pdf >>> ")
     #print ("[conceptos] "+conceptos)
@@ -263,9 +263,11 @@ def getpdfticketname():
     #entrega el json completo
     if (tipo=='1'):
         filename = pdfcreator.crear_ticket(request.json)
+        #print (filename)
     else: #para pdf factura grande
         #fecha = request.json['fecha']
         filename = pdfcreator.crear_factura(request.json)
+        #print (filename)
     #xml = helpersigner.xmlconclave(xml)
     # clave = request.json['clave']
     #filename = pdfcreator.crear_ticket()
@@ -326,7 +328,7 @@ def get_client():
                 "email_cli": str(email_cli),
                 }
         res.append(temp)
-    print (json.dumps(res))
+    #print (json.dumps(res))
     return json.dumps(res)
 
 @app.route("/services/mssql/get_secuencial", methods=["GET","POST"])
@@ -340,7 +342,7 @@ def get_secuencial():
     final =""
     for e in secuencial:
         final = str(e [0])
-    print (final)
+    #print (final)
     return final
     #if (request.method == 'POST'):
         ##prcesa

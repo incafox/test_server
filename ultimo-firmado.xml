@@ -4,61 +4,61 @@
     <tipoEmision>1</tipoEmision>
     <razonSocial>MATADERO Y CARNES FRIAS MACAFRI CIA. LTDA</razonSocial>
     <ruc>1791842413001</ruc>
-    <claveAcceso>0904202001179184241300110010010000000181234567810</claveAcceso>
+    <claveAcceso>2204202001179184241300110010010000000001234567810</claveAcceso>
     <codDoc>01</codDoc>
     <estab>001</estab>
-    <ptoEmi>001</ptoEmi>
-    <secuencial>000000018</secuencial>
+    <ptoEmi>00001</ptoEmi>
+    <secuencial>000000000</secuencial>
     <dirMatriz>Francelana, Guayacanes N58-118 y José Bustos.</dirMatriz>
   </infoTributaria>
         <infoFactura>
-    <fechaEmision>09/04/2020</fechaEmision>
+    <fechaEmision>22/04/2020</fechaEmision>
     <dirEstablecimiento>Francelana, Guayacanes N58-118 y José Bustos.</dirEstablecimiento>
     <obligadoContabilidad>SI</obligadoContabilidad>
     <tipoIdentificacionComprador>07</tipoIdentificacionComprador>
-    <razonSocialComprador>9999999999999</razonSocialComprador>
+    <razonSocialComprador>SUAREZ LETTY</razonSocialComprador>
     <identificacionComprador>9999999999999</identificacionComprador>
-    <totalSinImpuestos>2.35</totalSinImpuestos>
+    <totalSinImpuestos>2.45</totalSinImpuestos>
     <totalDescuento>0.00</totalDescuento>
     <totalConImpuestos>
       <totalImpuesto>
         <codigo>2</codigo>
         <codigoPorcentaje>2</codigoPorcentaje>
-        <baseImponible>2.35</baseImponible>
+        <baseImponible>2.45</baseImponible>
         <tarifa>12</tarifa>
         <valor>0.0</valor>
       </totalImpuesto>
     </totalConImpuestos>
     <propina>0</propina>
-    <importeTotal>2.35</importeTotal>
+    <importeTotal>2.45</importeTotal>
     <moneda>dolar</moneda>
     <pagos>
       <pago>
         <formaPago>01</formaPago>
-        <total>2.35</total>
+        <total>2.45</total>
       </pago>
     </pagos>
   </infoFactura>
     <detalles>                          <detalle>
-                          <codigoPrincipal>7861012505449</codigoPrincipal>
-                          <descripcion>YOGURT TONI FRUTILLA 200 GR</descripcion>
+                          <codigoPrincipal> 7861012509805</codigoPrincipal>
+                          <descripcion>YOGURT TONI MIX DURAZNO</descripcion>
                           <cantidad>1</cantidad>
-                          <precioUnitario>0.75</precioUnitario>
+                          <precioUnitario>0.85</precioUnitario>
                           <descuento>0</descuento>
-                          <precioTotalSinImpuesto>0.75</precioTotalSinImpuesto>
+                          <precioTotalSinImpuesto>0.85</precioTotalSinImpuesto>
                           <impuestos>
                             <impuesto>
                               <codigo>2</codigo>
                               <codigoPorcentaje>2</codigoPorcentaje>
                               <tarifa>0.0</tarifa>
-                              <baseImponible>0.75</baseImponible>
+                              <baseImponible>0.85</baseImponible>
                               <valor>0.0</valor>
                             </impuesto>
                           </impuestos>
                         </detalle>
                                                     <detalle>
-                          <codigoPrincipal> 7861012509805</codigoPrincipal>
-                          <descripcion>YOGURT TONI MIX DURAZNO</descripcion>
+                          <codigoPrincipal>7861012509782</codigoPrincipal>
+                          <descripcion>YOGURT TONI MIX FRUTILLA</descripcion>
                           <cantidad>1</cantidad>
                           <precioUnitario>0.85</precioUnitario>
                           <descuento>0</descuento>
@@ -91,34 +91,34 @@
                           </impuestos>
                         </detalle>
                           </detalles> 
- <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:etsi="http://uri.etsi.org/01903/v1.3.2#" Id="Signature427439">
-<ds:SignedInfo Id="Signature-SignedInfo319732">
+ <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:etsi="http://uri.etsi.org/01903/v1.3.2#" Id="Signature163431">
+<ds:SignedInfo Id="Signature-SignedInfo805381">
 <ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
 <ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
-<ds:Reference Id="SignedPropertiesID995200" Type="http://uri.etsi.org/01903#SignedProperties" URI="#Signature427439-SignedProperties311009">
+<ds:Reference Id="SignedPropertiesID619598" Type="http://uri.etsi.org/01903#SignedProperties" URI="#Signature163431-SignedProperties121810">
 <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
-<ds:DigestValue>TljivMv9tEg7nADIzhkOZjwrqgc=</ds:DigestValue>
+<ds:DigestValue>oRv37z0eKDw6cmakze80vsps1mE=</ds:DigestValue>
 </ds:Reference>
-<ds:Reference URI="#Certificate1578589">
+<ds:Reference URI="#Certificate1902353">
 <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
-<ds:DigestValue>0yx+NYtHF+qyLvxugf+uGd+wsi8=</ds:DigestValue>
+<ds:DigestValue>7GKEEIpFH72mslxKhgofJ2QKhFM=</ds:DigestValue>
 </ds:Reference>
-<ds:Reference Id="Reference-ID-373595" URI="#comprobante">
+<ds:Reference Id="Reference-ID-471580" URI="#comprobante">
 <ds:Transforms>
 <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
 </ds:Transforms>
 <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
-<ds:DigestValue>s2tiM6HzRLmXHrZjhpjHaasrzhM=</ds:DigestValue>
+<ds:DigestValue>UM/99jlAGova0/nf0ldgHsOHeag=</ds:DigestValue>
 </ds:Reference>
 </ds:SignedInfo>
-<ds:SignatureValue Id="SignatureValue53223">
-cQhYbze9rRXY6hDm3kP2ddE2trqPP5kGGrHuxRXKOUUwA89FZRPaFQ02SCevtnnTCN5aNoo5udA6
-frKaTHSvrk7GqSCRmUK+s/8msqlkwO7cel2bR/YjQeru58o7ZrxW5jr0PwRTj253l1ThTOzphR4G
-7hlGSiUFOehaMpkB88c8sTh6bf+sOWIlefwAttBMuDBxqY+Td7gq4IwhDPo9C6qcD59CM8Uf7Esv
-vh3K8Jbow+c3glHefpMffUO776Knc0/NlfjP5crgircCJmE5zN/r5/8ad1yGKElOf9SNur7cmxUa
-9elNtA25D7D18C2VjLjbDfdeIfW57IFC8iQANA==
+<ds:SignatureValue Id="SignatureValue922400">
+U+SQh92VwMHopaxx0/B6V09xPYydy8771UQ8p03sXuusTNvqRNhQ/uD0hQCsJ2oUwPQs9b3IRgIe
+aTpPHoWM/LyxLw0W34Zz+mPS/R58YdVSR5biU91sHZ9p6RSrIMAazxH5FnSlZGut56/bKpDc1q1Z
+Ydpq+bEi5WWnUHUr9OaHMd4x3Iz6T7ccL8tiok3zSIrMkytgpKV/6lEqGN8zWoUbq4XMPN0J8nUs
+ue41rz2wYAq1upSIST9t/lnGfGKSxx+ZLV02liT1oddzqns9up2Q54BuQVVJsRsAh5GoBbre6Gfd
+IdpBB5U0CSlHI0z22Bio1G0vqfVW+Dn4A0bxFQ==
 </ds:SignatureValue>
-<ds:KeyInfo Id="Certificate1578589">
+<ds:KeyInfo Id="Certificate1902353">
 <ds:X509Data>
 <ds:X509Certificate>
 MIIJWDCCB0CgAwIBAgIEW17h4zANBgkqhkiG9w0BAQsFADCBoTELMAkGA1UEBhMCRUMxIjAgBgNV
@@ -179,4 +179,4 @@ p5uSO1kwD8Z8GTMVNMVI4Z6C4C0yLj712nhvvw==
 </ds:RSAKeyValue>
 </ds:KeyValue>
 </ds:KeyInfo>
-<ds:Object Id="Signature427439-Object481352"><etsi:QualifyingProperties Target="#Signature427439"><etsi:SignedProperties Id="Signature427439-SignedProperties311009"><etsi:SignedSignatureProperties><etsi:SigningTime>2020-04-10T00:57:34+00:00</etsi:SigningTime><etsi:SigningCertificate><etsi:Cert><etsi:CertDigest><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><ds:DigestValue>C8nnxXUuG9sLK2m2BKyOVJQqt6w=</ds:DigestValue></etsi:CertDigest><etsi:IssuerSerial><ds:X509IssuerName>CN=AC BANCO CENTRAL DEL ECUADOR,L=QUITO,OU=ENTIDAD DE CERTIFICACION DE INFORMACION-ECIBCE,O=BANCO CENTRAL DEL ECUADOR,C=EC</ds:X509IssuerName><ds:X509SerialNumber>1532944867</ds:X509SerialNumber></etsi:IssuerSerial></etsi:Cert></etsi:SigningCertificate></etsi:SignedSignatureProperties><etsi:SignedDataObjectProperties><etsi:DataObjectFormat ObjectReference="#Reference-ID-373595"><etsi:Description>contenido comprobante</etsi:Description><etsi:MimeType>text/xml</etsi:MimeType></etsi:DataObjectFormat></etsi:SignedDataObjectProperties></etsi:SignedProperties></etsi:QualifyingProperties></ds:Object></ds:Signature></factura>
+<ds:Object Id="Signature163431-Object845040"><etsi:QualifyingProperties Target="#Signature163431"><etsi:SignedProperties Id="Signature163431-SignedProperties121810"><etsi:SignedSignatureProperties><etsi:SigningTime>2020-04-22T05:35:31+00:00</etsi:SigningTime><etsi:SigningCertificate><etsi:Cert><etsi:CertDigest><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><ds:DigestValue>C8nnxXUuG9sLK2m2BKyOVJQqt6w=</ds:DigestValue></etsi:CertDigest><etsi:IssuerSerial><ds:X509IssuerName>CN=AC BANCO CENTRAL DEL ECUADOR,L=QUITO,OU=ENTIDAD DE CERTIFICACION DE INFORMACION-ECIBCE,O=BANCO CENTRAL DEL ECUADOR,C=EC</ds:X509IssuerName><ds:X509SerialNumber>1532944867</ds:X509SerialNumber></etsi:IssuerSerial></etsi:Cert></etsi:SigningCertificate></etsi:SignedSignatureProperties><etsi:SignedDataObjectProperties><etsi:DataObjectFormat ObjectReference="#Reference-ID-471580"><etsi:Description>contenido comprobante</etsi:Description><etsi:MimeType>text/xml</etsi:MimeType></etsi:DataObjectFormat></etsi:SignedDataObjectProperties></etsi:SignedProperties></etsi:QualifyingProperties></ds:Object></ds:Signature></factura>

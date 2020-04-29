@@ -5,10 +5,13 @@ import json
 import sql_test
 from PIL import Image
 import io
+from datetime import date
 #import treepoem
 from barcode import Gs1_128
 from barcode.writer import ImageWriter
 from io import BytesIO
+
+today = date.today()
 
 #datos de xml
 razon_social = ""#"MATADERO Y CARNES FRIAS CIA. LTDA."
@@ -62,8 +65,9 @@ def crear_ticket(json_data):
     #pdf.multi_cell(80, 5, txt=calcula_clave(json_data))
     #pdf.cell(80, 5, txt='__________________________________', ln=1)
     #pdf.multi_cell(80, 5, txt='______________')
-    pdf.multi_cell(80, 5,border=1, txt='FACTURA No:'+"1234543434343434")
-    pdf.multi_cell(80, 5, border=1,txt='FECHA EMISION:'+json_data['fecha'])
+    pdf.multi_cell(80, 5,border=1, txt='FACTURA No:'+json_data['factura_no'])
+    d4 = today.strftime("%b-%d-%Y")
+    pdf.multi_cell(80, 5, border=1,txt='FECHA EMISION:'+ str(d4))
     pdf.multi_cell(80, 5,border=1 ,txt='RAZON SOCIAL: '+json_data['razonSocialComprador'])
     #pdf.multi_cell(80, 5, border=1,txt='CONSUMIDOR FINAL')
     pdf.multi_cell(80, 5, border=1,txt='RUC:'+json_data['rucComprador'] )
@@ -186,42 +190,47 @@ def crear_factura(json_data):
     data_conceptos = json.loads(data_conceptos.replace("'",'"'))
     pdf = FPDF(format='A4')
     pdf.add_page()
-    pdf.set_font("Times", size=17)
+    pdf.set_font("Times", size=12)
     pdf.set_top_margin(2)
     w = pdf.w
     h = pdf.h
 
     pdf.set_xy(w/2,10)
     #pdf.cell(100,20,'descridddocion')
-    pdf.multi_cell(w/2-15, 7, 'Ruc: '+ruc+'\n\nFACTURA\n\nNo:'+secue+'\nNumero Autorizacion.:\n56785456787656783212\nAMBIENTE:'+ambie+'\nEmision: Normal\nClave de Acceso: '+clave,1 )
+    pdf.multi_cell(w/2-15, 5, 'Ruc: '+ruc+'\n\nFACTURA\n\nNo:'+secue+'\nNumero Autorizacion.:\n56785456787656783212\nAMBIENTE:'+ambie+'\nEmision: Normal\nClave de Acceso: '+clave,1 )
 
-    pdf.set_font("Times", size=13)
+    pdf.set_font("Times", size=10)
     pdf.set_xy(10,10)
     #print (w,h)
     #imagen
     pdf.multi_cell(w/2-15, 35, ' ',1 )
     pdf.image(nombre_image,15,10,70,35)
     pdf.set_x(10)
-    pdf.multi_cell(w/2-15, 7,json_data['razonSocial']+'\nDir Matriz:\nDir'+json_data['dirMatriz']+'\nDir Sucursal: '+json_data['dirSucursal']+'\nContribuyente especial No:\nObligado a llevar contabilidad: No',1 )
+    pdf.multi_cell(w/2-15, 5,json_data['razonSocial']+'\nDir Matriz:\nDir'+json_data['dirMatriz']+'\nDir Sucursal: '+json_data['dirSucursal']+'\nContribuyente especial No:\nObligado a llevar contabilidad: No',1 )
 
 
 
     #rv = BytesIO()
     #Gs1_128(str(1000009078328787422482382922), writer=ImageWriter()).write(rv)
-
+    tempito = pdf.get_y()
+    pdf.multi_cell(w-20, 25, ' ',0)
+    tempi_post = pdf.get_y()
     # or sure, to an actual file:
     with open(nombre[:-4]+'cc.png', 'wb') as f:
-        Gs1_128(clave_acceso, writer=ImageWriter()).write(f)
-
-    pdf.image(nombre[:-4]+'cc.png',15,pdf.get_y(),80,20)
+        Gs1_128("2503202001179184241300120010010000030190000061611", writer=ImageWriter()).write(f)
+    
+    pdf.image(nombre[:-4]+'cc.png',40,tempito+1,140,25)
     #======== informacion del cliente =======
     pdf.set_x(30)
+    pdf.set_xy(30,tempi_post)
     pdf.set_font("Arial", size=16)
     pdf.cell(60, 10, 'INFORMACION DEL CLIENTE', 0, 1, 'C')
     #pdf.cell
     pdf.set_x(10)
     pdf.set_font("Arial", size=12)
-    pdf.multi_cell(w-25, 10, 'Razon Social:\t '+raSocComprador+'\nRUC/CI:\t\t'+rucComprador+'\nFecha de Emision: \n'+fecha,1 )
+    d4 = today.strftime("%b-%d-%Y")
+
+    pdf.multi_cell(w-25, 10, 'Razon Social:\t '+raSocComprador+'\nRUC/CI:\t\t'+rucComprador+'\nFecha de Emision: '+ str(d4),1 )
 
     #========= SECCION PRODUCTOS ===========
     #heades
@@ -267,10 +276,9 @@ def crear_factura(json_data):
         #pdf.set_xy(pdf.get_x(),pdf.get_y())
         #for casilla in temporal:
         if (len(row['nombre'])>28 ):
-            pass
-            #row_height = row_height * 2
+            row_height = 5
         else:
-            row_height = pdf.font_size
+            row_height = 5#pdf.font_size+2
         pdf.multi_cell(30, row_height*1,txt=row['codigo'].lower(),border=1)
         pdf.set_xy(x+30,y)
         pdf.multi_cell(20, row_height*1,txt=row['cantidad'],border=1)

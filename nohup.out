@@ -1,0 +1,1190 @@
+[2020-04-22 05:05:13 +0000] [630] [INFO] Starting gunicorn 20.0.4
+[2020-04-22 05:05:13 +0000] [630] [INFO] Listening at: http://127.0.0.1:8000 (630)
+[2020-04-22 05:05:13 +0000] [630] [INFO] Using worker: sync
+[2020-04-22 05:05:13 +0000] [633] [INFO] Booting worker with pid: 633
+[2020-04-22 05:07:27 +0000] [637] [INFO] Booting worker with pid: 637
+[2020-04-22 05:07:27 +0000] [630] [INFO] Handling signal: hup
+[2020-04-22 05:07:27 +0000] [630] [INFO] Hang up: Master
+[2020-04-22 05:07:27 +0000] [638] [INFO] Booting worker with pid: 638
+[2020-04-22 05:07:29 +0000] [637] [INFO] Worker exiting (pid: 637)
+<pyodbc.Connection object at 0x7f99917a58a0>
+<pyodbc.Connection object at 0x7f99917aa8a0>
+10004
+SELECT agenci_id,direcc_age,nombre_age FROM agenci WHERE(empresa_id=10004)
+10001
+SELECT agenci_id,direcc_age,nombre_age FROM agenci WHERE(empresa_id=10001)
+select * from client where (rucci_cli like '%suarez%' or codigo_cli LIKE'%suarez%' or nombre_cli like '%suarez%' and empresa_id=10001 )
+[{"codigo_cli": "001439", "nombre_cli": "MONTENEGRO SUAREZ  PAULINA", "razsoc_cli": "MONTENEGRO SUAREZ  PAULINA", "rucci_cli": "1714746821", "direcc_cli": "SAN BARTOLO", "telefo_cli": "26885892       ", "email_cli": "pauly.montenegro.29@hotmail.com"}, {"codigo_cli": "002157", "nombre_cli": "SUAREZ AMALIA", "razsoc_cli": "SUAREZ AMALIA", "rucci_cli": "1711425072", "direcc_cli": "Udla Granados", "telefo_cli": "099529727      ", "email_cli": "amalia.suarez@udla.edu.ec"}, {"codigo_cli": "002158", "nombre_cli": "SUAREZ ANGEL", "razsoc_cli": "SUAREZ ANGEL", "rucci_cli": "1708334246", "direcc_cli": "PUENGASI", "telefo_cli": "023190338      ", "email_cli": "fernandosuarez1105@gmail.com"}, {"codigo_cli": "002159", "nombre_cli": "SUAREZ GORDON RUTH", "razsoc_cli": "SUAREZ GORDON RUTH", "rucci_cli": "1715030852", "direcc_cli": "calderon", "telefo_cli": "28212984       ", "email_cli": ""}, {"codigo_cli": "002160", "nombre_cli": "SUAREZ ISABEL", "razsoc_cli": "SUAREZ ISABEL", "rucci_cli": "1791990447001", "direcc_cli": "san carlos", "telefo_cli": "6005475        ", "email_cli": ""}, {"codigo_cli": "002161", "nombre_cli": "SUAREZ JONATHAN", "razsoc_cli": "SUAREZ JONATHAN", "rucci_cli": "1718347725", "direcc_cli": "carcelen", "telefo_cli": "3813505        ", "email_cli": ""}, {"codigo_cli": "002162", "nombre_cli": "SUAREZ LETTY", "razsoc_cli": "SUAREZ LETTY", "rucci_cli": "1704535036", "direcc_cli": "Hernandez de Giron OE5-75 y Pedregal", "telefo_cli": "2439144        ", "email_cli": ""}, {"codigo_cli": "002163", "nombre_cli": "SUAREZ MARISOL", "razsoc_cli": "SUAREZ MARISOL", "rucci_cli": "1802433696", "direcc_cli": "Puente 3", "telefo_cli": "2835678        ", "email_cli": ""}, {"codigo_cli": "002164", "nombre_cli": "SUAREZ RUTH", "razsoc_cli": "SUAREZ RUTH", "rucci_cli": "1708380405", "direcc_cli": "mena 2", "telefo_cli": "2847460        ", "email_cli": "delpilar.ruth@yahoo.com"}, {"codigo_cli": "002661", "nombre_cli": "SUAREZ VERONICA", "razsoc_cli": "SUAREZ VERONICA", "rucci_cli": "1719341537", "direcc_cli": "COMITE DEL PUEBLO", "telefo_cli": "023452828      ", "email_cli": "andre.alexia@hotmail.com"}, {"codigo_cli": "002836", "nombre_cli": "SUAREZ XAVIER", "razsoc_cli": "SUAREZ XAVIER", "rucci_cli": "1710428770", "direcc_cli": "la gasca", "telefo_cli": "               ", "email_cli": "xasu1@yahoo.es"}, {"codigo_cli": "002935", "nombre_cli": "SUAREZ GABRIEL", "razsoc_cli": "SUAREZ GABRIEL", "rucci_cli": "1702843671", "direcc_cli": "NUEVA GRANIZADA", "telefo_cli": "               ", "email_cli": "grabrielsuarez43@yahoo.es"}, {"codigo_cli": "004805", "nombre_cli": "MORETA SUAREZ FERNANDO", "razsoc_cli": "MORETA SUAREZ FERNANDO", "rucci_cli": "0501136733001", "direcc_cli": "AV AMERICA 41-68 Y VERACRUZ", "telefo_cli": "2433107        ", "email_cli": ""}, {"codigo_cli": "005582", "nombre_cli": "SUAREZ ISABEL", "razsoc_cli": "SUAREZ ISABEL", "rucci_cli": "1722300736001", "direcc_cli": "SAN CARLOS", "telefo_cli": "3401447        ", "email_cli": ""}, {"codigo_cli": "005583", "nombre_cli": "SUAREZ JORGE", "razsoc_cli": "SUAREZ JORGE", "rucci_cli": "1700116039", "direcc_cli": "                   real audiencia", "telefo_cli": "2404066        ", "email_cli": ""}, {"codigo_cli": "005584", "nombre_cli": "SUAREZ JORGE RENE", "razsoc_cli": "SUAREZ JORGE RENE", "rucci_cli": "1700699299", "direcc_cli": "CARAPUNGO", "telefo_cli": "2424987        ", "email_cli": ""}, {"codigo_cli": "005585", "nombre_cli": "SUAREZ MARCELO", "razsoc_cli": "SUAREZ MARCELO", "rucci_cli": "1001915360", "direcc_cli": "CARCELEN", "telefo_cli": "0995025121     ", "email_cli": ""}, {"codigo_cli": "005586", "nombre_cli": "SUAREZ SILVIA", "razsoc_cli": "SUAREZ SILVIA", "rucci_cli": "1712475241", "direcc_cli": "COFAVI", "telefo_cli": "2400900        ", "email_cli": ""}, {"codigo_cli": "005587", "nombre_cli": "SUAREZ URREA VICTOR", "razsoc_cli": "SUAREZ URREA VICTOR", "rucci_cli": "1792680964001", "direcc_cli": "BAKER", "telefo_cli": "0983189706     ", "email_cli": ""}, {"codigo_cli": "005588", "nombre_cli": "SUAREZ VALLEJO ANA", "razsoc_cli": "SUAREZ VALLEJO ANA", "rucci_cli": "1002045506", "direcc_cli": "COFAVI", "telefo_cli": "               ", "email_cli": ""}, {"codigo_cli": "005589", "nombre_cli": "SUAREZ VERONICA", "razsoc_cli": "SUAREZ VERONICA", "rucci_cli": "1712087863", "direcc_cli": "JUAN MOLINEROS", "telefo_cli": "3283494        ", "email_cli": ""}, {"codigo_cli": "006215", "nombre_cli": "SUAREZ PAOLA", "razsoc_cli": "SUAREZ PAOLA", "rucci_cli": "1002880605", "direcc_cli": "LOS LAURELES", "telefo_cli": "               ", "email_cli": "pololita_suarez@hotmail.com"}]
+select * from client where (rucci_cli like '%suarez%' or codigo_cli LIKE'%suarez%' or nombre_cli like '%suarez%' and empresa_id=10001 )
+[{"codigo_cli": "001439", "nombre_cli": "MONTENEGRO SUAREZ  PAULINA", "razsoc_cli": "MONTENEGRO SUAREZ  PAULINA", "rucci_cli": "1714746821", "direcc_cli": "SAN BARTOLO", "telefo_cli": "26885892       ", "email_cli": "pauly.montenegro.29@hotmail.com"}, {"codigo_cli": "002157", "nombre_cli": "SUAREZ AMALIA", "razsoc_cli": "SUAREZ AMALIA", "rucci_cli": "1711425072", "direcc_cli": "Udla Granados", "telefo_cli": "099529727      ", "email_cli": "amalia.suarez@udla.edu.ec"}, {"codigo_cli": "002158", "nombre_cli": "SUAREZ ANGEL", "razsoc_cli": "SUAREZ ANGEL", "rucci_cli": "1708334246", "direcc_cli": "PUENGASI", "telefo_cli": "023190338      ", "email_cli": "fernandosuarez1105@gmail.com"}, {"codigo_cli": "002159", "nombre_cli": "SUAREZ GORDON RUTH", "razsoc_cli": "SUAREZ GORDON RUTH", "rucci_cli": "1715030852", "direcc_cli": "calderon", "telefo_cli": "28212984       ", "email_cli": ""}, {"codigo_cli": "002160", "nombre_cli": "SUAREZ ISABEL", "razsoc_cli": "SUAREZ ISABEL", "rucci_cli": "1791990447001", "direcc_cli": "san carlos", "telefo_cli": "6005475        ", "email_cli": ""}, {"codigo_cli": "002161", "nombre_cli": "SUAREZ JONATHAN", "razsoc_cli": "SUAREZ JONATHAN", "rucci_cli": "1718347725", "direcc_cli": "carcelen", "telefo_cli": "3813505        ", "email_cli": ""}, {"codigo_cli": "002162", "nombre_cli": "SUAREZ LETTY", "razsoc_cli": "SUAREZ LETTY", "rucci_cli": "1704535036", "direcc_cli": "Hernandez de Giron OE5-75 y Pedregal", "telefo_cli": "2439144        ", "email_cli": ""}, {"codigo_cli": "002163", "nombre_cli": "SUAREZ MARISOL", "razsoc_cli": "SUAREZ MARISOL", "rucci_cli": "1802433696", "direcc_cli": "Puente 3", "telefo_cli": "2835678        ", "email_cli": ""}, {"codigo_cli": "002164", "nombre_cli": "SUAREZ RUTH", "razsoc_cli": "SUAREZ RUTH", "rucci_cli": "1708380405", "direcc_cli": "mena 2", "telefo_cli": "2847460        ", "email_cli": "delpilar.ruth@yahoo.com"}, {"codigo_cli": "002661", "nombre_cli": "SUAREZ VERONICA", "razsoc_cli": "SUAREZ VERONICA", "rucci_cli": "1719341537", "direcc_cli": "COMITE DEL PUEBLO", "telefo_cli": "023452828      ", "email_cli": "andre.alexia@hotmail.com"}, {"codigo_cli": "002836", "nombre_cli": "SUAREZ XAVIER", "razsoc_cli": "SUAREZ XAVIER", "rucci_cli": "1710428770", "direcc_cli": "la gasca", "telefo_cli": "               ", "email_cli": "xasu1@yahoo.es"}, {"codigo_cli": "002935", "nombre_cli": "SUAREZ GABRIEL", "razsoc_cli": "SUAREZ GABRIEL", "rucci_cli": "1702843671", "direcc_cli": "NUEVA GRANIZADA", "telefo_cli": "               ", "email_cli": "grabrielsuarez43@yahoo.es"}, {"codigo_cli": "004805", "nombre_cli": "MORETA SUAREZ FERNANDO", "razsoc_cli": "MORETA SUAREZ FERNANDO", "rucci_cli": "0501136733001", "direcc_cli": "AV AMERICA 41-68 Y VERACRUZ", "telefo_cli": "2433107        ", "email_cli": ""}, {"codigo_cli": "005582", "nombre_cli": "SUAREZ ISABEL", "razsoc_cli": "SUAREZ ISABEL", "rucci_cli": "1722300736001", "direcc_cli": "SAN CARLOS", "telefo_cli": "3401447        ", "email_cli": ""}, {"codigo_cli": "005583", "nombre_cli": "SUAREZ JORGE", "razsoc_cli": "SUAREZ JORGE", "rucci_cli": "1700116039", "direcc_cli": "                   real audiencia", "telefo_cli": "2404066        ", "email_cli": ""}, {"codigo_cli": "005584", "nombre_cli": "SUAREZ JORGE RENE", "razsoc_cli": "SUAREZ JORGE RENE", "rucci_cli": "1700699299", "direcc_cli": "CARAPUNGO", "telefo_cli": "2424987        ", "email_cli": ""}, {"codigo_cli": "005585", "nombre_cli": "SUAREZ MARCELO", "razsoc_cli": "SUAREZ MARCELO", "rucci_cli": "1001915360", "direcc_cli": "CARCELEN", "telefo_cli": "0995025121     ", "email_cli": ""}, {"codigo_cli": "005586", "nombre_cli": "SUAREZ SILVIA", "razsoc_cli": "SUAREZ SILVIA", "rucci_cli": "1712475241", "direcc_cli": "COFAVI", "telefo_cli": "2400900        ", "email_cli": ""}, {"codigo_cli": "005587", "nombre_cli": "SUAREZ URREA VICTOR", "razsoc_cli": "SUAREZ URREA VICTOR", "rucci_cli": "1792680964001", "direcc_cli": "BAKER", "telefo_cli": "0983189706     ", "email_cli": ""}, {"codigo_cli": "005588", "nombre_cli": "SUAREZ VALLEJO ANA", "razsoc_cli": "SUAREZ VALLEJO ANA", "rucci_cli": "1002045506", "direcc_cli": "COFAVI", "telefo_cli": "               ", "email_cli": ""}, {"codigo_cli": "005589", "nombre_cli": "SUAREZ VERONICA", "razsoc_cli": "SUAREZ VERONICA", "rucci_cli": "1712087863", "direcc_cli": "JUAN MOLINEROS", "telefo_cli": "3283494        ", "email_cli": ""}, {"codigo_cli": "006215", "nombre_cli": "SUAREZ PAOLA", "razsoc_cli": "SUAREZ PAOLA", "rucci_cli": "1002880605", "direcc_cli": "LOS LAURELES", "telefo_cli": "               ", "email_cli": "pololita_suarez@hotmail.com"}]
+select * from client where (rucci_cli like '%sua%' or codigo_cli LIKE'%sua%' or nombre_cli like '%sua%' and empresa_id=10001 )
+[{"codigo_cli": "001439", "nombre_cli": "MONTENEGRO SUAREZ  PAULINA", "razsoc_cli": "MONTENEGRO SUAREZ  PAULINA", "rucci_cli": "1714746821", "direcc_cli": "SAN BARTOLO", "telefo_cli": "26885892       ", "email_cli": "pauly.montenegro.29@hotmail.com"}, {"codigo_cli": "002157", "nombre_cli": "SUAREZ AMALIA", "razsoc_cli": "SUAREZ AMALIA", "rucci_cli": "1711425072", "direcc_cli": "Udla Granados", "telefo_cli": "099529727      ", "email_cli": "amalia.suarez@udla.edu.ec"}, {"codigo_cli": "002158", "nombre_cli": "SUAREZ ANGEL", "razsoc_cli": "SUAREZ ANGEL", "rucci_cli": "1708334246", "direcc_cli": "PUENGASI", "telefo_cli": "023190338      ", "email_cli": "fernandosuarez1105@gmail.com"}, {"codigo_cli": "002159", "nombre_cli": "SUAREZ GORDON RUTH", "razsoc_cli": "SUAREZ GORDON RUTH", "rucci_cli": "1715030852", "direcc_cli": "calderon", "telefo_cli": "28212984       ", "email_cli": ""}, {"codigo_cli": "002160", "nombre_cli": "SUAREZ ISABEL", "razsoc_cli": "SUAREZ ISABEL", "rucci_cli": "1791990447001", "direcc_cli": "san carlos", "telefo_cli": "6005475        ", "email_cli": ""}, {"codigo_cli": "002161", "nombre_cli": "SUAREZ JONATHAN", "razsoc_cli": "SUAREZ JONATHAN", "rucci_cli": "1718347725", "direcc_cli": "carcelen", "telefo_cli": "3813505        ", "email_cli": ""}, {"codigo_cli": "002162", "nombre_cli": "SUAREZ LETTY", "razsoc_cli": "SUAREZ LETTY", "rucci_cli": "1704535036", "direcc_cli": "Hernandez de Giron OE5-75 y Pedregal", "telefo_cli": "2439144        ", "email_cli": ""}, {"codigo_cli": "002163", "nombre_cli": "SUAREZ MARISOL", "razsoc_cli": "SUAREZ MARISOL", "rucci_cli": "1802433696", "direcc_cli": "Puente 3", "telefo_cli": "2835678        ", "email_cli": ""}, {"codigo_cli": "002164", "nombre_cli": "SUAREZ RUTH", "razsoc_cli": "SUAREZ RUTH", "rucci_cli": "1708380405", "direcc_cli": "mena 2", "telefo_cli": "2847460        ", "email_cli": "delpilar.ruth@yahoo.com"}, {"codigo_cli": "002165", "nombre_cli": "SUASNAVAS JORGE", "razsoc_cli": "SUASNAVAS JORGE", "rucci_cli": "1717630931", "direcc_cli": "SANTA LUCIA", "telefo_cli": "2470744        ", "email_cli": ""}, {"codigo_cli": "002661", "nombre_cli": "SUAREZ VERONICA", "razsoc_cli": "SUAREZ VERONICA", "rucci_cli": "1719341537", "direcc_cli": "COMITE DEL PUEBLO", "telefo_cli": "023452828      ", "email_cli": "andre.alexia@hotmail.com"}, {"codigo_cli": "002836", "nombre_cli": "SUAREZ XAVIER", "razsoc_cli": "SUAREZ XAVIER", "rucci_cli": "1710428770", "direcc_cli": "la gasca", "telefo_cli": "               ", "email_cli": "xasu1@yahoo.es"}, {"codigo_cli": "002935", "nombre_cli": "SUAREZ GABRIEL", "razsoc_cli": "SUAREZ GABRIEL", "rucci_cli": "1702843671", "direcc_cli": "NUEVA GRANIZADA", "telefo_cli": "               ", "email_cli": "grabrielsuarez43@yahoo.es"}, {"codigo_cli": "004805", "nombre_cli": "MORETA SUAREZ FERNANDO", "razsoc_cli": "MORETA SUAREZ FERNANDO", "rucci_cli": "0501136733001", "direcc_cli": "AV AMERICA 41-68 Y VERACRUZ", "telefo_cli": "2433107        ", "email_cli": ""}, {"codigo_cli": "005582", "nombre_cli": "SUAREZ ISABEL", "razsoc_cli": "SUAREZ ISABEL", "rucci_cli": "1722300736001", "direcc_cli": "SAN CARLOS", "telefo_cli": "3401447        ", "email_cli": ""}, {"codigo_cli": "005583", "nombre_cli": "SUAREZ JORGE", "razsoc_cli": "SUAREZ JORGE", "rucci_cli": "1700116039", "direcc_cli": "                   real audiencia", "telefo_cli": "2404066        ", "email_cli": ""}, {"codigo_cli": "005584", "nombre_cli": "SUAREZ JORGE RENE", "razsoc_cli": "SUAREZ JORGE RENE", "rucci_cli": "1700699299", "direcc_cli": "CARAPUNGO", "telefo_cli": "2424987        ", "email_cli": ""}, {"codigo_cli": "005585", "nombre_cli": "SUAREZ MARCELO", "razsoc_cli": "SUAREZ MARCELO", "rucci_cli": "1001915360", "direcc_cli": "CARCELEN", "telefo_cli": "0995025121     ", "email_cli": ""}, {"codigo_cli": "005586", "nombre_cli": "SUAREZ SILVIA", "razsoc_cli": "SUAREZ SILVIA", "rucci_cli": "1712475241", "direcc_cli": "COFAVI", "telefo_cli": "2400900        ", "email_cli": ""}, {"codigo_cli": "005587", "nombre_cli": "SUAREZ URREA VICTOR", "razsoc_cli": "SUAREZ URREA VICTOR", "rucci_cli": "1792680964001", "direcc_cli": "BAKER", "telefo_cli": "0983189706     ", "email_cli": ""}, {"codigo_cli": "005588", "nombre_cli": "SUAREZ VALLEJO ANA", "razsoc_cli": "SUAREZ VALLEJO ANA", "rucci_cli": "1002045506", "direcc_cli": "COFAVI", "telefo_cli": "               ", "email_cli": ""}, {"codigo_cli": "005589", "nombre_cli": "SUAREZ VERONICA", "razsoc_cli": "SUAREZ VERONICA", "rucci_cli": "1712087863", "direcc_cli": "JUAN MOLINEROS", "telefo_cli": "3283494        ", "email_cli": ""}, {"codigo_cli": "005590", "nombre_cli": "SUASNAVAS FLORES JAIME", "razsoc_cli": "SUASNAVAS FLORES JAIME", "rucci_cli": "1704765666", "direcc_cli": "MITAD DEL MUNDO", "telefo_cli": "2395436        ", "email_cli": ""}, {"codigo_cli": "006029", "nombre_cli": "SUASNAVAS CARLOS", "razsoc_cli": "SUASNAVAS CARLOS", "rucci_cli": "1709767998", "direcc_cli": "PEDRO PINTO E2-170", "telefo_cli": "               ", "email_cli": "rafaelsuasnavas01@gmail.com"}, {"codigo_cli": "006215", "nombre_cli": "SUAREZ PAOLA", "razsoc_cli": "SUAREZ PAOLA", "rucci_cli": "1002880605", "direcc_cli": "LOS LAURELES", "telefo_cli": "               ", "email_cli": "pololita_suarez@hotmail.com"}]
+select * from client where (rucci_cli like '%suarez%' or codigo_cli LIKE'%suarez%' or nombre_cli like '%suarez%' and empresa_id=10001 )
+[{"codigo_cli": "001439", "nombre_cli": "MONTENEGRO SUAREZ  PAULINA", "razsoc_cli": "MONTENEGRO SUAREZ  PAULINA", "rucci_cli": "1714746821", "direcc_cli": "SAN BARTOLO", "telefo_cli": "26885892       ", "email_cli": "pauly.montenegro.29@hotmail.com"}, {"codigo_cli": "002157", "nombre_cli": "SUAREZ AMALIA", "razsoc_cli": "SUAREZ AMALIA", "rucci_cli": "1711425072", "direcc_cli": "Udla Granados", "telefo_cli": "099529727      ", "email_cli": "amalia.suarez@udla.edu.ec"}, {"codigo_cli": "002158", "nombre_cli": "SUAREZ ANGEL", "razsoc_cli": "SUAREZ ANGEL", "rucci_cli": "1708334246", "direcc_cli": "PUENGASI", "telefo_cli": "023190338      ", "email_cli": "fernandosuarez1105@gmail.com"}, {"codigo_cli": "002159", "nombre_cli": "SUAREZ GORDON RUTH", "razsoc_cli": "SUAREZ GORDON RUTH", "rucci_cli": "1715030852", "direcc_cli": "calderon", "telefo_cli": "28212984       ", "email_cli": ""}, {"codigo_cli": "002160", "nombre_cli": "SUAREZ ISABEL", "razsoc_cli": "SUAREZ ISABEL", "rucci_cli": "1791990447001", "direcc_cli": "san carlos", "telefo_cli": "6005475        ", "email_cli": ""}, {"codigo_cli": "002161", "nombre_cli": "SUAREZ JONATHAN", "razsoc_cli": "SUAREZ JONATHAN", "rucci_cli": "1718347725", "direcc_cli": "carcelen", "telefo_cli": "3813505        ", "email_cli": ""}, {"codigo_cli": "002162", "nombre_cli": "SUAREZ LETTY", "razsoc_cli": "SUAREZ LETTY", "rucci_cli": "1704535036", "direcc_cli": "Hernandez de Giron OE5-75 y Pedregal", "telefo_cli": "2439144        ", "email_cli": ""}, {"codigo_cli": "002163", "nombre_cli": "SUAREZ MARISOL", "razsoc_cli": "SUAREZ MARISOL", "rucci_cli": "1802433696", "direcc_cli": "Puente 3", "telefo_cli": "2835678        ", "email_cli": ""}, {"codigo_cli": "002164", "nombre_cli": "SUAREZ RUTH", "razsoc_cli": "SUAREZ RUTH", "rucci_cli": "1708380405", "direcc_cli": "mena 2", "telefo_cli": "2847460        ", "email_cli": "delpilar.ruth@yahoo.com"}, {"codigo_cli": "002661", "nombre_cli": "SUAREZ VERONICA", "razsoc_cli": "SUAREZ VERONICA", "rucci_cli": "1719341537", "direcc_cli": "COMITE DEL PUEBLO", "telefo_cli": "023452828      ", "email_cli": "andre.alexia@hotmail.com"}, {"codigo_cli": "002836", "nombre_cli": "SUAREZ XAVIER", "razsoc_cli": "SUAREZ XAVIER", "rucci_cli": "1710428770", "direcc_cli": "la gasca", "telefo_cli": "               ", "email_cli": "xasu1@yahoo.es"}, {"codigo_cli": "002935", "nombre_cli": "SUAREZ GABRIEL", "razsoc_cli": "SUAREZ GABRIEL", "rucci_cli": "1702843671", "direcc_cli": "NUEVA GRANIZADA", "telefo_cli": "               ", "email_cli": "grabrielsuarez43@yahoo.es"}, {"codigo_cli": "004805", "nombre_cli": "MORETA SUAREZ FERNANDO", "razsoc_cli": "MORETA SUAREZ FERNANDO", "rucci_cli": "0501136733001", "direcc_cli": "AV AMERICA 41-68 Y VERACRUZ", "telefo_cli": "2433107        ", "email_cli": ""}, {"codigo_cli": "005582", "nombre_cli": "SUAREZ ISABEL", "razsoc_cli": "SUAREZ ISABEL", "rucci_cli": "1722300736001", "direcc_cli": "SAN CARLOS", "telefo_cli": "3401447        ", "email_cli": ""}, {"codigo_cli": "005583", "nombre_cli": "SUAREZ JORGE", "razsoc_cli": "SUAREZ JORGE", "rucci_cli": "1700116039", "direcc_cli": "                   real audiencia", "telefo_cli": "2404066        ", "email_cli": ""}, {"codigo_cli": "005584", "nombre_cli": "SUAREZ JORGE RENE", "razsoc_cli": "SUAREZ JORGE RENE", "rucci_cli": "1700699299", "direcc_cli": "CARAPUNGO", "telefo_cli": "2424987        ", "email_cli": ""}, {"codigo_cli": "005585", "nombre_cli": "SUAREZ MARCELO", "razsoc_cli": "SUAREZ MARCELO", "rucci_cli": "1001915360", "direcc_cli": "CARCELEN", "telefo_cli": "0995025121     ", "email_cli": ""}, {"codigo_cli": "005586", "nombre_cli": "SUAREZ SILVIA", "razsoc_cli": "SUAREZ SILVIA", "rucci_cli": "1712475241", "direcc_cli": "COFAVI", "telefo_cli": "2400900        ", "email_cli": ""}, {"codigo_cli": "005587", "nombre_cli": "SUAREZ URREA VICTOR", "razsoc_cli": "SUAREZ URREA VICTOR", "rucci_cli": "1792680964001", "direcc_cli": "BAKER", "telefo_cli": "0983189706     ", "email_cli": ""}, {"codigo_cli": "005588", "nombre_cli": "SUAREZ VALLEJO ANA", "razsoc_cli": "SUAREZ VALLEJO ANA", "rucci_cli": "1002045506", "direcc_cli": "COFAVI", "telefo_cli": "               ", "email_cli": ""}, {"codigo_cli": "005589", "nombre_cli": "SUAREZ VERONICA", "razsoc_cli": "SUAREZ VERONICA", "rucci_cli": "1712087863", "direcc_cli": "JUAN MOLINEROS", "telefo_cli": "3283494        ", "email_cli": ""}, {"codigo_cli": "006215", "nombre_cli": "SUAREZ PAOLA", "razsoc_cli": "SUAREZ PAOLA", "rucci_cli": "1002880605", "direcc_cli": "LOS LAURELES", "telefo_cli": "               ", "email_cli": "pololita_suarez@hotmail.com"}]
+select * from client where (rucci_cli like '%Suárez %' or codigo_cli LIKE'%Suárez %' or nombre_cli like '%Suárez %' and empresa_id=10001 )
+[]
+select * from client where (rucci_cli like '%Suatez%' or codigo_cli LIKE'%Suatez%' or nombre_cli like '%Suatez%' and empresa_id=10001 )
+[]
+select * from client where (rucci_cli like '%Sua%' or codigo_cli LIKE'%Sua%' or nombre_cli like '%Sua%' and empresa_id=10001 )
+[{"codigo_cli": "001439", "nombre_cli": "MONTENEGRO SUAREZ  PAULINA", "razsoc_cli": "MONTENEGRO SUAREZ  PAULINA", "rucci_cli": "1714746821", "direcc_cli": "SAN BARTOLO", "telefo_cli": "26885892       ", "email_cli": "pauly.montenegro.29@hotmail.com"}, {"codigo_cli": "002157", "nombre_cli": "SUAREZ AMALIA", "razsoc_cli": "SUAREZ AMALIA", "rucci_cli": "1711425072", "direcc_cli": "Udla Granados", "telefo_cli": "099529727      ", "email_cli": "amalia.suarez@udla.edu.ec"}, {"codigo_cli": "002158", "nombre_cli": "SUAREZ ANGEL", "razsoc_cli": "SUAREZ ANGEL", "rucci_cli": "1708334246", "direcc_cli": "PUENGASI", "telefo_cli": "023190338      ", "email_cli": "fernandosuarez1105@gmail.com"}, {"codigo_cli": "002159", "nombre_cli": "SUAREZ GORDON RUTH", "razsoc_cli": "SUAREZ GORDON RUTH", "rucci_cli": "1715030852", "direcc_cli": "calderon", "telefo_cli": "28212984       ", "email_cli": ""}, {"codigo_cli": "002160", "nombre_cli": "SUAREZ ISABEL", "razsoc_cli": "SUAREZ ISABEL", "rucci_cli": "1791990447001", "direcc_cli": "san carlos", "telefo_cli": "6005475        ", "email_cli": ""}, {"codigo_cli": "002161", "nombre_cli": "SUAREZ JONATHAN", "razsoc_cli": "SUAREZ JONATHAN", "rucci_cli": "1718347725", "direcc_cli": "carcelen", "telefo_cli": "3813505        ", "email_cli": ""}, {"codigo_cli": "002162", "nombre_cli": "SUAREZ LETTY", "razsoc_cli": "SUAREZ LETTY", "rucci_cli": "1704535036", "direcc_cli": "Hernandez de Giron OE5-75 y Pedregal", "telefo_cli": "2439144        ", "email_cli": ""}, {"codigo_cli": "002163", "nombre_cli": "SUAREZ MARISOL", "razsoc_cli": "SUAREZ MARISOL", "rucci_cli": "1802433696", "direcc_cli": "Puente 3", "telefo_cli": "2835678        ", "email_cli": ""}, {"codigo_cli": "002164", "nombre_cli": "SUAREZ RUTH", "razsoc_cli": "SUAREZ RUTH", "rucci_cli": "1708380405", "direcc_cli": "mena 2", "telefo_cli": "2847460        ", "email_cli": "delpilar.ruth@yahoo.com"}, {"codigo_cli": "002165", "nombre_cli": "SUASNAVAS JORGE", "razsoc_cli": "SUASNAVAS JORGE", "rucci_cli": "1717630931", "direcc_cli": "SANTA LUCIA", "telefo_cli": "2470744        ", "email_cli": ""}, {"codigo_cli": "002661", "nombre_cli": "SUAREZ VERONICA", "razsoc_cli": "SUAREZ VERONICA", "rucci_cli": "1719341537", "direcc_cli": "COMITE DEL PUEBLO", "telefo_cli": "023452828      ", "email_cli": "andre.alexia@hotmail.com"}, {"codigo_cli": "002836", "nombre_cli": "SUAREZ XAVIER", "razsoc_cli": "SUAREZ XAVIER", "rucci_cli": "1710428770", "direcc_cli": "la gasca", "telefo_cli": "               ", "email_cli": "xasu1@yahoo.es"}, {"codigo_cli": "002935", "nombre_cli": "SUAREZ GABRIEL", "razsoc_cli": "SUAREZ GABRIEL", "rucci_cli": "1702843671", "direcc_cli": "NUEVA GRANIZADA", "telefo_cli": "               ", "email_cli": "grabrielsuarez43@yahoo.es"}, {"codigo_cli": "004805", "nombre_cli": "MORETA SUAREZ FERNANDO", "razsoc_cli": "MORETA SUAREZ FERNANDO", "rucci_cli": "0501136733001", "direcc_cli": "AV AMERICA 41-68 Y VERACRUZ", "telefo_cli": "2433107        ", "email_cli": ""}, {"codigo_cli": "005582", "nombre_cli": "SUAREZ ISABEL", "razsoc_cli": "SUAREZ ISABEL", "rucci_cli": "1722300736001", "direcc_cli": "SAN CARLOS", "telefo_cli": "3401447        ", "email_cli": ""}, {"codigo_cli": "005583", "nombre_cli": "SUAREZ JORGE", "razsoc_cli": "SUAREZ JORGE", "rucci_cli": "1700116039", "direcc_cli": "                   real audiencia", "telefo_cli": "2404066        ", "email_cli": ""}, {"codigo_cli": "005584", "nombre_cli": "SUAREZ JORGE RENE", "razsoc_cli": "SUAREZ JORGE RENE", "rucci_cli": "1700699299", "direcc_cli": "CARAPUNGO", "telefo_cli": "2424987        ", "email_cli": ""}, {"codigo_cli": "005585", "nombre_cli": "SUAREZ MARCELO", "razsoc_cli": "SUAREZ MARCELO", "rucci_cli": "1001915360", "direcc_cli": "CARCELEN", "telefo_cli": "0995025121     ", "email_cli": ""}, {"codigo_cli": "005586", "nombre_cli": "SUAREZ SILVIA", "razsoc_cli": "SUAREZ SILVIA", "rucci_cli": "1712475241", "direcc_cli": "COFAVI", "telefo_cli": "2400900        ", "email_cli": ""}, {"codigo_cli": "005587", "nombre_cli": "SUAREZ URREA VICTOR", "razsoc_cli": "SUAREZ URREA VICTOR", "rucci_cli": "1792680964001", "direcc_cli": "BAKER", "telefo_cli": "0983189706     ", "email_cli": ""}, {"codigo_cli": "005588", "nombre_cli": "SUAREZ VALLEJO ANA", "razsoc_cli": "SUAREZ VALLEJO ANA", "rucci_cli": "1002045506", "direcc_cli": "COFAVI", "telefo_cli": "               ", "email_cli": ""}, {"codigo_cli": "005589", "nombre_cli": "SUAREZ VERONICA", "razsoc_cli": "SUAREZ VERONICA", "rucci_cli": "1712087863", "direcc_cli": "JUAN MOLINEROS", "telefo_cli": "3283494        ", "email_cli": ""}, {"codigo_cli": "005590", "nombre_cli": "SUASNAVAS FLORES JAIME", "razsoc_cli": "SUASNAVAS FLORES JAIME", "rucci_cli": "1704765666", "direcc_cli": "MITAD DEL MUNDO", "telefo_cli": "2395436        ", "email_cli": ""}, {"codigo_cli": "006029", "nombre_cli": "SUASNAVAS CARLOS", "razsoc_cli": "SUASNAVAS CARLOS", "rucci_cli": "1709767998", "direcc_cli": "PEDRO PINTO E2-170", "telefo_cli": "               ", "email_cli": "rafaelsuasnavas01@gmail.com"}, {"codigo_cli": "006215", "nombre_cli": "SUAREZ PAOLA", "razsoc_cli": "SUAREZ PAOLA", "rucci_cli": "1002880605", "direcc_cli": "LOS LAURELES", "telefo_cli": "               ", "email_cli": "pololita_suarez@hotmail.com"}]
+select * from client where (rucci_cli like '%Suarez%' or codigo_cli LIKE'%Suarez%' or nombre_cli like '%Suarez%' and empresa_id=10001 )
+[{"codigo_cli": "001439", "nombre_cli": "MONTENEGRO SUAREZ  PAULINA", "razsoc_cli": "MONTENEGRO SUAREZ  PAULINA", "rucci_cli": "1714746821", "direcc_cli": "SAN BARTOLO", "telefo_cli": "26885892       ", "email_cli": "pauly.montenegro.29@hotmail.com"}, {"codigo_cli": "002157", "nombre_cli": "SUAREZ AMALIA", "razsoc_cli": "SUAREZ AMALIA", "rucci_cli": "1711425072", "direcc_cli": "Udla Granados", "telefo_cli": "099529727      ", "email_cli": "amalia.suarez@udla.edu.ec"}, {"codigo_cli": "002158", "nombre_cli": "SUAREZ ANGEL", "razsoc_cli": "SUAREZ ANGEL", "rucci_cli": "1708334246", "direcc_cli": "PUENGASI", "telefo_cli": "023190338      ", "email_cli": "fernandosuarez1105@gmail.com"}, {"codigo_cli": "002159", "nombre_cli": "SUAREZ GORDON RUTH", "razsoc_cli": "SUAREZ GORDON RUTH", "rucci_cli": "1715030852", "direcc_cli": "calderon", "telefo_cli": "28212984       ", "email_cli": ""}, {"codigo_cli": "002160", "nombre_cli": "SUAREZ ISABEL", "razsoc_cli": "SUAREZ ISABEL", "rucci_cli": "1791990447001", "direcc_cli": "san carlos", "telefo_cli": "6005475        ", "email_cli": ""}, {"codigo_cli": "002161", "nombre_cli": "SUAREZ JONATHAN", "razsoc_cli": "SUAREZ JONATHAN", "rucci_cli": "1718347725", "direcc_cli": "carcelen", "telefo_cli": "3813505        ", "email_cli": ""}, {"codigo_cli": "002162", "nombre_cli": "SUAREZ LETTY", "razsoc_cli": "SUAREZ LETTY", "rucci_cli": "1704535036", "direcc_cli": "Hernandez de Giron OE5-75 y Pedregal", "telefo_cli": "2439144        ", "email_cli": ""}, {"codigo_cli": "002163", "nombre_cli": "SUAREZ MARISOL", "razsoc_cli": "SUAREZ MARISOL", "rucci_cli": "1802433696", "direcc_cli": "Puente 3", "telefo_cli": "2835678        ", "email_cli": ""}, {"codigo_cli": "002164", "nombre_cli": "SUAREZ RUTH", "razsoc_cli": "SUAREZ RUTH", "rucci_cli": "1708380405", "direcc_cli": "mena 2", "telefo_cli": "2847460        ", "email_cli": "delpilar.ruth@yahoo.com"}, {"codigo_cli": "002661", "nombre_cli": "SUAREZ VERONICA", "razsoc_cli": "SUAREZ VERONICA", "rucci_cli": "1719341537", "direcc_cli": "COMITE DEL PUEBLO", "telefo_cli": "023452828      ", "email_cli": "andre.alexia@hotmail.com"}, {"codigo_cli": "002836", "nombre_cli": "SUAREZ XAVIER", "razsoc_cli": "SUAREZ XAVIER", "rucci_cli": "1710428770", "direcc_cli": "la gasca", "telefo_cli": "               ", "email_cli": "xasu1@yahoo.es"}, {"codigo_cli": "002935", "nombre_cli": "SUAREZ GABRIEL", "razsoc_cli": "SUAREZ GABRIEL", "rucci_cli": "1702843671", "direcc_cli": "NUEVA GRANIZADA", "telefo_cli": "               ", "email_cli": "grabrielsuarez43@yahoo.es"}, {"codigo_cli": "004805", "nombre_cli": "MORETA SUAREZ FERNANDO", "razsoc_cli": "MORETA SUAREZ FERNANDO", "rucci_cli": "0501136733001", "direcc_cli": "AV AMERICA 41-68 Y VERACRUZ", "telefo_cli": "2433107        ", "email_cli": ""}, {"codigo_cli": "005582", "nombre_cli": "SUAREZ ISABEL", "razsoc_cli": "SUAREZ ISABEL", "rucci_cli": "1722300736001", "direcc_cli": "SAN CARLOS", "telefo_cli": "3401447        ", "email_cli": ""}, {"codigo_cli": "005583", "nombre_cli": "SUAREZ JORGE", "razsoc_cli": "SUAREZ JORGE", "rucci_cli": "1700116039", "direcc_cli": "                   real audiencia", "telefo_cli": "2404066        ", "email_cli": ""}, {"codigo_cli": "005584", "nombre_cli": "SUAREZ JORGE RENE", "razsoc_cli": "SUAREZ JORGE RENE", "rucci_cli": "1700699299", "direcc_cli": "CARAPUNGO", "telefo_cli": "2424987        ", "email_cli": ""}, {"codigo_cli": "005585", "nombre_cli": "SUAREZ MARCELO", "razsoc_cli": "SUAREZ MARCELO", "rucci_cli": "1001915360", "direcc_cli": "CARCELEN", "telefo_cli": "0995025121     ", "email_cli": ""}, {"codigo_cli": "005586", "nombre_cli": "SUAREZ SILVIA", "razsoc_cli": "SUAREZ SILVIA", "rucci_cli": "1712475241", "direcc_cli": "COFAVI", "telefo_cli": "2400900        ", "email_cli": ""}, {"codigo_cli": "005587", "nombre_cli": "SUAREZ URREA VICTOR", "razsoc_cli": "SUAREZ URREA VICTOR", "rucci_cli": "1792680964001", "direcc_cli": "BAKER", "telefo_cli": "0983189706     ", "email_cli": ""}, {"codigo_cli": "005588", "nombre_cli": "SUAREZ VALLEJO ANA", "razsoc_cli": "SUAREZ VALLEJO ANA", "rucci_cli": "1002045506", "direcc_cli": "COFAVI", "telefo_cli": "               ", "email_cli": ""}, {"codigo_cli": "005589", "nombre_cli": "SUAREZ VERONICA", "razsoc_cli": "SUAREZ VERONICA", "rucci_cli": "1712087863", "direcc_cli": "JUAN MOLINEROS", "telefo_cli": "3283494        ", "email_cli": ""}, {"codigo_cli": "006215", "nombre_cli": "SUAREZ PAOLA", "razsoc_cli": "SUAREZ PAOLA", "rucci_cli": "1002880605", "direcc_cli": "LOS LAURELES", "telefo_cli": "               ", "email_cli": "pololita_suarez@hotmail.com"}]
+select * from client where (rucci_cli like '%suar%' or codigo_cli LIKE'%suar%' or nombre_cli like '%suar%' and empresa_id=10001 )
+[{"codigo_cli": "001439", "nombre_cli": "MONTENEGRO SUAREZ  PAULINA", "razsoc_cli": "MONTENEGRO SUAREZ  PAULINA", "rucci_cli": "1714746821", "direcc_cli": "SAN BARTOLO", "telefo_cli": "26885892       ", "email_cli": "pauly.montenegro.29@hotmail.com"}, {"codigo_cli": "002157", "nombre_cli": "SUAREZ AMALIA", "razsoc_cli": "SUAREZ AMALIA", "rucci_cli": "1711425072", "direcc_cli": "Udla Granados", "telefo_cli": "099529727      ", "email_cli": "amalia.suarez@udla.edu.ec"}, {"codigo_cli": "002158", "nombre_cli": "SUAREZ ANGEL", "razsoc_cli": "SUAREZ ANGEL", "rucci_cli": "1708334246", "direcc_cli": "PUENGASI", "telefo_cli": "023190338      ", "email_cli": "fernandosuarez1105@gmail.com"}, {"codigo_cli": "002159", "nombre_cli": "SUAREZ GORDON RUTH", "razsoc_cli": "SUAREZ GORDON RUTH", "rucci_cli": "1715030852", "direcc_cli": "calderon", "telefo_cli": "28212984       ", "email_cli": ""}, {"codigo_cli": "002160", "nombre_cli": "SUAREZ ISABEL", "razsoc_cli": "SUAREZ ISABEL", "rucci_cli": "1791990447001", "direcc_cli": "san carlos", "telefo_cli": "6005475        ", "email_cli": ""}, {"codigo_cli": "002161", "nombre_cli": "SUAREZ JONATHAN", "razsoc_cli": "SUAREZ JONATHAN", "rucci_cli": "1718347725", "direcc_cli": "carcelen", "telefo_cli": "3813505        ", "email_cli": ""}, {"codigo_cli": "002162", "nombre_cli": "SUAREZ LETTY", "razsoc_cli": "SUAREZ LETTY", "rucci_cli": "1704535036", "direcc_cli": "Hernandez de Giron OE5-75 y Pedregal", "telefo_cli": "2439144        ", "email_cli": ""}, {"codigo_cli": "002163", "nombre_cli": "SUAREZ MARISOL", "razsoc_cli": "SUAREZ MARISOL", "rucci_cli": "1802433696", "direcc_cli": "Puente 3", "telefo_cli": "2835678        ", "email_cli": ""}, {"codigo_cli": "002164", "nombre_cli": "SUAREZ RUTH", "razsoc_cli": "SUAREZ RUTH", "rucci_cli": "1708380405", "direcc_cli": "mena 2", "telefo_cli": "2847460        ", "email_cli": "delpilar.ruth@yahoo.com"}, {"codigo_cli": "002661", "nombre_cli": "SUAREZ VERONICA", "razsoc_cli": "SUAREZ VERONICA", "rucci_cli": "1719341537", "direcc_cli": "COMITE DEL PUEBLO", "telefo_cli": "023452828      ", "email_cli": "andre.alexia@hotmail.com"}, {"codigo_cli": "002836", "nombre_cli": "SUAREZ XAVIER", "razsoc_cli": "SUAREZ XAVIER", "rucci_cli": "1710428770", "direcc_cli": "la gasca", "telefo_cli": "               ", "email_cli": "xasu1@yahoo.es"}, {"codigo_cli": "002935", "nombre_cli": "SUAREZ GABRIEL", "razsoc_cli": "SUAREZ GABRIEL", "rucci_cli": "1702843671", "direcc_cli": "NUEVA GRANIZADA", "telefo_cli": "               ", "email_cli": "grabrielsuarez43@yahoo.es"}, {"codigo_cli": "004805", "nombre_cli": "MORETA SUAREZ FERNANDO", "razsoc_cli": "MORETA SUAREZ FERNANDO", "rucci_cli": "0501136733001", "direcc_cli": "AV AMERICA 41-68 Y VERACRUZ", "telefo_cli": "2433107        ", "email_cli": ""}, {"codigo_cli": "005582", "nombre_cli": "SUAREZ ISABEL", "razsoc_cli": "SUAREZ ISABEL", "rucci_cli": "1722300736001", "direcc_cli": "SAN CARLOS", "telefo_cli": "3401447        ", "email_cli": ""}, {"codigo_cli": "005583", "nombre_cli": "SUAREZ JORGE", "razsoc_cli": "SUAREZ JORGE", "rucci_cli": "1700116039", "direcc_cli": "                   real audiencia", "telefo_cli": "2404066        ", "email_cli": ""}, {"codigo_cli": "005584", "nombre_cli": "SUAREZ JORGE RENE", "razsoc_cli": "SUAREZ JORGE RENE", "rucci_cli": "1700699299", "direcc_cli": "CARAPUNGO", "telefo_cli": "2424987        ", "email_cli": ""}, {"codigo_cli": "005585", "nombre_cli": "SUAREZ MARCELO", "razsoc_cli": "SUAREZ MARCELO", "rucci_cli": "1001915360", "direcc_cli": "CARCELEN", "telefo_cli": "0995025121     ", "email_cli": ""}, {"codigo_cli": "005586", "nombre_cli": "SUAREZ SILVIA", "razsoc_cli": "SUAREZ SILVIA", "rucci_cli": "1712475241", "direcc_cli": "COFAVI", "telefo_cli": "2400900        ", "email_cli": ""}, {"codigo_cli": "005587", "nombre_cli": "SUAREZ URREA VICTOR", "razsoc_cli": "SUAREZ URREA VICTOR", "rucci_cli": "1792680964001", "direcc_cli": "BAKER", "telefo_cli": "0983189706     ", "email_cli": ""}, {"codigo_cli": "005588", "nombre_cli": "SUAREZ VALLEJO ANA", "razsoc_cli": "SUAREZ VALLEJO ANA", "rucci_cli": "1002045506", "direcc_cli": "COFAVI", "telefo_cli": "               ", "email_cli": ""}, {"codigo_cli": "005589", "nombre_cli": "SUAREZ VERONICA", "razsoc_cli": "SUAREZ VERONICA", "rucci_cli": "1712087863", "direcc_cli": "JUAN MOLINEROS", "telefo_cli": "3283494        ", "email_cli": ""}, {"codigo_cli": "006215", "nombre_cli": "SUAREZ PAOLA", "razsoc_cli": "SUAREZ PAOLA", "rucci_cli": "1002880605", "direcc_cli": "LOS LAURELES", "telefo_cli": "               ", "email_cli": "pololita_suarez@hotmail.com"}]
+select * from client where (rucci_cli like '%suarez%' or codigo_cli LIKE'%suarez%' or nombre_cli like '%suarez%' and empresa_id=10001 )
+[{"codigo_cli": "001439", "nombre_cli": "MONTENEGRO SUAREZ  PAULINA", "razsoc_cli": "MONTENEGRO SUAREZ  PAULINA", "rucci_cli": "1714746821", "direcc_cli": "SAN BARTOLO", "telefo_cli": "26885892       ", "email_cli": "pauly.montenegro.29@hotmail.com"}, {"codigo_cli": "002157", "nombre_cli": "SUAREZ AMALIA", "razsoc_cli": "SUAREZ AMALIA", "rucci_cli": "1711425072", "direcc_cli": "Udla Granados", "telefo_cli": "099529727      ", "email_cli": "amalia.suarez@udla.edu.ec"}, {"codigo_cli": "002158", "nombre_cli": "SUAREZ ANGEL", "razsoc_cli": "SUAREZ ANGEL", "rucci_cli": "1708334246", "direcc_cli": "PUENGASI", "telefo_cli": "023190338      ", "email_cli": "fernandosuarez1105@gmail.com"}, {"codigo_cli": "002159", "nombre_cli": "SUAREZ GORDON RUTH", "razsoc_cli": "SUAREZ GORDON RUTH", "rucci_cli": "1715030852", "direcc_cli": "calderon", "telefo_cli": "28212984       ", "email_cli": ""}, {"codigo_cli": "002160", "nombre_cli": "SUAREZ ISABEL", "razsoc_cli": "SUAREZ ISABEL", "rucci_cli": "1791990447001", "direcc_cli": "san carlos", "telefo_cli": "6005475        ", "email_cli": ""}, {"codigo_cli": "002161", "nombre_cli": "SUAREZ JONATHAN", "razsoc_cli": "SUAREZ JONATHAN", "rucci_cli": "1718347725", "direcc_cli": "carcelen", "telefo_cli": "3813505        ", "email_cli": ""}, {"codigo_cli": "002162", "nombre_cli": "SUAREZ LETTY", "razsoc_cli": "SUAREZ LETTY", "rucci_cli": "1704535036", "direcc_cli": "Hernandez de Giron OE5-75 y Pedregal", "telefo_cli": "2439144        ", "email_cli": ""}, {"codigo_cli": "002163", "nombre_cli": "SUAREZ MARISOL", "razsoc_cli": "SUAREZ MARISOL", "rucci_cli": "1802433696", "direcc_cli": "Puente 3", "telefo_cli": "2835678        ", "email_cli": ""}, {"codigo_cli": "002164", "nombre_cli": "SUAREZ RUTH", "razsoc_cli": "SUAREZ RUTH", "rucci_cli": "1708380405", "direcc_cli": "mena 2", "telefo_cli": "2847460        ", "email_cli": "delpilar.ruth@yahoo.com"}, {"codigo_cli": "002661", "nombre_cli": "SUAREZ VERONICA", "razsoc_cli": "SUAREZ VERONICA", "rucci_cli": "1719341537", "direcc_cli": "COMITE DEL PUEBLO", "telefo_cli": "023452828      ", "email_cli": "andre.alexia@hotmail.com"}, {"codigo_cli": "002836", "nombre_cli": "SUAREZ XAVIER", "razsoc_cli": "SUAREZ XAVIER", "rucci_cli": "1710428770", "direcc_cli": "la gasca", "telefo_cli": "               ", "email_cli": "xasu1@yahoo.es"}, {"codigo_cli": "002935", "nombre_cli": "SUAREZ GABRIEL", "razsoc_cli": "SUAREZ GABRIEL", "rucci_cli": "1702843671", "direcc_cli": "NUEVA GRANIZADA", "telefo_cli": "               ", "email_cli": "grabrielsuarez43@yahoo.es"}, {"codigo_cli": "004805", "nombre_cli": "MORETA SUAREZ FERNANDO", "razsoc_cli": "MORETA SUAREZ FERNANDO", "rucci_cli": "0501136733001", "direcc_cli": "AV AMERICA 41-68 Y VERACRUZ", "telefo_cli": "2433107        ", "email_cli": ""}, {"codigo_cli": "005582", "nombre_cli": "SUAREZ ISABEL", "razsoc_cli": "SUAREZ ISABEL", "rucci_cli": "1722300736001", "direcc_cli": "SAN CARLOS", "telefo_cli": "3401447        ", "email_cli": ""}, {"codigo_cli": "005583", "nombre_cli": "SUAREZ JORGE", "razsoc_cli": "SUAREZ JORGE", "rucci_cli": "1700116039", "direcc_cli": "                   real audiencia", "telefo_cli": "2404066        ", "email_cli": ""}, {"codigo_cli": "005584", "nombre_cli": "SUAREZ JORGE RENE", "razsoc_cli": "SUAREZ JORGE RENE", "rucci_cli": "1700699299", "direcc_cli": "CARAPUNGO", "telefo_cli": "2424987        ", "email_cli": ""}, {"codigo_cli": "005585", "nombre_cli": "SUAREZ MARCELO", "razsoc_cli": "SUAREZ MARCELO", "rucci_cli": "1001915360", "direcc_cli": "CARCELEN", "telefo_cli": "0995025121     ", "email_cli": ""}, {"codigo_cli": "005586", "nombre_cli": "SUAREZ SILVIA", "razsoc_cli": "SUAREZ SILVIA", "rucci_cli": "1712475241", "direcc_cli": "COFAVI", "telefo_cli": "2400900        ", "email_cli": ""}, {"codigo_cli": "005587", "nombre_cli": "SUAREZ URREA VICTOR", "razsoc_cli": "SUAREZ URREA VICTOR", "rucci_cli": "1792680964001", "direcc_cli": "BAKER", "telefo_cli": "0983189706     ", "email_cli": ""}, {"codigo_cli": "005588", "nombre_cli": "SUAREZ VALLEJO ANA", "razsoc_cli": "SUAREZ VALLEJO ANA", "rucci_cli": "1002045506", "direcc_cli": "COFAVI", "telefo_cli": "               ", "email_cli": ""}, {"codigo_cli": "005589", "nombre_cli": "SUAREZ VERONICA", "razsoc_cli": "SUAREZ VERONICA", "rucci_cli": "1712087863", "direcc_cli": "JUAN MOLINEROS", "telefo_cli": "3283494        ", "email_cli": ""}, {"codigo_cli": "006215", "nombre_cli": "SUAREZ PAOLA", "razsoc_cli": "SUAREZ PAOLA", "rucci_cli": "1002880605", "direcc_cli": "LOS LAURELES", "telefo_cli": "               ", "email_cli": "pololita_suarez@hotmail.com"}]
+select * from client where (rucci_cli like '%sua%' or codigo_cli LIKE'%sua%' or nombre_cli like '%sua%' and empresa_id=10001 )
+[{"codigo_cli": "001439", "nombre_cli": "MONTENEGRO SUAREZ  PAULINA", "razsoc_cli": "MONTENEGRO SUAREZ  PAULINA", "rucci_cli": "1714746821", "direcc_cli": "SAN BARTOLO", "telefo_cli": "26885892       ", "email_cli": "pauly.montenegro.29@hotmail.com"}, {"codigo_cli": "002157", "nombre_cli": "SUAREZ AMALIA", "razsoc_cli": "SUAREZ AMALIA", "rucci_cli": "1711425072", "direcc_cli": "Udla Granados", "telefo_cli": "099529727      ", "email_cli": "amalia.suarez@udla.edu.ec"}, {"codigo_cli": "002158", "nombre_cli": "SUAREZ ANGEL", "razsoc_cli": "SUAREZ ANGEL", "rucci_cli": "1708334246", "direcc_cli": "PUENGASI", "telefo_cli": "023190338      ", "email_cli": "fernandosuarez1105@gmail.com"}, {"codigo_cli": "002159", "nombre_cli": "SUAREZ GORDON RUTH", "razsoc_cli": "SUAREZ GORDON RUTH", "rucci_cli": "1715030852", "direcc_cli": "calderon", "telefo_cli": "28212984       ", "email_cli": ""}, {"codigo_cli": "002160", "nombre_cli": "SUAREZ ISABEL", "razsoc_cli": "SUAREZ ISABEL", "rucci_cli": "1791990447001", "direcc_cli": "san carlos", "telefo_cli": "6005475        ", "email_cli": ""}, {"codigo_cli": "002161", "nombre_cli": "SUAREZ JONATHAN", "razsoc_cli": "SUAREZ JONATHAN", "rucci_cli": "1718347725", "direcc_cli": "carcelen", "telefo_cli": "3813505        ", "email_cli": ""}, {"codigo_cli": "002162", "nombre_cli": "SUAREZ LETTY", "razsoc_cli": "SUAREZ LETTY", "rucci_cli": "1704535036", "direcc_cli": "Hernandez de Giron OE5-75 y Pedregal", "telefo_cli": "2439144        ", "email_cli": ""}, {"codigo_cli": "002163", "nombre_cli": "SUAREZ MARISOL", "razsoc_cli": "SUAREZ MARISOL", "rucci_cli": "1802433696", "direcc_cli": "Puente 3", "telefo_cli": "2835678        ", "email_cli": ""}, {"codigo_cli": "002164", "nombre_cli": "SUAREZ RUTH", "razsoc_cli": "SUAREZ RUTH", "rucci_cli": "1708380405", "direcc_cli": "mena 2", "telefo_cli": "2847460        ", "email_cli": "delpilar.ruth@yahoo.com"}, {"codigo_cli": "002165", "nombre_cli": "SUASNAVAS JORGE", "razsoc_cli": "SUASNAVAS JORGE", "rucci_cli": "1717630931", "direcc_cli": "SANTA LUCIA", "telefo_cli": "2470744        ", "email_cli": ""}, {"codigo_cli": "002661", "nombre_cli": "SUAREZ VERONICA", "razsoc_cli": "SUAREZ VERONICA", "rucci_cli": "1719341537", "direcc_cli": "COMITE DEL PUEBLO", "telefo_cli": "023452828      ", "email_cli": "andre.alexia@hotmail.com"}, {"codigo_cli": "002836", "nombre_cli": "SUAREZ XAVIER", "razsoc_cli": "SUAREZ XAVIER", "rucci_cli": "1710428770", "direcc_cli": "la gasca", "telefo_cli": "               ", "email_cli": "xasu1@yahoo.es"}, {"codigo_cli": "002935", "nombre_cli": "SUAREZ GABRIEL", "razsoc_cli": "SUAREZ GABRIEL", "rucci_cli": "1702843671", "direcc_cli": "NUEVA GRANIZADA", "telefo_cli": "               ", "email_cli": "grabrielsuarez43@yahoo.es"}, {"codigo_cli": "004805", "nombre_cli": "MORETA SUAREZ FERNANDO", "razsoc_cli": "MORETA SUAREZ FERNANDO", "rucci_cli": "0501136733001", "direcc_cli": "AV AMERICA 41-68 Y VERACRUZ", "telefo_cli": "2433107        ", "email_cli": ""}, {"codigo_cli": "005582", "nombre_cli": "SUAREZ ISABEL", "razsoc_cli": "SUAREZ ISABEL", "rucci_cli": "1722300736001", "direcc_cli": "SAN CARLOS", "telefo_cli": "3401447        ", "email_cli": ""}, {"codigo_cli": "005583", "nombre_cli": "SUAREZ JORGE", "razsoc_cli": "SUAREZ JORGE", "rucci_cli": "1700116039", "direcc_cli": "                   real audiencia", "telefo_cli": "2404066        ", "email_cli": ""}, {"codigo_cli": "005584", "nombre_cli": "SUAREZ JORGE RENE", "razsoc_cli": "SUAREZ JORGE RENE", "rucci_cli": "1700699299", "direcc_cli": "CARAPUNGO", "telefo_cli": "2424987        ", "email_cli": ""}, {"codigo_cli": "005585", "nombre_cli": "SUAREZ MARCELO", "razsoc_cli": "SUAREZ MARCELO", "rucci_cli": "1001915360", "direcc_cli": "CARCELEN", "telefo_cli": "0995025121     ", "email_cli": ""}, {"codigo_cli": "005586", "nombre_cli": "SUAREZ SILVIA", "razsoc_cli": "SUAREZ SILVIA", "rucci_cli": "1712475241", "direcc_cli": "COFAVI", "telefo_cli": "2400900        ", "email_cli": ""}, {"codigo_cli": "005587", "nombre_cli": "SUAREZ URREA VICTOR", "razsoc_cli": "SUAREZ URREA VICTOR", "rucci_cli": "1792680964001", "direcc_cli": "BAKER", "telefo_cli": "0983189706     ", "email_cli": ""}, {"codigo_cli": "005588", "nombre_cli": "SUAREZ VALLEJO ANA", "razsoc_cli": "SUAREZ VALLEJO ANA", "rucci_cli": "1002045506", "direcc_cli": "COFAVI", "telefo_cli": "               ", "email_cli": ""}, {"codigo_cli": "005589", "nombre_cli": "SUAREZ VERONICA", "razsoc_cli": "SUAREZ VERONICA", "rucci_cli": "1712087863", "direcc_cli": "JUAN MOLINEROS", "telefo_cli": "3283494        ", "email_cli": ""}, {"codigo_cli": "005590", "nombre_cli": "SUASNAVAS FLORES JAIME", "razsoc_cli": "SUASNAVAS FLORES JAIME", "rucci_cli": "1704765666", "direcc_cli": "MITAD DEL MUNDO", "telefo_cli": "2395436        ", "email_cli": ""}, {"codigo_cli": "006029", "nombre_cli": "SUASNAVAS CARLOS", "razsoc_cli": "SUASNAVAS CARLOS", "rucci_cli": "1709767998", "direcc_cli": "PEDRO PINTO E2-170", "telefo_cli": "               ", "email_cli": "rafaelsuasnavas01@gmail.com"}, {"codigo_cli": "006215", "nombre_cli": "SUAREZ PAOLA", "razsoc_cli": "SUAREZ PAOLA", "rucci_cli": "1002880605", "direcc_cli": "LOS LAURELES", "telefo_cli": "               ", "email_cli": "pololita_suarez@hotmail.com"}]
+select * from client where (rucci_cli like '%suare%' or codigo_cli LIKE'%suare%' or nombre_cli like '%suare%' and empresa_id=10001 )
+[{"codigo_cli": "001439", "nombre_cli": "MONTENEGRO SUAREZ  PAULINA", "razsoc_cli": "MONTENEGRO SUAREZ  PAULINA", "rucci_cli": "1714746821", "direcc_cli": "SAN BARTOLO", "telefo_cli": "26885892       ", "email_cli": "pauly.montenegro.29@hotmail.com"}, {"codigo_cli": "002157", "nombre_cli": "SUAREZ AMALIA", "razsoc_cli": "SUAREZ AMALIA", "rucci_cli": "1711425072", "direcc_cli": "Udla Granados", "telefo_cli": "099529727      ", "email_cli": "amalia.suarez@udla.edu.ec"}, {"codigo_cli": "002158", "nombre_cli": "SUAREZ ANGEL", "razsoc_cli": "SUAREZ ANGEL", "rucci_cli": "1708334246", "direcc_cli": "PUENGASI", "telefo_cli": "023190338      ", "email_cli": "fernandosuarez1105@gmail.com"}, {"codigo_cli": "002159", "nombre_cli": "SUAREZ GORDON RUTH", "razsoc_cli": "SUAREZ GORDON RUTH", "rucci_cli": "1715030852", "direcc_cli": "calderon", "telefo_cli": "28212984       ", "email_cli": ""}, {"codigo_cli": "002160", "nombre_cli": "SUAREZ ISABEL", "razsoc_cli": "SUAREZ ISABEL", "rucci_cli": "1791990447001", "direcc_cli": "san carlos", "telefo_cli": "6005475        ", "email_cli": ""}, {"codigo_cli": "002161", "nombre_cli": "SUAREZ JONATHAN", "razsoc_cli": "SUAREZ JONATHAN", "rucci_cli": "1718347725", "direcc_cli": "carcelen", "telefo_cli": "3813505        ", "email_cli": ""}, {"codigo_cli": "002162", "nombre_cli": "SUAREZ LETTY", "razsoc_cli": "SUAREZ LETTY", "rucci_cli": "1704535036", "direcc_cli": "Hernandez de Giron OE5-75 y Pedregal", "telefo_cli": "2439144        ", "email_cli": ""}, {"codigo_cli": "002163", "nombre_cli": "SUAREZ MARISOL", "razsoc_cli": "SUAREZ MARISOL", "rucci_cli": "1802433696", "direcc_cli": "Puente 3", "telefo_cli": "2835678        ", "email_cli": ""}, {"codigo_cli": "002164", "nombre_cli": "SUAREZ RUTH", "razsoc_cli": "SUAREZ RUTH", "rucci_cli": "1708380405", "direcc_cli": "mena 2", "telefo_cli": "2847460        ", "email_cli": "delpilar.ruth@yahoo.com"}, {"codigo_cli": "002661", "nombre_cli": "SUAREZ VERONICA", "razsoc_cli": "SUAREZ VERONICA", "rucci_cli": "1719341537", "direcc_cli": "COMITE DEL PUEBLO", "telefo_cli": "023452828      ", "email_cli": "andre.alexia@hotmail.com"}, {"codigo_cli": "002836", "nombre_cli": "SUAREZ XAVIER", "razsoc_cli": "SUAREZ XAVIER", "rucci_cli": "1710428770", "direcc_cli": "la gasca", "telefo_cli": "               ", "email_cli": "xasu1@yahoo.es"}, {"codigo_cli": "002935", "nombre_cli": "SUAREZ GABRIEL", "razsoc_cli": "SUAREZ GABRIEL", "rucci_cli": "1702843671", "direcc_cli": "NUEVA GRANIZADA", "telefo_cli": "               ", "email_cli": "grabrielsuarez43@yahoo.es"}, {"codigo_cli": "004805", "nombre_cli": "MORETA SUAREZ FERNANDO", "razsoc_cli": "MORETA SUAREZ FERNANDO", "rucci_cli": "0501136733001", "direcc_cli": "AV AMERICA 41-68 Y VERACRUZ", "telefo_cli": "2433107        ", "email_cli": ""}, {"codigo_cli": "005582", "nombre_cli": "SUAREZ ISABEL", "razsoc_cli": "SUAREZ ISABEL", "rucci_cli": "1722300736001", "direcc_cli": "SAN CARLOS", "telefo_cli": "3401447        ", "email_cli": ""}, {"codigo_cli": "005583", "nombre_cli": "SUAREZ JORGE", "razsoc_cli": "SUAREZ JORGE", "rucci_cli": "1700116039", "direcc_cli": "                   real audiencia", "telefo_cli": "2404066        ", "email_cli": ""}, {"codigo_cli": "005584", "nombre_cli": "SUAREZ JORGE RENE", "razsoc_cli": "SUAREZ JORGE RENE", "rucci_cli": "1700699299", "direcc_cli": "CARAPUNGO", "telefo_cli": "2424987        ", "email_cli": ""}, {"codigo_cli": "005585", "nombre_cli": "SUAREZ MARCELO", "razsoc_cli": "SUAREZ MARCELO", "rucci_cli": "1001915360", "direcc_cli": "CARCELEN", "telefo_cli": "0995025121     ", "email_cli": ""}, {"codigo_cli": "005586", "nombre_cli": "SUAREZ SILVIA", "razsoc_cli": "SUAREZ SILVIA", "rucci_cli": "1712475241", "direcc_cli": "COFAVI", "telefo_cli": "2400900        ", "email_cli": ""}, {"codigo_cli": "005587", "nombre_cli": "SUAREZ URREA VICTOR", "razsoc_cli": "SUAREZ URREA VICTOR", "rucci_cli": "1792680964001", "direcc_cli": "BAKER", "telefo_cli": "0983189706     ", "email_cli": ""}, {"codigo_cli": "005588", "nombre_cli": "SUAREZ VALLEJO ANA", "razsoc_cli": "SUAREZ VALLEJO ANA", "rucci_cli": "1002045506", "direcc_cli": "COFAVI", "telefo_cli": "               ", "email_cli": ""}, {"codigo_cli": "005589", "nombre_cli": "SUAREZ VERONICA", "razsoc_cli": "SUAREZ VERONICA", "rucci_cli": "1712087863", "direcc_cli": "JUAN MOLINEROS", "telefo_cli": "3283494        ", "email_cli": ""}, {"codigo_cli": "006215", "nombre_cli": "SUAREZ PAOLA", "razsoc_cli": "SUAREZ PAOLA", "rucci_cli": "1002880605", "direcc_cli": "LOS LAURELES", "telefo_cli": "               ", "email_cli": "pololita_suarez@hotmail.com"}]
+select * from client where (rucci_cli like '%suarez%' or codigo_cli LIKE'%suarez%' or nombre_cli like '%suarez%' and empresa_id=10001 )
+[{"codigo_cli": "001439", "nombre_cli": "MONTENEGRO SUAREZ  PAULINA", "razsoc_cli": "MONTENEGRO SUAREZ  PAULINA", "rucci_cli": "1714746821", "direcc_cli": "SAN BARTOLO", "telefo_cli": "26885892       ", "email_cli": "pauly.montenegro.29@hotmail.com"}, {"codigo_cli": "002157", "nombre_cli": "SUAREZ AMALIA", "razsoc_cli": "SUAREZ AMALIA", "rucci_cli": "1711425072", "direcc_cli": "Udla Granados", "telefo_cli": "099529727      ", "email_cli": "amalia.suarez@udla.edu.ec"}, {"codigo_cli": "002158", "nombre_cli": "SUAREZ ANGEL", "razsoc_cli": "SUAREZ ANGEL", "rucci_cli": "1708334246", "direcc_cli": "PUENGASI", "telefo_cli": "023190338      ", "email_cli": "fernandosuarez1105@gmail.com"}, {"codigo_cli": "002159", "nombre_cli": "SUAREZ GORDON RUTH", "razsoc_cli": "SUAREZ GORDON RUTH", "rucci_cli": "1715030852", "direcc_cli": "calderon", "telefo_cli": "28212984       ", "email_cli": ""}, {"codigo_cli": "002160", "nombre_cli": "SUAREZ ISABEL", "razsoc_cli": "SUAREZ ISABEL", "rucci_cli": "1791990447001", "direcc_cli": "san carlos", "telefo_cli": "6005475        ", "email_cli": ""}, {"codigo_cli": "002161", "nombre_cli": "SUAREZ JONATHAN", "razsoc_cli": "SUAREZ JONATHAN", "rucci_cli": "1718347725", "direcc_cli": "carcelen", "telefo_cli": "3813505        ", "email_cli": ""}, {"codigo_cli": "002162", "nombre_cli": "SUAREZ LETTY", "razsoc_cli": "SUAREZ LETTY", "rucci_cli": "1704535036", "direcc_cli": "Hernandez de Giron OE5-75 y Pedregal", "telefo_cli": "2439144        ", "email_cli": ""}, {"codigo_cli": "002163", "nombre_cli": "SUAREZ MARISOL", "razsoc_cli": "SUAREZ MARISOL", "rucci_cli": "1802433696", "direcc_cli": "Puente 3", "telefo_cli": "2835678        ", "email_cli": ""}, {"codigo_cli": "002164", "nombre_cli": "SUAREZ RUTH", "razsoc_cli": "SUAREZ RUTH", "rucci_cli": "1708380405", "direcc_cli": "mena 2", "telefo_cli": "2847460        ", "email_cli": "delpilar.ruth@yahoo.com"}, {"codigo_cli": "002661", "nombre_cli": "SUAREZ VERONICA", "razsoc_cli": "SUAREZ VERONICA", "rucci_cli": "1719341537", "direcc_cli": "COMITE DEL PUEBLO", "telefo_cli": "023452828      ", "email_cli": "andre.alexia@hotmail.com"}, {"codigo_cli": "002836", "nombre_cli": "SUAREZ XAVIER", "razsoc_cli": "SUAREZ XAVIER", "rucci_cli": "1710428770", "direcc_cli": "la gasca", "telefo_cli": "               ", "email_cli": "xasu1@yahoo.es"}, {"codigo_cli": "002935", "nombre_cli": "SUAREZ GABRIEL", "razsoc_cli": "SUAREZ GABRIEL", "rucci_cli": "1702843671", "direcc_cli": "NUEVA GRANIZADA", "telefo_cli": "               ", "email_cli": "grabrielsuarez43@yahoo.es"}, {"codigo_cli": "004805", "nombre_cli": "MORETA SUAREZ FERNANDO", "razsoc_cli": "MORETA SUAREZ FERNANDO", "rucci_cli": "0501136733001", "direcc_cli": "AV AMERICA 41-68 Y VERACRUZ", "telefo_cli": "2433107        ", "email_cli": ""}, {"codigo_cli": "005582", "nombre_cli": "SUAREZ ISABEL", "razsoc_cli": "SUAREZ ISABEL", "rucci_cli": "1722300736001", "direcc_cli": "SAN CARLOS", "telefo_cli": "3401447        ", "email_cli": ""}, {"codigo_cli": "005583", "nombre_cli": "SUAREZ JORGE", "razsoc_cli": "SUAREZ JORGE", "rucci_cli": "1700116039", "direcc_cli": "                   real audiencia", "telefo_cli": "2404066        ", "email_cli": ""}, {"codigo_cli": "005584", "nombre_cli": "SUAREZ JORGE RENE", "razsoc_cli": "SUAREZ JORGE RENE", "rucci_cli": "1700699299", "direcc_cli": "CARAPUNGO", "telefo_cli": "2424987        ", "email_cli": ""}, {"codigo_cli": "005585", "nombre_cli": "SUAREZ MARCELO", "razsoc_cli": "SUAREZ MARCELO", "rucci_cli": "1001915360", "direcc_cli": "CARCELEN", "telefo_cli": "0995025121     ", "email_cli": ""}, {"codigo_cli": "005586", "nombre_cli": "SUAREZ SILVIA", "razsoc_cli": "SUAREZ SILVIA", "rucci_cli": "1712475241", "direcc_cli": "COFAVI", "telefo_cli": "2400900        ", "email_cli": ""}, {"codigo_cli": "005587", "nombre_cli": "SUAREZ URREA VICTOR", "razsoc_cli": "SUAREZ URREA VICTOR", "rucci_cli": "1792680964001", "direcc_cli": "BAKER", "telefo_cli": "0983189706     ", "email_cli": ""}, {"codigo_cli": "005588", "nombre_cli": "SUAREZ VALLEJO ANA", "razsoc_cli": "SUAREZ VALLEJO ANA", "rucci_cli": "1002045506", "direcc_cli": "COFAVI", "telefo_cli": "               ", "email_cli": ""}, {"codigo_cli": "005589", "nombre_cli": "SUAREZ VERONICA", "razsoc_cli": "SUAREZ VERONICA", "rucci_cli": "1712087863", "direcc_cli": "JUAN MOLINEROS", "telefo_cli": "3283494        ", "email_cli": ""}, {"codigo_cli": "006215", "nombre_cli": "SUAREZ PAOLA", "razsoc_cli": "SUAREZ PAOLA", "rucci_cli": "1002880605", "direcc_cli": "LOS LAURELES", "telefo_cli": "               ", "email_cli": "pololita_suarez@hotmail.com"}]
+10004
+SELECT agenci_id,direcc_age,nombre_age FROM agenci WHERE(empresa_id=10004)
+10004
+SELECT agenci_id,direcc_age,nombre_age FROM agenci WHERE(empresa_id=10004)
+10004
+SELECT agenci_id,direcc_age,nombre_age FROM agenci WHERE(empresa_id=10004)
+10004
+SELECT agenci_id,direcc_age,nombre_age FROM agenci WHERE(empresa_id=10004)
+select * from client where (rucci_cli like '%sua%' or codigo_cli LIKE'%sua%' or nombre_cli like '%sua%' and empresa_id=10004 )
+[{"codigo_cli": "001439", "nombre_cli": "MONTENEGRO SUAREZ  PAULINA", "razsoc_cli": "MONTENEGRO SUAREZ  PAULINA", "rucci_cli": "1714746821", "direcc_cli": "SAN BARTOLO", "telefo_cli": "26885892       ", "email_cli": "pauly.montenegro.29@hotmail.com"}, {"codigo_cli": "002157", "nombre_cli": "SUAREZ AMALIA", "razsoc_cli": "SUAREZ AMALIA", "rucci_cli": "1711425072", "direcc_cli": "Udla Granados", "telefo_cli": "099529727      ", "email_cli": "amalia.suarez@udla.edu.ec"}, {"codigo_cli": "002158", "nombre_cli": "SUAREZ ANGEL", "razsoc_cli": "SUAREZ ANGEL", "rucci_cli": "1708334246", "direcc_cli": "PUENGASI", "telefo_cli": "023190338      ", "email_cli": "fernandosuarez1105@gmail.com"}, {"codigo_cli": "002159", "nombre_cli": "SUAREZ GORDON RUTH", "razsoc_cli": "SUAREZ GORDON RUTH", "rucci_cli": "1715030852", "direcc_cli": "calderon", "telefo_cli": "28212984       ", "email_cli": ""}, {"codigo_cli": "002160", "nombre_cli": "SUAREZ ISABEL", "razsoc_cli": "SUAREZ ISABEL", "rucci_cli": "1791990447001", "direcc_cli": "san carlos", "telefo_cli": "6005475        ", "email_cli": ""}, {"codigo_cli": "002161", "nombre_cli": "SUAREZ JONATHAN", "razsoc_cli": "SUAREZ JONATHAN", "rucci_cli": "1718347725", "direcc_cli": "carcelen", "telefo_cli": "3813505        ", "email_cli": ""}, {"codigo_cli": "002162", "nombre_cli": "SUAREZ LETTY", "razsoc_cli": "SUAREZ LETTY", "rucci_cli": "1704535036", "direcc_cli": "Hernandez de Giron OE5-75 y Pedregal", "telefo_cli": "2439144        ", "email_cli": ""}, {"codigo_cli": "002163", "nombre_cli": "SUAREZ MARISOL", "razsoc_cli": "SUAREZ MARISOL", "rucci_cli": "1802433696", "direcc_cli": "Puente 3", "telefo_cli": "2835678        ", "email_cli": ""}, {"codigo_cli": "002164", "nombre_cli": "SUAREZ RUTH", "razsoc_cli": "SUAREZ RUTH", "rucci_cli": "1708380405", "direcc_cli": "mena 2", "telefo_cli": "2847460        ", "email_cli": "delpilar.ruth@yahoo.com"}, {"codigo_cli": "002165", "nombre_cli": "SUASNAVAS JORGE", "razsoc_cli": "SUASNAVAS JORGE", "rucci_cli": "1717630931", "direcc_cli": "SANTA LUCIA", "telefo_cli": "2470744        ", "email_cli": ""}, {"codigo_cli": "002661", "nombre_cli": "SUAREZ VERONICA", "razsoc_cli": "SUAREZ VERONICA", "rucci_cli": "1719341537", "direcc_cli": "COMITE DEL PUEBLO", "telefo_cli": "023452828      ", "email_cli": "andre.alexia@hotmail.com"}, {"codigo_cli": "002836", "nombre_cli": "SUAREZ XAVIER", "razsoc_cli": "SUAREZ XAVIER", "rucci_cli": "1710428770", "direcc_cli": "la gasca", "telefo_cli": "               ", "email_cli": "xasu1@yahoo.es"}, {"codigo_cli": "002935", "nombre_cli": "SUAREZ GABRIEL", "razsoc_cli": "SUAREZ GABRIEL", "rucci_cli": "1702843671", "direcc_cli": "NUEVA GRANIZADA", "telefo_cli": "               ", "email_cli": "grabrielsuarez43@yahoo.es"}, {"codigo_cli": "004805", "nombre_cli": "MORETA SUAREZ FERNANDO", "razsoc_cli": "MORETA SUAREZ FERNANDO", "rucci_cli": "0501136733001", "direcc_cli": "AV AMERICA 41-68 Y VERACRUZ", "telefo_cli": "2433107        ", "email_cli": ""}, {"codigo_cli": "005582", "nombre_cli": "SUAREZ ISABEL", "razsoc_cli": "SUAREZ ISABEL", "rucci_cli": "1722300736001", "direcc_cli": "SAN CARLOS", "telefo_cli": "3401447        ", "email_cli": ""}, {"codigo_cli": "005583", "nombre_cli": "SUAREZ JORGE", "razsoc_cli": "SUAREZ JORGE", "rucci_cli": "1700116039", "direcc_cli": "                   real audiencia", "telefo_cli": "2404066        ", "email_cli": ""}, {"codigo_cli": "005584", "nombre_cli": "SUAREZ JORGE RENE", "razsoc_cli": "SUAREZ JORGE RENE", "rucci_cli": "1700699299", "direcc_cli": "CARAPUNGO", "telefo_cli": "2424987        ", "email_cli": ""}, {"codigo_cli": "005585", "nombre_cli": "SUAREZ MARCELO", "razsoc_cli": "SUAREZ MARCELO", "rucci_cli": "1001915360", "direcc_cli": "CARCELEN", "telefo_cli": "0995025121     ", "email_cli": ""}, {"codigo_cli": "005586", "nombre_cli": "SUAREZ SILVIA", "razsoc_cli": "SUAREZ SILVIA", "rucci_cli": "1712475241", "direcc_cli": "COFAVI", "telefo_cli": "2400900        ", "email_cli": ""}, {"codigo_cli": "005587", "nombre_cli": "SUAREZ URREA VICTOR", "razsoc_cli": "SUAREZ URREA VICTOR", "rucci_cli": "1792680964001", "direcc_cli": "BAKER", "telefo_cli": "0983189706     ", "email_cli": ""}, {"codigo_cli": "005588", "nombre_cli": "SUAREZ VALLEJO ANA", "razsoc_cli": "SUAREZ VALLEJO ANA", "rucci_cli": "1002045506", "direcc_cli": "COFAVI", "telefo_cli": "               ", "email_cli": ""}, {"codigo_cli": "005589", "nombre_cli": "SUAREZ VERONICA", "razsoc_cli": "SUAREZ VERONICA", "rucci_cli": "1712087863", "direcc_cli": "JUAN MOLINEROS", "telefo_cli": "3283494        ", "email_cli": ""}, {"codigo_cli": "005590", "nombre_cli": "SUASNAVAS FLORES JAIME", "razsoc_cli": "SUASNAVAS FLORES JAIME", "rucci_cli": "1704765666", "direcc_cli": "MITAD DEL MUNDO", "telefo_cli": "2395436        ", "email_cli": ""}, {"codigo_cli": "006029", "nombre_cli": "SUASNAVAS CARLOS", "razsoc_cli": "SUASNAVAS CARLOS", "rucci_cli": "1709767998", "direcc_cli": "PEDRO PINTO E2-170", "telefo_cli": "               ", "email_cli": "rafaelsuasnavas01@gmail.com"}, {"codigo_cli": "006215", "nombre_cli": "SUAREZ PAOLA", "razsoc_cli": "SUAREZ PAOLA", "rucci_cli": "1002880605", "direcc_cli": "LOS LAURELES", "telefo_cli": "               ", "email_cli": "pololita_suarez@hotmail.com"}, {"codigo_cli": "006659", "nombre_cli": "SUAREZ MARIA SOLEDAD", "razsoc_cli": "SUAREZ MARIA SOLEDAD", "rucci_cli": "1710412170", "direcc_cli": "CALIFORNIA ALTA", "telefo_cli": "               ", "email_cli": "gchiribogav@yahoo.com"}, {"codigo_cli": "006674", "nombre_cli": "SUAREZ MARLENE", "razsoc_cli": "SUAREZ MARLENE", "rucci_cli": "1710352624001", "direcc_cli": "AV. PEDRO  PINTO CASALES SAN PERO LULUNCOTO", "telefo_cli": "               ", "email_cli": "krutskaya@gmail.com"}, {"codigo_cli": "006679", "nombre_cli": "SUAREZ LIDA", "razsoc_cli": "SUAREZ LIDA", "rucci_cli": "1800006023", "direcc_cli": "JIPIJAPA", "telefo_cli": "               ", "email_cli": "robertocruz_n99@hotmail.com"}, {"codigo_cli": "006743", "nombre_cli": "SUAREZ ANGELITA", "razsoc_cli": "SUAREZ ANGELITA", "rucci_cli": "1719083816", "direcc_cli": "CARCELEN", "telefo_cli": "               ", "email_cli": "angelitasuarez24@hotmail.com"}]
+select * from client where (rucci_cli like '%suarez%' or codigo_cli LIKE'%suarez%' or nombre_cli like '%suarez%' and empresa_id=10004 )
+[{"codigo_cli": "001439", "nombre_cli": "MONTENEGRO SUAREZ  PAULINA", "razsoc_cli": "MONTENEGRO SUAREZ  PAULINA", "rucci_cli": "1714746821", "direcc_cli": "SAN BARTOLO", "telefo_cli": "26885892       ", "email_cli": "pauly.montenegro.29@hotmail.com"}, {"codigo_cli": "002157", "nombre_cli": "SUAREZ AMALIA", "razsoc_cli": "SUAREZ AMALIA", "rucci_cli": "1711425072", "direcc_cli": "Udla Granados", "telefo_cli": "099529727      ", "email_cli": "amalia.suarez@udla.edu.ec"}, {"codigo_cli": "002158", "nombre_cli": "SUAREZ ANGEL", "razsoc_cli": "SUAREZ ANGEL", "rucci_cli": "1708334246", "direcc_cli": "PUENGASI", "telefo_cli": "023190338      ", "email_cli": "fernandosuarez1105@gmail.com"}, {"codigo_cli": "002159", "nombre_cli": "SUAREZ GORDON RUTH", "razsoc_cli": "SUAREZ GORDON RUTH", "rucci_cli": "1715030852", "direcc_cli": "calderon", "telefo_cli": "28212984       ", "email_cli": ""}, {"codigo_cli": "002160", "nombre_cli": "SUAREZ ISABEL", "razsoc_cli": "SUAREZ ISABEL", "rucci_cli": "1791990447001", "direcc_cli": "san carlos", "telefo_cli": "6005475        ", "email_cli": ""}, {"codigo_cli": "002161", "nombre_cli": "SUAREZ JONATHAN", "razsoc_cli": "SUAREZ JONATHAN", "rucci_cli": "1718347725", "direcc_cli": "carcelen", "telefo_cli": "3813505        ", "email_cli": ""}, {"codigo_cli": "002162", "nombre_cli": "SUAREZ LETTY", "razsoc_cli": "SUAREZ LETTY", "rucci_cli": "1704535036", "direcc_cli": "Hernandez de Giron OE5-75 y Pedregal", "telefo_cli": "2439144        ", "email_cli": ""}, {"codigo_cli": "002163", "nombre_cli": "SUAREZ MARISOL", "razsoc_cli": "SUAREZ MARISOL", "rucci_cli": "1802433696", "direcc_cli": "Puente 3", "telefo_cli": "2835678        ", "email_cli": ""}, {"codigo_cli": "002164", "nombre_cli": "SUAREZ RUTH", "razsoc_cli": "SUAREZ RUTH", "rucci_cli": "1708380405", "direcc_cli": "mena 2", "telefo_cli": "2847460        ", "email_cli": "delpilar.ruth@yahoo.com"}, {"codigo_cli": "002661", "nombre_cli": "SUAREZ VERONICA", "razsoc_cli": "SUAREZ VERONICA", "rucci_cli": "1719341537", "direcc_cli": "COMITE DEL PUEBLO", "telefo_cli": "023452828      ", "email_cli": "andre.alexia@hotmail.com"}, {"codigo_cli": "002836", "nombre_cli": "SUAREZ XAVIER", "razsoc_cli": "SUAREZ XAVIER", "rucci_cli": "1710428770", "direcc_cli": "la gasca", "telefo_cli": "               ", "email_cli": "xasu1@yahoo.es"}, {"codigo_cli": "002935", "nombre_cli": "SUAREZ GABRIEL", "razsoc_cli": "SUAREZ GABRIEL", "rucci_cli": "1702843671", "direcc_cli": "NUEVA GRANIZADA", "telefo_cli": "               ", "email_cli": "grabrielsuarez43@yahoo.es"}, {"codigo_cli": "004805", "nombre_cli": "MORETA SUAREZ FERNANDO", "razsoc_cli": "MORETA SUAREZ FERNANDO", "rucci_cli": "0501136733001", "direcc_cli": "AV AMERICA 41-68 Y VERACRUZ", "telefo_cli": "2433107        ", "email_cli": ""}, {"codigo_cli": "005582", "nombre_cli": "SUAREZ ISABEL", "razsoc_cli": "SUAREZ ISABEL", "rucci_cli": "1722300736001", "direcc_cli": "SAN CARLOS", "telefo_cli": "3401447        ", "email_cli": ""}, {"codigo_cli": "005583", "nombre_cli": "SUAREZ JORGE", "razsoc_cli": "SUAREZ JORGE", "rucci_cli": "1700116039", "direcc_cli": "                   real audiencia", "telefo_cli": "2404066        ", "email_cli": ""}, {"codigo_cli": "005584", "nombre_cli": "SUAREZ JORGE RENE", "razsoc_cli": "SUAREZ JORGE RENE", "rucci_cli": "1700699299", "direcc_cli": "CARAPUNGO", "telefo_cli": "2424987        ", "email_cli": ""}, {"codigo_cli": "005585", "nombre_cli": "SUAREZ MARCELO", "razsoc_cli": "SUAREZ MARCELO", "rucci_cli": "1001915360", "direcc_cli": "CARCELEN", "telefo_cli": "0995025121     ", "email_cli": ""}, {"codigo_cli": "005586", "nombre_cli": "SUAREZ SILVIA", "razsoc_cli": "SUAREZ SILVIA", "rucci_cli": "1712475241", "direcc_cli": "COFAVI", "telefo_cli": "2400900        ", "email_cli": ""}, {"codigo_cli": "005587", "nombre_cli": "SUAREZ URREA VICTOR", "razsoc_cli": "SUAREZ URREA VICTOR", "rucci_cli": "1792680964001", "direcc_cli": "BAKER", "telefo_cli": "0983189706     ", "email_cli": ""}, {"codigo_cli": "005588", "nombre_cli": "SUAREZ VALLEJO ANA", "razsoc_cli": "SUAREZ VALLEJO ANA", "rucci_cli": "1002045506", "direcc_cli": "COFAVI", "telefo_cli": "               ", "email_cli": ""}, {"codigo_cli": "005589", "nombre_cli": "SUAREZ VERONICA", "razsoc_cli": "SUAREZ VERONICA", "rucci_cli": "1712087863", "direcc_cli": "JUAN MOLINEROS", "telefo_cli": "3283494        ", "email_cli": ""}, {"codigo_cli": "006215", "nombre_cli": "SUAREZ PAOLA", "razsoc_cli": "SUAREZ PAOLA", "rucci_cli": "1002880605", "direcc_cli": "LOS LAURELES", "telefo_cli": "               ", "email_cli": "pololita_suarez@hotmail.com"}, {"codigo_cli": "006659", "nombre_cli": "SUAREZ MARIA SOLEDAD", "razsoc_cli": "SUAREZ MARIA SOLEDAD", "rucci_cli": "1710412170", "direcc_cli": "CALIFORNIA ALTA", "telefo_cli": "               ", "email_cli": "gchiribogav@yahoo.com"}, {"codigo_cli": "006674", "nombre_cli": "SUAREZ MARLENE", "razsoc_cli": "SUAREZ MARLENE", "rucci_cli": "1710352624001", "direcc_cli": "AV. PEDRO  PINTO CASALES SAN PERO LULUNCOTO", "telefo_cli": "               ", "email_cli": "krutskaya@gmail.com"}, {"codigo_cli": "006679", "nombre_cli": "SUAREZ LIDA", "razsoc_cli": "SUAREZ LIDA", "rucci_cli": "1800006023", "direcc_cli": "JIPIJAPA", "telefo_cli": "               ", "email_cli": "robertocruz_n99@hotmail.com"}, {"codigo_cli": "006743", "nombre_cli": "SUAREZ ANGELITA", "razsoc_cli": "SUAREZ ANGELITA", "rucci_cli": "1719083816", "direcc_cli": "CARCELEN", "telefo_cli": "               ", "email_cli": "angelitasuarez24@hotmail.com"}]
+select * from client where (rucci_cli like '%suare%' or codigo_cli LIKE'%suare%' or nombre_cli like '%suare%' and empresa_id=10004 )
+[{"codigo_cli": "001439", "nombre_cli": "MONTENEGRO SUAREZ  PAULINA", "razsoc_cli": "MONTENEGRO SUAREZ  PAULINA", "rucci_cli": "1714746821", "direcc_cli": "SAN BARTOLO", "telefo_cli": "26885892       ", "email_cli": "pauly.montenegro.29@hotmail.com"}, {"codigo_cli": "002157", "nombre_cli": "SUAREZ AMALIA", "razsoc_cli": "SUAREZ AMALIA", "rucci_cli": "1711425072", "direcc_cli": "Udla Granados", "telefo_cli": "099529727      ", "email_cli": "amalia.suarez@udla.edu.ec"}, {"codigo_cli": "002158", "nombre_cli": "SUAREZ ANGEL", "razsoc_cli": "SUAREZ ANGEL", "rucci_cli": "1708334246", "direcc_cli": "PUENGASI", "telefo_cli": "023190338      ", "email_cli": "fernandosuarez1105@gmail.com"}, {"codigo_cli": "002159", "nombre_cli": "SUAREZ GORDON RUTH", "razsoc_cli": "SUAREZ GORDON RUTH", "rucci_cli": "1715030852", "direcc_cli": "calderon", "telefo_cli": "28212984       ", "email_cli": ""}, {"codigo_cli": "002160", "nombre_cli": "SUAREZ ISABEL", "razsoc_cli": "SUAREZ ISABEL", "rucci_cli": "1791990447001", "direcc_cli": "san carlos", "telefo_cli": "6005475        ", "email_cli": ""}, {"codigo_cli": "002161", "nombre_cli": "SUAREZ JONATHAN", "razsoc_cli": "SUAREZ JONATHAN", "rucci_cli": "1718347725", "direcc_cli": "carcelen", "telefo_cli": "3813505        ", "email_cli": ""}, {"codigo_cli": "002162", "nombre_cli": "SUAREZ LETTY", "razsoc_cli": "SUAREZ LETTY", "rucci_cli": "1704535036", "direcc_cli": "Hernandez de Giron OE5-75 y Pedregal", "telefo_cli": "2439144        ", "email_cli": ""}, {"codigo_cli": "002163", "nombre_cli": "SUAREZ MARISOL", "razsoc_cli": "SUAREZ MARISOL", "rucci_cli": "1802433696", "direcc_cli": "Puente 3", "telefo_cli": "2835678        ", "email_cli": ""}, {"codigo_cli": "002164", "nombre_cli": "SUAREZ RUTH", "razsoc_cli": "SUAREZ RUTH", "rucci_cli": "1708380405", "direcc_cli": "mena 2", "telefo_cli": "2847460        ", "email_cli": "delpilar.ruth@yahoo.com"}, {"codigo_cli": "002661", "nombre_cli": "SUAREZ VERONICA", "razsoc_cli": "SUAREZ VERONICA", "rucci_cli": "1719341537", "direcc_cli": "COMITE DEL PUEBLO", "telefo_cli": "023452828      ", "email_cli": "andre.alexia@hotmail.com"}, {"codigo_cli": "002836", "nombre_cli": "SUAREZ XAVIER", "razsoc_cli": "SUAREZ XAVIER", "rucci_cli": "1710428770", "direcc_cli": "la gasca", "telefo_cli": "               ", "email_cli": "xasu1@yahoo.es"}, {"codigo_cli": "002935", "nombre_cli": "SUAREZ GABRIEL", "razsoc_cli": "SUAREZ GABRIEL", "rucci_cli": "1702843671", "direcc_cli": "NUEVA GRANIZADA", "telefo_cli": "               ", "email_cli": "grabrielsuarez43@yahoo.es"}, {"codigo_cli": "004805", "nombre_cli": "MORETA SUAREZ FERNANDO", "razsoc_cli": "MORETA SUAREZ FERNANDO", "rucci_cli": "0501136733001", "direcc_cli": "AV AMERICA 41-68 Y VERACRUZ", "telefo_cli": "2433107        ", "email_cli": ""}, {"codigo_cli": "005582", "nombre_cli": "SUAREZ ISABEL", "razsoc_cli": "SUAREZ ISABEL", "rucci_cli": "1722300736001", "direcc_cli": "SAN CARLOS", "telefo_cli": "3401447        ", "email_cli": ""}, {"codigo_cli": "005583", "nombre_cli": "SUAREZ JORGE", "razsoc_cli": "SUAREZ JORGE", "rucci_cli": "1700116039", "direcc_cli": "                   real audiencia", "telefo_cli": "2404066        ", "email_cli": ""}, {"codigo_cli": "005584", "nombre_cli": "SUAREZ JORGE RENE", "razsoc_cli": "SUAREZ JORGE RENE", "rucci_cli": "1700699299", "direcc_cli": "CARAPUNGO", "telefo_cli": "2424987        ", "email_cli": ""}, {"codigo_cli": "005585", "nombre_cli": "SUAREZ MARCELO", "razsoc_cli": "SUAREZ MARCELO", "rucci_cli": "1001915360", "direcc_cli": "CARCELEN", "telefo_cli": "0995025121     ", "email_cli": ""}, {"codigo_cli": "005586", "nombre_cli": "SUAREZ SILVIA", "razsoc_cli": "SUAREZ SILVIA", "rucci_cli": "1712475241", "direcc_cli": "COFAVI", "telefo_cli": "2400900        ", "email_cli": ""}, {"codigo_cli": "005587", "nombre_cli": "SUAREZ URREA VICTOR", "razsoc_cli": "SUAREZ URREA VICTOR", "rucci_cli": "1792680964001", "direcc_cli": "BAKER", "telefo_cli": "0983189706     ", "email_cli": ""}, {"codigo_cli": "005588", "nombre_cli": "SUAREZ VALLEJO ANA", "razsoc_cli": "SUAREZ VALLEJO ANA", "rucci_cli": "1002045506", "direcc_cli": "COFAVI", "telefo_cli": "               ", "email_cli": ""}, {"codigo_cli": "005589", "nombre_cli": "SUAREZ VERONICA", "razsoc_cli": "SUAREZ VERONICA", "rucci_cli": "1712087863", "direcc_cli": "JUAN MOLINEROS", "telefo_cli": "3283494        ", "email_cli": ""}, {"codigo_cli": "006215", "nombre_cli": "SUAREZ PAOLA", "razsoc_cli": "SUAREZ PAOLA", "rucci_cli": "1002880605", "direcc_cli": "LOS LAURELES", "telefo_cli": "               ", "email_cli": "pololita_suarez@hotmail.com"}, {"codigo_cli": "006659", "nombre_cli": "SUAREZ MARIA SOLEDAD", "razsoc_cli": "SUAREZ MARIA SOLEDAD", "rucci_cli": "1710412170", "direcc_cli": "CALIFORNIA ALTA", "telefo_cli": "               ", "email_cli": "gchiribogav@yahoo.com"}, {"codigo_cli": "006674", "nombre_cli": "SUAREZ MARLENE", "razsoc_cli": "SUAREZ MARLENE", "rucci_cli": "1710352624001", "direcc_cli": "AV. PEDRO  PINTO CASALES SAN PERO LULUNCOTO", "telefo_cli": "               ", "email_cli": "krutskaya@gmail.com"}, {"codigo_cli": "006679", "nombre_cli": "SUAREZ LIDA", "razsoc_cli": "SUAREZ LIDA", "rucci_cli": "1800006023", "direcc_cli": "JIPIJAPA", "telefo_cli": "               ", "email_cli": "robertocruz_n99@hotmail.com"}, {"codigo_cli": "006743", "nombre_cli": "SUAREZ ANGELITA", "razsoc_cli": "SUAREZ ANGELITA", "rucci_cli": "1719083816", "direcc_cli": "CARCELEN", "telefo_cli": "               ", "email_cli": "angelitasuarez24@hotmail.com"}]
+select * from client where (rucci_cli like '%orozco%' or codigo_cli LIKE'%orozco%' or nombre_cli like '%orozco%' and empresa_id=10004 )
+[{"codigo_cli": "001586", "nombre_cli": "OROZCO GERMAN", "razsoc_cli": "OROZCO GERMAN", "rucci_cli": "0602498800", "direcc_cli": "CAPELO", "telefo_cli": "6008425        ", "email_cli": "orozco.germa@gmail.com"}, {"codigo_cli": "001587", "nombre_cli": "OROZCO JORGE", "razsoc_cli": "OROZCO JORGE", "rucci_cli": "0601743388", "direcc_cli": "PIO XII", "telefo_cli": "2660376        ", "email_cli": ""}, {"codigo_cli": "001588", "nombre_cli": "OROZCO SILVIA", "razsoc_cli": "OROZCO SILVIA", "rucci_cli": "0602685661", "direcc_cli": "EDEN DEL VALLE 5", "telefo_cli": "099603439      ", "email_cli": ""}, {"codigo_cli": "004948", "nombre_cli": "OROZCO CRISTINA", "razsoc_cli": "OROZCO CRISTINA", "rucci_cli": "1714972369", "direcc_cli": "cotocollao", "telefo_cli": "2598935        ", "email_cli": ""}, {"codigo_cli": "004949", "nombre_cli": "OROZCO JORGE", "razsoc_cli": "OROZCO JORGE", "rucci_cli": "1716632409", "direcc_cli": "PIO DOCE", "telefo_cli": "2660376        ", "email_cli": ""}]
+select * from client where (rucci_cli like '%Orozco %' or codigo_cli LIKE'%Orozco %' or nombre_cli like '%Orozco %' and empresa_id=10004 )
+[{"codigo_cli": "001586", "nombre_cli": "OROZCO GERMAN", "razsoc_cli": "OROZCO GERMAN", "rucci_cli": "0602498800", "direcc_cli": "CAPELO", "telefo_cli": "6008425        ", "email_cli": "orozco.germa@gmail.com"}, {"codigo_cli": "001587", "nombre_cli": "OROZCO JORGE", "razsoc_cli": "OROZCO JORGE", "rucci_cli": "0601743388", "direcc_cli": "PIO XII", "telefo_cli": "2660376        ", "email_cli": ""}, {"codigo_cli": "001588", "nombre_cli": "OROZCO SILVIA", "razsoc_cli": "OROZCO SILVIA", "rucci_cli": "0602685661", "direcc_cli": "EDEN DEL VALLE 5", "telefo_cli": "099603439      ", "email_cli": ""}, {"codigo_cli": "004948", "nombre_cli": "OROZCO CRISTINA", "razsoc_cli": "OROZCO CRISTINA", "rucci_cli": "1714972369", "direcc_cli": "cotocollao", "telefo_cli": "2598935        ", "email_cli": ""}, {"codigo_cli": "004949", "nombre_cli": "OROZCO JORGE", "razsoc_cli": "OROZCO JORGE", "rucci_cli": "1716632409", "direcc_cli": "PIO DOCE", "telefo_cli": "2660376        ", "email_cli": ""}]
+select * from client where (rucci_cli like '%suarez%' or codigo_cli LIKE'%suarez%' or nombre_cli like '%suarez%' and empresa_id=10004 )
+[{"codigo_cli": "001439", "nombre_cli": "MONTENEGRO SUAREZ  PAULINA", "razsoc_cli": "MONTENEGRO SUAREZ  PAULINA", "rucci_cli": "1714746821", "direcc_cli": "SAN BARTOLO", "telefo_cli": "26885892       ", "email_cli": "pauly.montenegro.29@hotmail.com"}, {"codigo_cli": "002157", "nombre_cli": "SUAREZ AMALIA", "razsoc_cli": "SUAREZ AMALIA", "rucci_cli": "1711425072", "direcc_cli": "Udla Granados", "telefo_cli": "099529727      ", "email_cli": "amalia.suarez@udla.edu.ec"}, {"codigo_cli": "002158", "nombre_cli": "SUAREZ ANGEL", "razsoc_cli": "SUAREZ ANGEL", "rucci_cli": "1708334246", "direcc_cli": "PUENGASI", "telefo_cli": "023190338      ", "email_cli": "fernandosuarez1105@gmail.com"}, {"codigo_cli": "002159", "nombre_cli": "SUAREZ GORDON RUTH", "razsoc_cli": "SUAREZ GORDON RUTH", "rucci_cli": "1715030852", "direcc_cli": "calderon", "telefo_cli": "28212984       ", "email_cli": ""}, {"codigo_cli": "002160", "nombre_cli": "SUAREZ ISABEL", "razsoc_cli": "SUAREZ ISABEL", "rucci_cli": "1791990447001", "direcc_cli": "san carlos", "telefo_cli": "6005475        ", "email_cli": ""}, {"codigo_cli": "002161", "nombre_cli": "SUAREZ JONATHAN", "razsoc_cli": "SUAREZ JONATHAN", "rucci_cli": "1718347725", "direcc_cli": "carcelen", "telefo_cli": "3813505        ", "email_cli": ""}, {"codigo_cli": "002162", "nombre_cli": "SUAREZ LETTY", "razsoc_cli": "SUAREZ LETTY", "rucci_cli": "1704535036", "direcc_cli": "Hernandez de Giron OE5-75 y Pedregal", "telefo_cli": "2439144        ", "email_cli": ""}, {"codigo_cli": "002163", "nombre_cli": "SUAREZ MARISOL", "razsoc_cli": "SUAREZ MARISOL", "rucci_cli": "1802433696", "direcc_cli": "Puente 3", "telefo_cli": "2835678        ", "email_cli": ""}, {"codigo_cli": "002164", "nombre_cli": "SUAREZ RUTH", "razsoc_cli": "SUAREZ RUTH", "rucci_cli": "1708380405", "direcc_cli": "mena 2", "telefo_cli": "2847460        ", "email_cli": "delpilar.ruth@yahoo.com"}, {"codigo_cli": "002661", "nombre_cli": "SUAREZ VERONICA", "razsoc_cli": "SUAREZ VERONICA", "rucci_cli": "1719341537", "direcc_cli": "COMITE DEL PUEBLO", "telefo_cli": "023452828      ", "email_cli": "andre.alexia@hotmail.com"}, {"codigo_cli": "002836", "nombre_cli": "SUAREZ XAVIER", "razsoc_cli": "SUAREZ XAVIER", "rucci_cli": "1710428770", "direcc_cli": "la gasca", "telefo_cli": "               ", "email_cli": "xasu1@yahoo.es"}, {"codigo_cli": "002935", "nombre_cli": "SUAREZ GABRIEL", "razsoc_cli": "SUAREZ GABRIEL", "rucci_cli": "1702843671", "direcc_cli": "NUEVA GRANIZADA", "telefo_cli": "               ", "email_cli": "grabrielsuarez43@yahoo.es"}, {"codigo_cli": "004805", "nombre_cli": "MORETA SUAREZ FERNANDO", "razsoc_cli": "MORETA SUAREZ FERNANDO", "rucci_cli": "0501136733001", "direcc_cli": "AV AMERICA 41-68 Y VERACRUZ", "telefo_cli": "2433107        ", "email_cli": ""}, {"codigo_cli": "005582", "nombre_cli": "SUAREZ ISABEL", "razsoc_cli": "SUAREZ ISABEL", "rucci_cli": "1722300736001", "direcc_cli": "SAN CARLOS", "telefo_cli": "3401447        ", "email_cli": ""}, {"codigo_cli": "005583", "nombre_cli": "SUAREZ JORGE", "razsoc_cli": "SUAREZ JORGE", "rucci_cli": "1700116039", "direcc_cli": "                   real audiencia", "telefo_cli": "2404066        ", "email_cli": ""}, {"codigo_cli": "005584", "nombre_cli": "SUAREZ JORGE RENE", "razsoc_cli": "SUAREZ JORGE RENE", "rucci_cli": "1700699299", "direcc_cli": "CARAPUNGO", "telefo_cli": "2424987        ", "email_cli": ""}, {"codigo_cli": "005585", "nombre_cli": "SUAREZ MARCELO", "razsoc_cli": "SUAREZ MARCELO", "rucci_cli": "1001915360", "direcc_cli": "CARCELEN", "telefo_cli": "0995025121     ", "email_cli": ""}, {"codigo_cli": "005586", "nombre_cli": "SUAREZ SILVIA", "razsoc_cli": "SUAREZ SILVIA", "rucci_cli": "1712475241", "direcc_cli": "COFAVI", "telefo_cli": "2400900        ", "email_cli": ""}, {"codigo_cli": "005587", "nombre_cli": "SUAREZ URREA VICTOR", "razsoc_cli": "SUAREZ URREA VICTOR", "rucci_cli": "1792680964001", "direcc_cli": "BAKER", "telefo_cli": "0983189706     ", "email_cli": ""}, {"codigo_cli": "005588", "nombre_cli": "SUAREZ VALLEJO ANA", "razsoc_cli": "SUAREZ VALLEJO ANA", "rucci_cli": "1002045506", "direcc_cli": "COFAVI", "telefo_cli": "               ", "email_cli": ""}, {"codigo_cli": "005589", "nombre_cli": "SUAREZ VERONICA", "razsoc_cli": "SUAREZ VERONICA", "rucci_cli": "1712087863", "direcc_cli": "JUAN MOLINEROS", "telefo_cli": "3283494        ", "email_cli": ""}, {"codigo_cli": "006215", "nombre_cli": "SUAREZ PAOLA", "razsoc_cli": "SUAREZ PAOLA", "rucci_cli": "1002880605", "direcc_cli": "LOS LAURELES", "telefo_cli": "               ", "email_cli": "pololita_suarez@hotmail.com"}, {"codigo_cli": "006659", "nombre_cli": "SUAREZ MARIA SOLEDAD", "razsoc_cli": "SUAREZ MARIA SOLEDAD", "rucci_cli": "1710412170", "direcc_cli": "CALIFORNIA ALTA", "telefo_cli": "               ", "email_cli": "gchiribogav@yahoo.com"}, {"codigo_cli": "006674", "nombre_cli": "SUAREZ MARLENE", "razsoc_cli": "SUAREZ MARLENE", "rucci_cli": "1710352624001", "direcc_cli": "AV. PEDRO  PINTO CASALES SAN PERO LULUNCOTO", "telefo_cli": "               ", "email_cli": "krutskaya@gmail.com"}, {"codigo_cli": "006679", "nombre_cli": "SUAREZ LIDA", "razsoc_cli": "SUAREZ LIDA", "rucci_cli": "1800006023", "direcc_cli": "JIPIJAPA", "telefo_cli": "               ", "email_cli": "robertocruz_n99@hotmail.com"}, {"codigo_cli": "006743", "nombre_cli": "SUAREZ ANGELITA", "razsoc_cli": "SUAREZ ANGELITA", "rucci_cli": "1719083816", "direcc_cli": "CARCELEN", "telefo_cli": "               ", "email_cli": "angelitasuarez24@hotmail.com"}]
+10004
+SELECT agenci_id,direcc_age,nombre_age FROM agenci WHERE(empresa_id=10004)
+select * from client where (rucci_cli like '%suare%' or codigo_cli LIKE'%suare%' or nombre_cli like '%suare%' and empresa_id=10004 )
+[{"codigo_cli": "001439", "nombre_cli": "MONTENEGRO SUAREZ  PAULINA", "razsoc_cli": "MONTENEGRO SUAREZ  PAULINA", "rucci_cli": "1714746821", "direcc_cli": "SAN BARTOLO", "telefo_cli": "26885892       ", "email_cli": "pauly.montenegro.29@hotmail.com"}, {"codigo_cli": "002157", "nombre_cli": "SUAREZ AMALIA", "razsoc_cli": "SUAREZ AMALIA", "rucci_cli": "1711425072", "direcc_cli": "Udla Granados", "telefo_cli": "099529727      ", "email_cli": "amalia.suarez@udla.edu.ec"}, {"codigo_cli": "002158", "nombre_cli": "SUAREZ ANGEL", "razsoc_cli": "SUAREZ ANGEL", "rucci_cli": "1708334246", "direcc_cli": "PUENGASI", "telefo_cli": "023190338      ", "email_cli": "fernandosuarez1105@gmail.com"}, {"codigo_cli": "002159", "nombre_cli": "SUAREZ GORDON RUTH", "razsoc_cli": "SUAREZ GORDON RUTH", "rucci_cli": "1715030852", "direcc_cli": "calderon", "telefo_cli": "28212984       ", "email_cli": ""}, {"codigo_cli": "002160", "nombre_cli": "SUAREZ ISABEL", "razsoc_cli": "SUAREZ ISABEL", "rucci_cli": "1791990447001", "direcc_cli": "san carlos", "telefo_cli": "6005475        ", "email_cli": ""}, {"codigo_cli": "002161", "nombre_cli": "SUAREZ JONATHAN", "razsoc_cli": "SUAREZ JONATHAN", "rucci_cli": "1718347725", "direcc_cli": "carcelen", "telefo_cli": "3813505        ", "email_cli": ""}, {"codigo_cli": "002162", "nombre_cli": "SUAREZ LETTY", "razsoc_cli": "SUAREZ LETTY", "rucci_cli": "1704535036", "direcc_cli": "Hernandez de Giron OE5-75 y Pedregal", "telefo_cli": "2439144        ", "email_cli": ""}, {"codigo_cli": "002163", "nombre_cli": "SUAREZ MARISOL", "razsoc_cli": "SUAREZ MARISOL", "rucci_cli": "1802433696", "direcc_cli": "Puente 3", "telefo_cli": "2835678        ", "email_cli": ""}, {"codigo_cli": "002164", "nombre_cli": "SUAREZ RUTH", "razsoc_cli": "SUAREZ RUTH", "rucci_cli": "1708380405", "direcc_cli": "mena 2", "telefo_cli": "2847460        ", "email_cli": "delpilar.ruth@yahoo.com"}, {"codigo_cli": "002661", "nombre_cli": "SUAREZ VERONICA", "razsoc_cli": "SUAREZ VERONICA", "rucci_cli": "1719341537", "direcc_cli": "COMITE DEL PUEBLO", "telefo_cli": "023452828      ", "email_cli": "andre.alexia@hotmail.com"}, {"codigo_cli": "002836", "nombre_cli": "SUAREZ XAVIER", "razsoc_cli": "SUAREZ XAVIER", "rucci_cli": "1710428770", "direcc_cli": "la gasca", "telefo_cli": "               ", "email_cli": "xasu1@yahoo.es"}, {"codigo_cli": "002935", "nombre_cli": "SUAREZ GABRIEL", "razsoc_cli": "SUAREZ GABRIEL", "rucci_cli": "1702843671", "direcc_cli": "NUEVA GRANIZADA", "telefo_cli": "               ", "email_cli": "grabrielsuarez43@yahoo.es"}, {"codigo_cli": "004805", "nombre_cli": "MORETA SUAREZ FERNANDO", "razsoc_cli": "MORETA SUAREZ FERNANDO", "rucci_cli": "0501136733001", "direcc_cli": "AV AMERICA 41-68 Y VERACRUZ", "telefo_cli": "2433107        ", "email_cli": ""}, {"codigo_cli": "005582", "nombre_cli": "SUAREZ ISABEL", "razsoc_cli": "SUAREZ ISABEL", "rucci_cli": "1722300736001", "direcc_cli": "SAN CARLOS", "telefo_cli": "3401447        ", "email_cli": ""}, {"codigo_cli": "005583", "nombre_cli": "SUAREZ JORGE", "razsoc_cli": "SUAREZ JORGE", "rucci_cli": "1700116039", "direcc_cli": "                   real audiencia", "telefo_cli": "2404066        ", "email_cli": ""}, {"codigo_cli": "005584", "nombre_cli": "SUAREZ JORGE RENE", "razsoc_cli": "SUAREZ JORGE RENE", "rucci_cli": "1700699299", "direcc_cli": "CARAPUNGO", "telefo_cli": "2424987        ", "email_cli": ""}, {"codigo_cli": "005585", "nombre_cli": "SUAREZ MARCELO", "razsoc_cli": "SUAREZ MARCELO", "rucci_cli": "1001915360", "direcc_cli": "CARCELEN", "telefo_cli": "0995025121     ", "email_cli": ""}, {"codigo_cli": "005586", "nombre_cli": "SUAREZ SILVIA", "razsoc_cli": "SUAREZ SILVIA", "rucci_cli": "1712475241", "direcc_cli": "COFAVI", "telefo_cli": "2400900        ", "email_cli": ""}, {"codigo_cli": "005587", "nombre_cli": "SUAREZ URREA VICTOR", "razsoc_cli": "SUAREZ URREA VICTOR", "rucci_cli": "1792680964001", "direcc_cli": "BAKER", "telefo_cli": "0983189706     ", "email_cli": ""}, {"codigo_cli": "005588", "nombre_cli": "SUAREZ VALLEJO ANA", "razsoc_cli": "SUAREZ VALLEJO ANA", "rucci_cli": "1002045506", "direcc_cli": "COFAVI", "telefo_cli": "               ", "email_cli": ""}, {"codigo_cli": "005589", "nombre_cli": "SUAREZ VERONICA", "razsoc_cli": "SUAREZ VERONICA", "rucci_cli": "1712087863", "direcc_cli": "JUAN MOLINEROS", "telefo_cli": "3283494        ", "email_cli": ""}, {"codigo_cli": "006215", "nombre_cli": "SUAREZ PAOLA", "razsoc_cli": "SUAREZ PAOLA", "rucci_cli": "1002880605", "direcc_cli": "LOS LAURELES", "telefo_cli": "               ", "email_cli": "pololita_suarez@hotmail.com"}, {"codigo_cli": "006659", "nombre_cli": "SUAREZ MARIA SOLEDAD", "razsoc_cli": "SUAREZ MARIA SOLEDAD", "rucci_cli": "1710412170", "direcc_cli": "CALIFORNIA ALTA", "telefo_cli": "               ", "email_cli": "gchiribogav@yahoo.com"}, {"codigo_cli": "006674", "nombre_cli": "SUAREZ MARLENE", "razsoc_cli": "SUAREZ MARLENE", "rucci_cli": "1710352624001", "direcc_cli": "AV. PEDRO  PINTO CASALES SAN PERO LULUNCOTO", "telefo_cli": "               ", "email_cli": "krutskaya@gmail.com"}, {"codigo_cli": "006679", "nombre_cli": "SUAREZ LIDA", "razsoc_cli": "SUAREZ LIDA", "rucci_cli": "1800006023", "direcc_cli": "JIPIJAPA", "telefo_cli": "               ", "email_cli": "robertocruz_n99@hotmail.com"}, {"codigo_cli": "006743", "nombre_cli": "SUAREZ ANGELITA", "razsoc_cli": "SUAREZ ANGELITA", "rucci_cli": "1719083816", "direcc_cli": "CARCELEN", "telefo_cli": "               ", "email_cli": "angelitasuarez24@hotmail.com"}]
+select * from client where (rucci_cli like '%Suárez %' or codigo_cli LIKE'%Suárez %' or nombre_cli like '%Suárez %' and empresa_id=10004 )
+[]
+select * from client where (rucci_cli like '%Suarez%' or codigo_cli LIKE'%Suarez%' or nombre_cli like '%Suarez%' and empresa_id=10004 )
+[{"codigo_cli": "001439", "nombre_cli": "MONTENEGRO SUAREZ  PAULINA", "razsoc_cli": "MONTENEGRO SUAREZ  PAULINA", "rucci_cli": "1714746821", "direcc_cli": "SAN BARTOLO", "telefo_cli": "26885892       ", "email_cli": "pauly.montenegro.29@hotmail.com"}, {"codigo_cli": "002157", "nombre_cli": "SUAREZ AMALIA", "razsoc_cli": "SUAREZ AMALIA", "rucci_cli": "1711425072", "direcc_cli": "Udla Granados", "telefo_cli": "099529727      ", "email_cli": "amalia.suarez@udla.edu.ec"}, {"codigo_cli": "002158", "nombre_cli": "SUAREZ ANGEL", "razsoc_cli": "SUAREZ ANGEL", "rucci_cli": "1708334246", "direcc_cli": "PUENGASI", "telefo_cli": "023190338      ", "email_cli": "fernandosuarez1105@gmail.com"}, {"codigo_cli": "002159", "nombre_cli": "SUAREZ GORDON RUTH", "razsoc_cli": "SUAREZ GORDON RUTH", "rucci_cli": "1715030852", "direcc_cli": "calderon", "telefo_cli": "28212984       ", "email_cli": ""}, {"codigo_cli": "002160", "nombre_cli": "SUAREZ ISABEL", "razsoc_cli": "SUAREZ ISABEL", "rucci_cli": "1791990447001", "direcc_cli": "san carlos", "telefo_cli": "6005475        ", "email_cli": ""}, {"codigo_cli": "002161", "nombre_cli": "SUAREZ JONATHAN", "razsoc_cli": "SUAREZ JONATHAN", "rucci_cli": "1718347725", "direcc_cli": "carcelen", "telefo_cli": "3813505        ", "email_cli": ""}, {"codigo_cli": "002162", "nombre_cli": "SUAREZ LETTY", "razsoc_cli": "SUAREZ LETTY", "rucci_cli": "1704535036", "direcc_cli": "Hernandez de Giron OE5-75 y Pedregal", "telefo_cli": "2439144        ", "email_cli": ""}, {"codigo_cli": "002163", "nombre_cli": "SUAREZ MARISOL", "razsoc_cli": "SUAREZ MARISOL", "rucci_cli": "1802433696", "direcc_cli": "Puente 3", "telefo_cli": "2835678        ", "email_cli": ""}, {"codigo_cli": "002164", "nombre_cli": "SUAREZ RUTH", "razsoc_cli": "SUAREZ RUTH", "rucci_cli": "1708380405", "direcc_cli": "mena 2", "telefo_cli": "2847460        ", "email_cli": "delpilar.ruth@yahoo.com"}, {"codigo_cli": "002661", "nombre_cli": "SUAREZ VERONICA", "razsoc_cli": "SUAREZ VERONICA", "rucci_cli": "1719341537", "direcc_cli": "COMITE DEL PUEBLO", "telefo_cli": "023452828      ", "email_cli": "andre.alexia@hotmail.com"}, {"codigo_cli": "002836", "nombre_cli": "SUAREZ XAVIER", "razsoc_cli": "SUAREZ XAVIER", "rucci_cli": "1710428770", "direcc_cli": "la gasca", "telefo_cli": "               ", "email_cli": "xasu1@yahoo.es"}, {"codigo_cli": "002935", "nombre_cli": "SUAREZ GABRIEL", "razsoc_cli": "SUAREZ GABRIEL", "rucci_cli": "1702843671", "direcc_cli": "NUEVA GRANIZADA", "telefo_cli": "               ", "email_cli": "grabrielsuarez43@yahoo.es"}, {"codigo_cli": "004805", "nombre_cli": "MORETA SUAREZ FERNANDO", "razsoc_cli": "MORETA SUAREZ FERNANDO", "rucci_cli": "0501136733001", "direcc_cli": "AV AMERICA 41-68 Y VERACRUZ", "telefo_cli": "2433107        ", "email_cli": ""}, {"codigo_cli": "005582", "nombre_cli": "SUAREZ ISABEL", "razsoc_cli": "SUAREZ ISABEL", "rucci_cli": "1722300736001", "direcc_cli": "SAN CARLOS", "telefo_cli": "3401447        ", "email_cli": ""}, {"codigo_cli": "005583", "nombre_cli": "SUAREZ JORGE", "razsoc_cli": "SUAREZ JORGE", "rucci_cli": "1700116039", "direcc_cli": "                   real audiencia", "telefo_cli": "2404066        ", "email_cli": ""}, {"codigo_cli": "005584", "nombre_cli": "SUAREZ JORGE RENE", "razsoc_cli": "SUAREZ JORGE RENE", "rucci_cli": "1700699299", "direcc_cli": "CARAPUNGO", "telefo_cli": "2424987        ", "email_cli": ""}, {"codigo_cli": "005585", "nombre_cli": "SUAREZ MARCELO", "razsoc_cli": "SUAREZ MARCELO", "rucci_cli": "1001915360", "direcc_cli": "CARCELEN", "telefo_cli": "0995025121     ", "email_cli": ""}, {"codigo_cli": "005586", "nombre_cli": "SUAREZ SILVIA", "razsoc_cli": "SUAREZ SILVIA", "rucci_cli": "1712475241", "direcc_cli": "COFAVI", "telefo_cli": "2400900        ", "email_cli": ""}, {"codigo_cli": "005587", "nombre_cli": "SUAREZ URREA VICTOR", "razsoc_cli": "SUAREZ URREA VICTOR", "rucci_cli": "1792680964001", "direcc_cli": "BAKER", "telefo_cli": "0983189706     ", "email_cli": ""}, {"codigo_cli": "005588", "nombre_cli": "SUAREZ VALLEJO ANA", "razsoc_cli": "SUAREZ VALLEJO ANA", "rucci_cli": "1002045506", "direcc_cli": "COFAVI", "telefo_cli": "               ", "email_cli": ""}, {"codigo_cli": "005589", "nombre_cli": "SUAREZ VERONICA", "razsoc_cli": "SUAREZ VERONICA", "rucci_cli": "1712087863", "direcc_cli": "JUAN MOLINEROS", "telefo_cli": "3283494        ", "email_cli": ""}, {"codigo_cli": "006215", "nombre_cli": "SUAREZ PAOLA", "razsoc_cli": "SUAREZ PAOLA", "rucci_cli": "1002880605", "direcc_cli": "LOS LAURELES", "telefo_cli": "               ", "email_cli": "pololita_suarez@hotmail.com"}, {"codigo_cli": "006659", "nombre_cli": "SUAREZ MARIA SOLEDAD", "razsoc_cli": "SUAREZ MARIA SOLEDAD", "rucci_cli": "1710412170", "direcc_cli": "CALIFORNIA ALTA", "telefo_cli": "               ", "email_cli": "gchiribogav@yahoo.com"}, {"codigo_cli": "006674", "nombre_cli": "SUAREZ MARLENE", "razsoc_cli": "SUAREZ MARLENE", "rucci_cli": "1710352624001", "direcc_cli": "AV. PEDRO  PINTO CASALES SAN PERO LULUNCOTO", "telefo_cli": "               ", "email_cli": "krutskaya@gmail.com"}, {"codigo_cli": "006679", "nombre_cli": "SUAREZ LIDA", "razsoc_cli": "SUAREZ LIDA", "rucci_cli": "1800006023", "direcc_cli": "JIPIJAPA", "telefo_cli": "               ", "email_cli": "robertocruz_n99@hotmail.com"}, {"codigo_cli": "006743", "nombre_cli": "SUAREZ ANGELITA", "razsoc_cli": "SUAREZ ANGELITA", "rucci_cli": "1719083816", "direcc_cli": "CARCELEN", "telefo_cli": "               ", "email_cli": "angelitasuarez24@hotmail.com"}]
+select * from client where (rucci_cli like '%suare%' or codigo_cli LIKE'%suare%' or nombre_cli like '%suare%' and empresa_id=10004 )
+[{"codigo_cli": "001439", "nombre_cli": "MONTENEGRO SUAREZ  PAULINA", "razsoc_cli": "MONTENEGRO SUAREZ  PAULINA", "rucci_cli": "1714746821", "direcc_cli": "SAN BARTOLO", "telefo_cli": "26885892       ", "email_cli": "pauly.montenegro.29@hotmail.com"}, {"codigo_cli": "002157", "nombre_cli": "SUAREZ AMALIA", "razsoc_cli": "SUAREZ AMALIA", "rucci_cli": "1711425072", "direcc_cli": "Udla Granados", "telefo_cli": "099529727      ", "email_cli": "amalia.suarez@udla.edu.ec"}, {"codigo_cli": "002158", "nombre_cli": "SUAREZ ANGEL", "razsoc_cli": "SUAREZ ANGEL", "rucci_cli": "1708334246", "direcc_cli": "PUENGASI", "telefo_cli": "023190338      ", "email_cli": "fernandosuarez1105@gmail.com"}, {"codigo_cli": "002159", "nombre_cli": "SUAREZ GORDON RUTH", "razsoc_cli": "SUAREZ GORDON RUTH", "rucci_cli": "1715030852", "direcc_cli": "calderon", "telefo_cli": "28212984       ", "email_cli": ""}, {"codigo_cli": "002160", "nombre_cli": "SUAREZ ISABEL", "razsoc_cli": "SUAREZ ISABEL", "rucci_cli": "1791990447001", "direcc_cli": "san carlos", "telefo_cli": "6005475        ", "email_cli": ""}, {"codigo_cli": "002161", "nombre_cli": "SUAREZ JONATHAN", "razsoc_cli": "SUAREZ JONATHAN", "rucci_cli": "1718347725", "direcc_cli": "carcelen", "telefo_cli": "3813505        ", "email_cli": ""}, {"codigo_cli": "002162", "nombre_cli": "SUAREZ LETTY", "razsoc_cli": "SUAREZ LETTY", "rucci_cli": "1704535036", "direcc_cli": "Hernandez de Giron OE5-75 y Pedregal", "telefo_cli": "2439144        ", "email_cli": ""}, {"codigo_cli": "002163", "nombre_cli": "SUAREZ MARISOL", "razsoc_cli": "SUAREZ MARISOL", "rucci_cli": "1802433696", "direcc_cli": "Puente 3", "telefo_cli": "2835678        ", "email_cli": ""}, {"codigo_cli": "002164", "nombre_cli": "SUAREZ RUTH", "razsoc_cli": "SUAREZ RUTH", "rucci_cli": "1708380405", "direcc_cli": "mena 2", "telefo_cli": "2847460        ", "email_cli": "delpilar.ruth@yahoo.com"}, {"codigo_cli": "002661", "nombre_cli": "SUAREZ VERONICA", "razsoc_cli": "SUAREZ VERONICA", "rucci_cli": "1719341537", "direcc_cli": "COMITE DEL PUEBLO", "telefo_cli": "023452828      ", "email_cli": "andre.alexia@hotmail.com"}, {"codigo_cli": "002836", "nombre_cli": "SUAREZ XAVIER", "razsoc_cli": "SUAREZ XAVIER", "rucci_cli": "1710428770", "direcc_cli": "la gasca", "telefo_cli": "               ", "email_cli": "xasu1@yahoo.es"}, {"codigo_cli": "002935", "nombre_cli": "SUAREZ GABRIEL", "razsoc_cli": "SUAREZ GABRIEL", "rucci_cli": "1702843671", "direcc_cli": "NUEVA GRANIZADA", "telefo_cli": "               ", "email_cli": "grabrielsuarez43@yahoo.es"}, {"codigo_cli": "004805", "nombre_cli": "MORETA SUAREZ FERNANDO", "razsoc_cli": "MORETA SUAREZ FERNANDO", "rucci_cli": "0501136733001", "direcc_cli": "AV AMERICA 41-68 Y VERACRUZ", "telefo_cli": "2433107        ", "email_cli": ""}, {"codigo_cli": "005582", "nombre_cli": "SUAREZ ISABEL", "razsoc_cli": "SUAREZ ISABEL", "rucci_cli": "1722300736001", "direcc_cli": "SAN CARLOS", "telefo_cli": "3401447        ", "email_cli": ""}, {"codigo_cli": "005583", "nombre_cli": "SUAREZ JORGE", "razsoc_cli": "SUAREZ JORGE", "rucci_cli": "1700116039", "direcc_cli": "                   real audiencia", "telefo_cli": "2404066        ", "email_cli": ""}, {"codigo_cli": "005584", "nombre_cli": "SUAREZ JORGE RENE", "razsoc_cli": "SUAREZ JORGE RENE", "rucci_cli": "1700699299", "direcc_cli": "CARAPUNGO", "telefo_cli": "2424987        ", "email_cli": ""}, {"codigo_cli": "005585", "nombre_cli": "SUAREZ MARCELO", "razsoc_cli": "SUAREZ MARCELO", "rucci_cli": "1001915360", "direcc_cli": "CARCELEN", "telefo_cli": "0995025121     ", "email_cli": ""}, {"codigo_cli": "005586", "nombre_cli": "SUAREZ SILVIA", "razsoc_cli": "SUAREZ SILVIA", "rucci_cli": "1712475241", "direcc_cli": "COFAVI", "telefo_cli": "2400900        ", "email_cli": ""}, {"codigo_cli": "005587", "nombre_cli": "SUAREZ URREA VICTOR", "razsoc_cli": "SUAREZ URREA VICTOR", "rucci_cli": "1792680964001", "direcc_cli": "BAKER", "telefo_cli": "0983189706     ", "email_cli": ""}, {"codigo_cli": "005588", "nombre_cli": "SUAREZ VALLEJO ANA", "razsoc_cli": "SUAREZ VALLEJO ANA", "rucci_cli": "1002045506", "direcc_cli": "COFAVI", "telefo_cli": "               ", "email_cli": ""}, {"codigo_cli": "005589", "nombre_cli": "SUAREZ VERONICA", "razsoc_cli": "SUAREZ VERONICA", "rucci_cli": "1712087863", "direcc_cli": "JUAN MOLINEROS", "telefo_cli": "3283494        ", "email_cli": ""}, {"codigo_cli": "006215", "nombre_cli": "SUAREZ PAOLA", "razsoc_cli": "SUAREZ PAOLA", "rucci_cli": "1002880605", "direcc_cli": "LOS LAURELES", "telefo_cli": "               ", "email_cli": "pololita_suarez@hotmail.com"}, {"codigo_cli": "006659", "nombre_cli": "SUAREZ MARIA SOLEDAD", "razsoc_cli": "SUAREZ MARIA SOLEDAD", "rucci_cli": "1710412170", "direcc_cli": "CALIFORNIA ALTA", "telefo_cli": "               ", "email_cli": "gchiribogav@yahoo.com"}, {"codigo_cli": "006674", "nombre_cli": "SUAREZ MARLENE", "razsoc_cli": "SUAREZ MARLENE", "rucci_cli": "1710352624001", "direcc_cli": "AV. PEDRO  PINTO CASALES SAN PERO LULUNCOTO", "telefo_cli": "               ", "email_cli": "krutskaya@gmail.com"}, {"codigo_cli": "006679", "nombre_cli": "SUAREZ LIDA", "razsoc_cli": "SUAREZ LIDA", "rucci_cli": "1800006023", "direcc_cli": "JIPIJAPA", "telefo_cli": "               ", "email_cli": "robertocruz_n99@hotmail.com"}, {"codigo_cli": "006743", "nombre_cli": "SUAREZ ANGELITA", "razsoc_cli": "SUAREZ ANGELITA", "rucci_cli": "1719083816", "direcc_cli": "CARCELEN", "telefo_cli": "               ", "email_cli": "angelitasuarez24@hotmail.com"}]
+select * from client where (rucci_cli like '%suarez%' or codigo_cli LIKE'%suarez%' or nombre_cli like '%suarez%' and empresa_id=10004 )
+[{"codigo_cli": "001439", "nombre_cli": "MONTENEGRO SUAREZ  PAULINA", "razsoc_cli": "MONTENEGRO SUAREZ  PAULINA", "rucci_cli": "1714746821", "direcc_cli": "SAN BARTOLO", "telefo_cli": "26885892       ", "email_cli": "pauly.montenegro.29@hotmail.com"}, {"codigo_cli": "002157", "nombre_cli": "SUAREZ AMALIA", "razsoc_cli": "SUAREZ AMALIA", "rucci_cli": "1711425072", "direcc_cli": "Udla Granados", "telefo_cli": "099529727      ", "email_cli": "amalia.suarez@udla.edu.ec"}, {"codigo_cli": "002158", "nombre_cli": "SUAREZ ANGEL", "razsoc_cli": "SUAREZ ANGEL", "rucci_cli": "1708334246", "direcc_cli": "PUENGASI", "telefo_cli": "023190338      ", "email_cli": "fernandosuarez1105@gmail.com"}, {"codigo_cli": "002159", "nombre_cli": "SUAREZ GORDON RUTH", "razsoc_cli": "SUAREZ GORDON RUTH", "rucci_cli": "1715030852", "direcc_cli": "calderon", "telefo_cli": "28212984       ", "email_cli": ""}, {"codigo_cli": "002160", "nombre_cli": "SUAREZ ISABEL", "razsoc_cli": "SUAREZ ISABEL", "rucci_cli": "1791990447001", "direcc_cli": "san carlos", "telefo_cli": "6005475        ", "email_cli": ""}, {"codigo_cli": "002161", "nombre_cli": "SUAREZ JONATHAN", "razsoc_cli": "SUAREZ JONATHAN", "rucci_cli": "1718347725", "direcc_cli": "carcelen", "telefo_cli": "3813505        ", "email_cli": ""}, {"codigo_cli": "002162", "nombre_cli": "SUAREZ LETTY", "razsoc_cli": "SUAREZ LETTY", "rucci_cli": "1704535036", "direcc_cli": "Hernandez de Giron OE5-75 y Pedregal", "telefo_cli": "2439144        ", "email_cli": ""}, {"codigo_cli": "002163", "nombre_cli": "SUAREZ MARISOL", "razsoc_cli": "SUAREZ MARISOL", "rucci_cli": "1802433696", "direcc_cli": "Puente 3", "telefo_cli": "2835678        ", "email_cli": ""}, {"codigo_cli": "002164", "nombre_cli": "SUAREZ RUTH", "razsoc_cli": "SUAREZ RUTH", "rucci_cli": "1708380405", "direcc_cli": "mena 2", "telefo_cli": "2847460        ", "email_cli": "delpilar.ruth@yahoo.com"}, {"codigo_cli": "002661", "nombre_cli": "SUAREZ VERONICA", "razsoc_cli": "SUAREZ VERONICA", "rucci_cli": "1719341537", "direcc_cli": "COMITE DEL PUEBLO", "telefo_cli": "023452828      ", "email_cli": "andre.alexia@hotmail.com"}, {"codigo_cli": "002836", "nombre_cli": "SUAREZ XAVIER", "razsoc_cli": "SUAREZ XAVIER", "rucci_cli": "1710428770", "direcc_cli": "la gasca", "telefo_cli": "               ", "email_cli": "xasu1@yahoo.es"}, {"codigo_cli": "002935", "nombre_cli": "SUAREZ GABRIEL", "razsoc_cli": "SUAREZ GABRIEL", "rucci_cli": "1702843671", "direcc_cli": "NUEVA GRANIZADA", "telefo_cli": "               ", "email_cli": "grabrielsuarez43@yahoo.es"}, {"codigo_cli": "004805", "nombre_cli": "MORETA SUAREZ FERNANDO", "razsoc_cli": "MORETA SUAREZ FERNANDO", "rucci_cli": "0501136733001", "direcc_cli": "AV AMERICA 41-68 Y VERACRUZ", "telefo_cli": "2433107        ", "email_cli": ""}, {"codigo_cli": "005582", "nombre_cli": "SUAREZ ISABEL", "razsoc_cli": "SUAREZ ISABEL", "rucci_cli": "1722300736001", "direcc_cli": "SAN CARLOS", "telefo_cli": "3401447        ", "email_cli": ""}, {"codigo_cli": "005583", "nombre_cli": "SUAREZ JORGE", "razsoc_cli": "SUAREZ JORGE", "rucci_cli": "1700116039", "direcc_cli": "                   real audiencia", "telefo_cli": "2404066        ", "email_cli": ""}, {"codigo_cli": "005584", "nombre_cli": "SUAREZ JORGE RENE", "razsoc_cli": "SUAREZ JORGE RENE", "rucci_cli": "1700699299", "direcc_cli": "CARAPUNGO", "telefo_cli": "2424987        ", "email_cli": ""}, {"codigo_cli": "005585", "nombre_cli": "SUAREZ MARCELO", "razsoc_cli": "SUAREZ MARCELO", "rucci_cli": "1001915360", "direcc_cli": "CARCELEN", "telefo_cli": "0995025121     ", "email_cli": ""}, {"codigo_cli": "005586", "nombre_cli": "SUAREZ SILVIA", "razsoc_cli": "SUAREZ SILVIA", "rucci_cli": "1712475241", "direcc_cli": "COFAVI", "telefo_cli": "2400900        ", "email_cli": ""}, {"codigo_cli": "005587", "nombre_cli": "SUAREZ URREA VICTOR", "razsoc_cli": "SUAREZ URREA VICTOR", "rucci_cli": "1792680964001", "direcc_cli": "BAKER", "telefo_cli": "0983189706     ", "email_cli": ""}, {"codigo_cli": "005588", "nombre_cli": "SUAREZ VALLEJO ANA", "razsoc_cli": "SUAREZ VALLEJO ANA", "rucci_cli": "1002045506", "direcc_cli": "COFAVI", "telefo_cli": "               ", "email_cli": ""}, {"codigo_cli": "005589", "nombre_cli": "SUAREZ VERONICA", "razsoc_cli": "SUAREZ VERONICA", "rucci_cli": "1712087863", "direcc_cli": "JUAN MOLINEROS", "telefo_cli": "3283494        ", "email_cli": ""}, {"codigo_cli": "006215", "nombre_cli": "SUAREZ PAOLA", "razsoc_cli": "SUAREZ PAOLA", "rucci_cli": "1002880605", "direcc_cli": "LOS LAURELES", "telefo_cli": "               ", "email_cli": "pololita_suarez@hotmail.com"}, {"codigo_cli": "006659", "nombre_cli": "SUAREZ MARIA SOLEDAD", "razsoc_cli": "SUAREZ MARIA SOLEDAD", "rucci_cli": "1710412170", "direcc_cli": "CALIFORNIA ALTA", "telefo_cli": "               ", "email_cli": "gchiribogav@yahoo.com"}, {"codigo_cli": "006674", "nombre_cli": "SUAREZ MARLENE", "razsoc_cli": "SUAREZ MARLENE", "rucci_cli": "1710352624001", "direcc_cli": "AV. PEDRO  PINTO CASALES SAN PERO LULUNCOTO", "telefo_cli": "               ", "email_cli": "krutskaya@gmail.com"}, {"codigo_cli": "006679", "nombre_cli": "SUAREZ LIDA", "razsoc_cli": "SUAREZ LIDA", "rucci_cli": "1800006023", "direcc_cli": "JIPIJAPA", "telefo_cli": "               ", "email_cli": "robertocruz_n99@hotmail.com"}, {"codigo_cli": "006743", "nombre_cli": "SUAREZ ANGELITA", "razsoc_cli": "SUAREZ ANGELITA", "rucci_cli": "1719083816", "direcc_cli": "CARCELEN", "telefo_cli": "               ", "email_cli": "angelitasuarez24@hotmail.com"}]
+10004
+SELECT agenci_id,direcc_age,nombre_age FROM agenci WHERE(empresa_id=10004)
+select * from client where (rucci_cli like '%alberto%' or codigo_cli LIKE'%alberto%' or nombre_cli like '%alberto%' and empresa_id=10004 )
+[{"codigo_cli": "000304", "nombre_cli": "BRIONES MUENTES LUIS ALBERTO", "razsoc_cli": "BRIONES MUENTES LUIS ALBERTO", "rucci_cli": "0703428557001", "direcc_cli": "Pasaje S14 C2 45 y Jose Peralta", "telefo_cli": "2613181        ", "email_cli": "luisbriones77@hotmail.com"}, {"codigo_cli": "000460", "nombre_cli": "CASTILLO JAIME ALBERTO", "razsoc_cli": "CASTILLO JAIME ALBERTO", "rucci_cli": "1708588353", "direcc_cli": "SOLCA", "telefo_cli": "099190262      ", "email_cli": ""}, {"codigo_cli": "000581", "nombre_cli": "CONDOR GUALCO CARLOS ALBERTO", "razsoc_cli": "CONDOR GUALCO CARLOS ALBERTO", "rucci_cli": "1711290930", "direcc_cli": "COTOCOLLAO", "telefo_cli": "2494635        ", "email_cli": ""}, {"codigo_cli": "000651", "nombre_cli": "CUMBE ALBERTO", "razsoc_cli": "CUMBE ALBERTO", "rucci_cli": "1705282927001", "direcc_cli": "comite del pueblo", "telefo_cli": "099792349      ", "email_cli": ""}, {"codigo_cli": "001176", "nombre_cli": "JORDAN ALBERTO", "razsoc_cli": "JORDAN ALBERTO", "rucci_cli": "1755664834001", "direcc_cli": "solca", "telefo_cli": "099542177      ", "email_cli": ""}, {"codigo_cli": "001237", "nombre_cli": "LINERO ADALBERTO", "razsoc_cli": "LINERO ADALBERTO", "rucci_cli": "1130600764", "direcc_cli": "nayon", "telefo_cli": "096750738      ", "email_cli": ""}, {"codigo_cli": "001697", "nombre_cli": "PEREZ ALBERTO", "razsoc_cli": "PEREZ ALBERTO", "rucci_cli": "1704383718", "direcc_cli": "MAGDALENA", "telefo_cli": "2641285        ", "email_cli": ""}, {"codigo_cli": "001984", "nombre_cli": "ROSERO ALBERTO", "razsoc_cli": "ROSERO ALBERTO", "rucci_cli": "1708707748", "direcc_cli": "los laureles", "telefo_cli": "3344064        ", "email_cli": ""}, {"codigo_cli": "003514", "nombre_cli": "CARDONO OREJUELA CARLOS ALBERTO", "razsoc_cli": "CARDONO OREJUELA CARLOS ALBERTO", "rucci_cli": "0103993153", "direcc_cli": "aeronautico", "telefo_cli": "2850051        ", "email_cli": ""}, {"codigo_cli": "003833", "nombre_cli": "DIONISIO LUIS ALBERTO", "razsoc_cli": "DIONISIO LUIS ALBERTO", "rucci_cli": "1704327830001", "direcc_cli": "carcelen", "telefo_cli": "2482396        ", "email_cli": ""}, {"codigo_cli": "003951", "nombre_cli": "FERNANDEZ ALBERTO", "razsoc_cli": "FERNANDEZ ALBERTO", "rucci_cli": "1715204762", "direcc_cli": "RUMINAHUI", "telefo_cli": "5121524        ", "email_cli": ""}, {"codigo_cli": "004151", "nombre_cli": "GUERRA ALBERTO", "razsoc_cli": "GUERRA ALBERTO", "rucci_cli": "1700846361", "direcc_cli": "RUMI\u00d1AHUI", "telefo_cli": "2410967        ", "email_cli": "yudiromerop@yahoo.com"}, {"codigo_cli": "004277", "nombre_cli": "HURTADO  JUAN ALBERTO", "razsoc_cli": "HURTADO  JUAN ALBERTO", "rucci_cli": "1705099263", "direcc_cli": "MITAD DEL MUNDO", "telefo_cli": "09905924703    ", "email_cli": "monica202hurtado@gmail.com"}, {"codigo_cli": "005568", "nombre_cli": "SORIA ALBERTO", "razsoc_cli": "SORIA ALBERTO", "rucci_cli": "1701525303", "direcc_cli": "TUMBACO", "telefo_cli": "               ", "email_cli": ""}, {"codigo_cli": "005727", "nombre_cli": "VALAREZO JORGE ALBERTO", "razsoc_cli": "VALAREZO JORGE ALBERTO", "rucci_cli": "1711093854", "direcc_cli": "Rumi\u00f1ahui", "telefo_cli": "2923490        ", "email_cli": ""}, {"codigo_cli": "006230", "nombre_cli": "JAYA ALBERTO", "razsoc_cli": "JAYA ALBERTO", "rucci_cli": "1714004478", "direcc_cli": "LA RUMI\u00d1AHUI", "telefo_cli": "               ", "email_cli": "beto1929@gmail.com"}, {"codigo_cli": "006725", "nombre_cli": "PINZON ALBERTO", "razsoc_cli": "PINZON ALBERTO", "rucci_cli": "1717885287", "direcc_cli": "PUSUQUI", "telefo_cli": "               ", "email_cli": "ventas@campoequit.com"}]
+codigo es >  044695003809
+codigo es >  7861012500956
+codigo es >  7861012500406
+codigo es >  7861012501366
+{'tipo_pdf': '1', 'empresa_id': '10004', 'ruc': '1791842413001', 'rucComprador': '1711290930', 'clave': '', 'secuencial': '', 'dirMatriz': 'Francelana, Guayacanes N58-118 y José Bustos.', 'fecha': '', 'factura_no': '002-null-', 'razonSocialComprador': 'CONDOR GUALCO CARLOS ALBERTO', 'razonSocial': 'MATADERO Y CARNES FRIAS MACAFRI CIA. LTDA', 'totalCon': '2.4', 'totalSin': '2.13', 'conceptos': '[{"nombre":"LECHE VAINILLA TONI 200ML","cantidad":"1","unitario":"0.71","total":"0.71","impuesto":"Iva 12%"},{"nombre":"LECHE FRUTILLA TONI 200ML","cantidad":"1","unitario":"0.71","total":"0.71","impuesto":"Iva 12%"},{"nombre":"LECHE CHOCOLATE TONI 200ML","cantidad":"1","unitario":"0.71","total":"0.71","impuesto":"Iva 12%"}]', 'total': '2.4'}
+[{'nombre': 'LECHE VAINILLA TONI 200ML', 'cantidad': '1', 'unitario': '0.71', 'total': '0.71', 'impuesto': 'Iva 12%'}, {'nombre': 'LECHE FRUTILLA TONI 200ML', 'cantidad': '1', 'unitario': '0.71', 'total': '0.71', 'impuesto': 'Iva 12%'}, {'nombre': 'LECHE CHOCOLATE TONI 200ML', 'cantidad': '1', 'unitario': '0.71', 'total': '0.71', 'impuesto': 'Iva 12%'}]
+[pdf creator muestra] >> 
+{'nombre': 'LECHE VAINILLA TONI 200ML', 'cantidad': '1', 'unitario': '0.71', 'total': '0.71', 'impuesto': 'Iva 12%'}
+06165842788450974.pdf
+{'tipo_pdf': '2', 'ambiente': '1', 'dirSucursal': '', 'empresa_id': '10004', 'ruc': '1791842413001', 'rucComprador': '1711290930', 'clave': '', 'secuencial': '', 'dirMatriz': 'Francelana, Guayacanes N58-118 y José Bustos.', 'fecha': '', 'razonSocialComprador': 'CONDOR GUALCO CARLOS ALBERTO', 'razonSocial': 'MATADERO Y CARNES FRIAS MACAFRI CIA. LTDA', 'totalCon': '2.4', 'totalSin': '2.13', 'conceptos': '[{"nombre":"LECHE VAINILLA TONI 200ML","unitario":"0.71","cantidad":"1","total":"0.71","impuesto":"Iva 12%","codigo":"7861012501366"},{"nombre":"LECHE FRUTILLA TONI 200ML","unitario":"0.71","cantidad":"1","total":"0.71","impuesto":"Iva 12%","codigo":"7861012500956"},{"nombre":"LECHE CHOCOLATE TONI 200ML","unitario":"0.71","cantidad":"1","total":"0.71","impuesto":"Iva 12%","codigo":"7861012500406"}]', 'total': '2.4'}
+empresa imagen >> 10004
+011405975971191484.pdf
+[get secuencial] >> [('000000002', )]
+000000002
+https://docs.google.com/uc?id=1XRZf492B5xYf2A5srACW7j_sZAuf4gC9&export=download
+[path de centiifcado] > /root/027277041568882776.p12
+[se procesara : xml ] > <?xml version="1.0" encoding="UTF-8"?>
+<factura id="comprobante" version="1.0.0">
+    <infoTributaria>
+    <ambiente>1</ambiente>
+    <tipoEmision>1</tipoEmision>
+    <razonSocial>MATADERO Y CARNES FRIAS MACAFRI CIA. LTDA</razonSocial>
+    <ruc>1791842413001</ruc>
+    <claveAcceso>2204202001179184241300110010010000000021234567810</claveAcceso>
+    <codDoc>01</codDoc>
+    <estab>002</estab>
+    <ptoEmi>00001</ptoEmi>
+    <secuencial>000000002</secuencial>
+    <dirMatriz>Francelana, Guayacanes N58-118 y José Bustos.</dirMatriz>
+  </infoTributaria>
+        <infoFactura>
+    <fechaEmision>22/04/2020</fechaEmision>
+    <dirEstablecimiento>Francelana, Guayacanes N58-118 y José Bustos.</dirEstablecimiento>
+    <obligadoContabilidad>SI</obligadoContabilidad>
+    <tipoIdentificacionComprador>07</tipoIdentificacionComprador>
+    <razonSocialComprador>CONDOR GUALCO CARLOS ALBERTO</razonSocialComprador>
+    <identificacionComprador>9999999999999</identificacionComprador>
+    <totalSinImpuestos>2.13</totalSinImpuestos>
+    <totalDescuento>0.00</totalDescuento>
+    <totalConImpuestos>
+      <totalImpuesto>
+        <codigo>2</codigo>
+        <codigoPorcentaje>2</codigoPorcentaje>
+        <baseImponible>2.13</baseImponible>
+        <tarifa>12</tarifa>
+        <valor>0.27</valor>
+      </totalImpuesto>
+    </totalConImpuestos>
+    <propina>0</propina>
+    <importeTotal>2.4</importeTotal>
+    <moneda>dolar</moneda>
+    <pagos>
+      <pago>
+        <formaPago>01</formaPago>
+        <total>2.4</total>
+      </pago>
+    </pagos>
+  </infoFactura>
+    <detalles>                          <detalle>
+                          <codigoPrincipal>7861012501366</codigoPrincipal>
+                          <descripcion>LECHE VAINILLA TONI 200ML</descripcion>
+                          <cantidad>1</cantidad>
+                          <precioUnitario>0.71</precioUnitario>
+                          <descuento>0</descuento>
+                          <precioTotalSinImpuesto>0.71</precioTotalSinImpuesto>
+                          <impuestos>
+                            <impuesto>
+                              <codigo>2</codigo>
+                              <codigoPorcentaje>2</codigoPorcentaje>
+                              <tarifa>12.0</tarifa>
+                              <baseImponible>0.71</baseImponible>
+                              <valor>0.09</valor>
+                            </impuesto>
+                          </impuestos>
+                        </detalle>
+                                                    <detalle>
+                          <codigoPrincipal>7861012500956</codigoPrincipal>
+                          <descripcion>LECHE FRUTILLA TONI 200ML</descripcion>
+                          <cantidad>1</cantidad>
+                          <precioUnitario>0.71</precioUnitario>
+                          <descuento>0</descuento>
+                          <precioTotalSinImpuesto>0.71</precioTotalSinImpuesto>
+                          <impuestos>
+                            <impuesto>
+                              <codigo>2</codigo>
+                              <codigoPorcentaje>2</codigoPorcentaje>
+                              <tarifa>12.0</tarifa>
+                              <baseImponible>0.71</baseImponible>
+                              <valor>0.09</valor>
+                            </impuesto>
+                          </impuestos>
+                        </detalle>
+                                                    <detalle>
+                          <codigoPrincipal>7861012500406</codigoPrincipal>
+                          <descripcion>LECHE CHOCOLATE TONI 200ML</descripcion>
+                          <cantidad>1</cantidad>
+                          <precioUnitario>0.71</precioUnitario>
+                          <descuento>0</descuento>
+                          <precioTotalSinImpuesto>0.71</precioTotalSinImpuesto>
+                          <impuestos>
+                            <impuesto>
+                              <codigo>2</codigo>
+                              <codigoPorcentaje>2</codigoPorcentaje>
+                              <tarifa>12.0</tarifa>
+                              <baseImponible>0.71</baseImponible>
+                              <valor>0.09</valor>
+                            </impuesto>
+                          </impuestos>
+                        </detalle>
+                          </detalles> 
+ </factura>
+[se procesara : path12 ] > /root/027277041568882776.p12
+[se procesara : pwd ] > Fielec26..
+[enviador > ]
+{
+    'estado': 'DEVUELTA',
+    'comprobantes': {
+        'comprobante': [
+            {
+                'claveAcceso': '2204202001179184241300110010010000000021234567810',
+                'mensajes': {
+                    'mensaje': [
+                        {
+                            'identificador': '35',
+                            'mensaje': 'ARCHIVO NO CUMPLE ESTRUCTURA XML',
+                            'informacionAdicional': "Se encontró el siguiente error en la estructura del comprobante: cvc-pattern-valid: Value '00001' is not facet-valid with respect to pattern '[0-9]{3}' for type 'puntoEmision'..",
+                            'tipo': 'ERROR'
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
+{
+    'estado': 'DEVUELTA',
+    'comprobantes': {
+        'comprobante': [
+            {
+                'claveAcceso': '2204202001179184241300110010010000000021234567810',
+                'mensajes': {
+                    'mensaje': [
+                        {
+                            'identificador': '35',
+                            'mensaje': 'ARCHIVO NO CUMPLE ESTRUCTURA XML',
+                            'informacionAdicional': "Se encontró el siguiente error en la estructura del comprobante: cvc-pattern-valid: Value '00001' is not facet-valid with respect to pattern '[0-9]{3}' for type 'puntoEmision'..",
+                            'tipo': 'ERROR'
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}[2020-04-22 05:31:15 +0000] [630] [CRITICAL] WORKER TIMEOUT (pid:638)
+[2020-04-22 05:31:15 +0000] [638] [INFO] Worker exiting (pid: 638)
+
+{'tipo_pdf': '1', 'empresa_id': '10004', 'ruc': '1791842413001', 'rucComprador': '1704535036', 'clave': '', 'secuencial': '', 'dirMatriz': 'Francelana, Guayacanes N58-118 y José Bustos.', 'fecha': '', 'factura_no': '001-null-', 'razonSocialComprador': 'SUAREZ LETTY', 'razonSocial': 'MATADERO Y CARNES FRIAS MACAFRI CIA. LTDA', 'totalCon': '0.0', 'totalSin': '1.92', 'conceptos': '[{"nombre":"FREJOL CON TOCINO FACUNDO 300GR","cantidad":"1","unitario":"1.92","total":"1.92","impuesto":"Iva 12%"}]', 'total': '0.0'}
+[{'nombre': 'FREJOL CON TOCINO FACUNDO 300GR', 'cantidad': '1', 'unitario': '1.92', 'total': '1.92', 'impuesto': 'Iva 12%'}]
+[pdf creator muestra] >> 
+{'nombre': 'FREJOL CON TOCINO FACUNDO 300GR', 'cantidad': '1', 'unitario': '1.92', 'total': '1.92', 'impuesto': 'Iva 12%'}
+06706805190800581.pdf
+codigo es >  044695003793
+{'tipo_pdf': '2', 'ambiente': '1', 'dirSucursal': '', 'empresa_id': '10004', 'ruc': '1791842413001', 'rucComprador': '1704535036', 'clave': '', 'secuencial': '', 'dirMatriz': 'Francelana, Guayacanes N58-118 y José Bustos.', 'fecha': '', 'razonSocialComprador': 'SUAREZ LETTY', 'razonSocial': 'MATADERO Y CARNES FRIAS MACAFRI CIA. LTDA', 'totalCon': '0.0', 'totalSin': '1.92', 'conceptos': '[{"nombre":"FREJOL CON TOCINO FACUNDO 300GR","unitario":"1.92","cantidad":"1","total":"1.92","impuesto":"Iva 12%","codigo":"044695003809"}]', 'total': '0.0'}
+empresa imagen >> 10004
+03061332509003116.pdf
+{'tipo_pdf': '2', 'ambiente': '1', 'dirSucursal': 'Francelana, Guayacanes N58-118 y José Bustos.', 'empresa_id': '10004', 'ruc': '1791842413001', 'rucComprador': '1711290930', 'clave': '2204202001179184241300110010010000000021234567810', 'secuencial': '000000002', 'dirMatriz': 'Francelana, Guayacanes N58-118 y José Bustos.', 'fecha': '22/04/2020', 'razonSocialComprador': 'CONDOR GUALCO CARLOS ALBERTO', 'razonSocial': 'MATADERO Y CARNES FRIAS MACAFRI CIA. LTDA', 'totalCon': '2.4', 'totalSin': '2.13', 'conceptos': '[]', 'total': '2.4'}
+empresa imagen >> 10004
+044916774039842333.pdf
+{'tipo_pdf': '2', 'ambiente': '1', 'dirSucursal': '', 'empresa_id': '10004', 'ruc': '1791842413001', 'rucComprador': '1704535036', 'clave': '', 'secuencial': '', 'dirMatriz': 'Francelana, Guayacanes N58-118 y José Bustos.', 'fecha': '', 'razonSocialComprador': 'SUAREZ LETTY', 'razonSocial': 'MATADERO Y CARNES FRIAS MACAFRI CIA. LTDA', 'totalCon': '0.0', 'totalSin': '1.92', 'conceptos': '[{"nombre":"FREJOL CON TOCINO FACUNDO 300GR","unitario":"1.92","cantidad":"1","total":"1.92","impuesto":"Iva 12%","codigo":"044695003809"}]', 'total': '0.0'}
+empresa imagen >> 10004
+012278282515379613.pdf
+[get secuencial] >> [('0000000000', )]
+0000000000
+https://docs.google.com/uc?id=1XRZf492B5xYf2A5srACW7j_sZAuf4gC9&export=download
+[path de centiifcado] > /root/004112198693987379.p12
+[se procesara : xml ] > <?xml version="1.0" encoding="UTF-8"?>
+<factura id="comprobante" version="1.0.0">
+    <infoTributaria>
+    <ambiente>1</ambiente>
+    <tipoEmision>1</tipoEmision>
+    <razonSocial>MATADERO Y CARNES FRIAS MACAFRI CIA. LTDA</razonSocial>
+    <ruc>1791842413001</ruc>
+    <claveAcceso>2204202001179184241300110010010000000001234567810</claveAcceso>
+    <codDoc>01</codDoc>
+    <estab>001</estab>
+    <ptoEmi>00001</ptoEmi>
+    <secuencial>000000000</secuencial>
+    <dirMatriz>Francelana, Guayacanes N58-118 y José Bustos.</dirMatriz>
+  </infoTributaria>
+        <infoFactura>
+    <fechaEmision>22/04/2020</fechaEmision>
+    <dirEstablecimiento>Francelana, Guayacanes N58-118 y José Bustos.</dirEstablecimiento>
+    <obligadoContabilidad>SI</obligadoContabilidad>
+    <tipoIdentificacionComprador>07</tipoIdentificacionComprador>
+    <razonSocialComprador>SUAREZ LETTY</razonSocialComprador>
+    <identificacionComprador>9999999999999</identificacionComprador>
+    <totalSinImpuestos>1.92</totalSinImpuestos>
+    <totalDescuento>0.00</totalDescuento>
+    <totalConImpuestos>
+      <totalImpuesto>
+        <codigo>2</codigo>
+        <codigoPorcentaje>2</codigoPorcentaje>
+        <baseImponible>1.92</baseImponible>
+        <tarifa>12</tarifa>
+        <valor>0.23</valor>
+      </totalImpuesto>
+    </totalConImpuestos>
+    <propina>0</propina>
+    <importeTotal>2.15</importeTotal>
+    <moneda>dolar</moneda>
+    <pagos>
+      <pago>
+        <formaPago>01</formaPago>
+        <total>2.15</total>
+      </pago>
+    </pagos>
+  </infoFactura>
+    <detalles>                          <detalle>
+                          <codigoPrincipal>044695003809</codigoPrincipal>
+                          <descripcion>FREJOL CON TOCINO FACUNDO 300GR</descripcion>
+                          <cantidad>1</cantidad>
+                          <precioUnitario>1.92</precioUnitario>
+                          <descuento>0</descuento>
+                          <precioTotalSinImpuesto>1.92</precioTotalSinImpuesto>
+                          <impuestos>
+                            <impuesto>
+                              <codigo>2</codigo>
+                              <codigoPorcentaje>2</codigoPorcentaje>
+                              <tarifa>12.0</tarifa>
+                              <baseImponible>1.92</baseImponible>
+                              <valor>0.23</valor>
+                            </impuesto>
+                          </impuestos>
+                        </detalle>
+                          </detalles> 
+ </factura>
+[se procesara : path12 ] > /root/004112198693987379.p12
+[se procesara : pwd ] > Fielec26..
+[2020-04-22 05:31:15 +0000] [721] [INFO] Booting worker with pid: 721
+<pyodbc.Connection object at 0x7f99917a98a0>
+[get secuencial] >> [('0000000000', )]
+0000000000
+https://docs.google.com/uc?id=1XRZf492B5xYf2A5srACW7j_sZAuf4gC9&export=download
+[path de centiifcado] > /root/34804393117387755.p12
+[se procesara : xml ] > <?xml version="1.0" encoding="UTF-8"?>
+<factura id="comprobante" version="1.0.0">
+    <infoTributaria>
+    <ambiente>1</ambiente>
+    <tipoEmision>1</tipoEmision>
+    <razonSocial>MATADERO Y CARNES FRIAS MACAFRI CIA. LTDA</razonSocial>
+    <ruc>1791842413001</ruc>
+    <claveAcceso>2204202001179184241300110010010000000001234567810</claveAcceso>
+    <codDoc>01</codDoc>
+    <estab>001</estab>
+    <ptoEmi>00001</ptoEmi>
+    <secuencial>000000000</secuencial>
+    <dirMatriz>Francelana, Guayacanes N58-118 y José Bustos.</dirMatriz>
+  </infoTributaria>
+        <infoFactura>
+    <fechaEmision>22/04/2020</fechaEmision>
+    <dirEstablecimiento>Francelana, Guayacanes N58-118 y José Bustos.</dirEstablecimiento>
+    <obligadoContabilidad>SI</obligadoContabilidad>
+    <tipoIdentificacionComprador>07</tipoIdentificacionComprador>
+    <razonSocialComprador>SUAREZ LETTY</razonSocialComprador>
+    <identificacionComprador>9999999999999</identificacionComprador>
+    <totalSinImpuestos>1.92</totalSinImpuestos>
+    <totalDescuento>0.00</totalDescuento>
+    <totalConImpuestos>
+      <totalImpuesto>
+        <codigo>2</codigo>
+        <codigoPorcentaje>2</codigoPorcentaje>
+        <baseImponible>1.92</baseImponible>
+        <tarifa>12</tarifa>
+        <valor>0.23</valor>
+      </totalImpuesto>
+    </totalConImpuestos>
+    <propina>0</propina>
+    <importeTotal>2.15</importeTotal>
+    <moneda>dolar</moneda>
+    <pagos>
+      <pago>
+        <formaPago>01</formaPago>
+        <total>2.15</total>
+      </pago>
+    </pagos>
+  </infoFactura>
+    <detalles>                          <detalle>
+                          <codigoPrincipal>044695003809</codigoPrincipal>
+                          <descripcion>FREJOL CON TOCINO FACUNDO 300GR</descripcion>
+                          <cantidad>1</cantidad>
+                          <precioUnitario>1.92</precioUnitario>
+                          <descuento>0</descuento>
+                          <precioTotalSinImpuesto>1.92</precioTotalSinImpuesto>
+                          <impuestos>
+                            <impuesto>
+                              <codigo>2</codigo>
+                              <codigoPorcentaje>2</codigoPorcentaje>
+                              <tarifa>12.0</tarifa>
+                              <baseImponible>1.92</baseImponible>
+                              <valor>0.23</valor>
+                            </impuesto>
+                          </impuestos>
+                        </detalle>
+                          </detalles> 
+ </factura>
+[se procesara : path12 ] > /root/34804393117387755.p12
+[se procesara : pwd ] > Fielec26..
+[enviador > ]
+{
+    'estado': 'DEVUELTA',
+    'comprobantes': {
+        'comprobante': [
+            {
+                'claveAcceso': '2204202001179184241300110010010000000001234567810',
+                'mensajes': {
+                    'mensaje': [
+                        {
+                            'identificador': '35',
+                            'mensaje': 'ARCHIVO NO CUMPLE ESTRUCTURA XML',
+                            'informacionAdicional': "Se encontró el siguiente error en la estructura del comprobante: cvc-pattern-valid: Value '00001' is not facet-valid with respect to pattern '[0-9]{3}' for type 'puntoEmision'..",
+                            'tipo': 'ERROR'
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
+{
+    'estado': 'DEVUELTA',
+    'comprobantes': {
+        'comprobante': [
+            {
+                'claveAcceso': '2204202001179184241300110010010000000001234567810',
+                'mensajes': {
+                    'mensaje': [
+                        {
+                            'identificador': '35',
+                            'mensaje': 'ARCHIVO NO CUMPLE ESTRUCTURA XML',
+                            'informacionAdicional': "Se encontró el siguiente error en la estructura del comprobante: cvc-pattern-valid: Value '00001' is not facet-valid with respect to pattern '[0-9]{3}' for type 'puntoEmision'..",
+                            'tipo': 'ERROR'
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
+codigo es >  7861012509782
+codigo es >  7861012505456
+codigo es >   7861012509805
+{'tipo_pdf': '1', 'empresa_id': '10004', 'ruc': '1791842413001', 'rucComprador': '1704535036', 'clave': '2204202001179184241300110010010000000001234567810', 'secuencial': '000000000', 'dirMatriz': 'Francelana, Guayacanes N58-118 y José Bustos.', 'fecha': '22/04/2020', 'factura_no': '001-null-000000000', 'razonSocialComprador': 'SUAREZ LETTY', 'razonSocial': 'MATADERO Y CARNES FRIAS MACAFRI CIA. LTDA', 'totalCon': '2.45', 'totalSin': '2.45', 'conceptos': '[{"nombre":"YOGURT TONI MIX DURAZNO","cantidad":"1","unitario":"0.85","total":"0.85","impuesto":"Iva 0%"},{"nombre":"YOGURT TONI MIX FRUTILLA","cantidad":"1","unitario":"0.85","total":"0.85","impuesto":"Iva 0%"},{"nombre":"YOGURT TONI MORA 200G","cantidad":"1","unitario":"0.75","total":"0.75","impuesto":"Iva 0%"}]', 'total': '2.45'}
+[{'nombre': 'YOGURT TONI MIX DURAZNO', 'cantidad': '1', 'unitario': '0.85', 'total': '0.85', 'impuesto': 'Iva 0%'}, {'nombre': 'YOGURT TONI MIX FRUTILLA', 'cantidad': '1', 'unitario': '0.85', 'total': '0.85', 'impuesto': 'Iva 0%'}, {'nombre': 'YOGURT TONI MORA 200G', 'cantidad': '1', 'unitario': '0.75', 'total': '0.75', 'impuesto': 'Iva 0%'}]
+[pdf creator muestra] >> 
+{'nombre': 'YOGURT TONI MIX DURAZNO', 'cantidad': '1', 'unitario': '0.85', 'total': '0.85', 'impuesto': 'Iva 0%'}
+09499420755229611.pdf
+{'tipo_pdf': '2', 'ambiente': '1', 'dirSucursal': 'Francelana, Guayacanes N58-118 y José Bustos.', 'empresa_id': '10004', 'ruc': '1791842413001', 'rucComprador': '1704535036', 'clave': '2204202001179184241300110010010000000001234567810', 'secuencial': '000000000', 'dirMatriz': 'Francelana, Guayacanes N58-118 y José Bustos.', 'fecha': '22/04/2020', 'razonSocialComprador': 'SUAREZ LETTY', 'razonSocial': 'MATADERO Y CARNES FRIAS MACAFRI CIA. LTDA', 'totalCon': '2.45', 'totalSin': '2.45', 'conceptos': '[{"nombre":"YOGURT TONI MIX DURAZNO","unitario":"0.85","cantidad":"1","total":"0.85","impuesto":"Iva 0%","codigo":" 7861012509805"},{"nombre":"YOGURT TONI MIX FRUTILLA","unitario":"0.85","cantidad":"1","total":"0.85","impuesto":"Iva 0%","codigo":"7861012509782"},{"nombre":"YOGURT TONI MORA 200G","unitario":"0.75","cantidad":"1","total":"0.75","impuesto":"Iva 0%","codigo":"7861012505456"}]', 'total': '2.45'}
+empresa imagen >> 10004
+03089143594147816.pdf
+[get secuencial] >> [('0000000000', )]
+0000000000
+https://docs.google.com/uc?id=1XRZf492B5xYf2A5srACW7j_sZAuf4gC9&export=download
+[path de centiifcado] > /root/026136109889562276.p12
+[se procesara : xml ] > <?xml version="1.0" encoding="UTF-8"?>
+<factura id="comprobante" version="1.0.0">
+    <infoTributaria>
+    <ambiente>1</ambiente>
+    <tipoEmision>1</tipoEmision>
+    <razonSocial>MATADERO Y CARNES FRIAS MACAFRI CIA. LTDA</razonSocial>
+    <ruc>1791842413001</ruc>
+    <claveAcceso>2204202001179184241300110010010000000001234567810</claveAcceso>
+    <codDoc>01</codDoc>
+    <estab>001</estab>
+    <ptoEmi>00001</ptoEmi>
+    <secuencial>000000000</secuencial>
+    <dirMatriz>Francelana, Guayacanes N58-118 y José Bustos.</dirMatriz>
+  </infoTributaria>
+        <infoFactura>
+    <fechaEmision>22/04/2020</fechaEmision>
+    <dirEstablecimiento>Francelana, Guayacanes N58-118 y José Bustos.</dirEstablecimiento>
+    <obligadoContabilidad>SI</obligadoContabilidad>
+    <tipoIdentificacionComprador>07</tipoIdentificacionComprador>
+    <razonSocialComprador>SUAREZ LETTY</razonSocialComprador>
+    <identificacionComprador>9999999999999</identificacionComprador>
+    <totalSinImpuestos>2.45</totalSinImpuestos>
+    <totalDescuento>0.00</totalDescuento>
+    <totalConImpuestos>
+      <totalImpuesto>
+        <codigo>2</codigo>
+        <codigoPorcentaje>2</codigoPorcentaje>
+        <baseImponible>2.45</baseImponible>
+        <tarifa>12</tarifa>
+        <valor>0.0</valor>
+      </totalImpuesto>
+    </totalConImpuestos>
+    <propina>0</propina>
+    <importeTotal>2.45</importeTotal>
+    <moneda>dolar</moneda>
+    <pagos>
+      <pago>
+        <formaPago>01</formaPago>
+        <total>2.45</total>
+      </pago>
+    </pagos>
+  </infoFactura>
+    <detalles>                          <detalle>
+                          <codigoPrincipal> 7861012509805</codigoPrincipal>
+                          <descripcion>YOGURT TONI MIX DURAZNO</descripcion>
+                          <cantidad>1</cantidad>
+                          <precioUnitario>0.85</precioUnitario>
+                          <descuento>0</descuento>
+                          <precioTotalSinImpuesto>0.85</precioTotalSinImpuesto>
+                          <impuestos>
+                            <impuesto>
+                              <codigo>2</codigo>
+                              <codigoPorcentaje>2</codigoPorcentaje>
+                              <tarifa>0.0</tarifa>
+                              <baseImponible>0.85</baseImponible>
+                              <valor>0.0</valor>
+                            </impuesto>
+                          </impuestos>
+                        </detalle>
+                                                    <detalle>
+                          <codigoPrincipal>7861012509782</codigoPrincipal>
+                          <descripcion>YOGURT TONI MIX FRUTILLA</descripcion>
+                          <cantidad>1</cantidad>
+                          <precioUnitario>0.85</precioUnitario>
+                          <descuento>0</descuento>
+                          <precioTotalSinImpuesto>0.85</precioTotalSinImpuesto>
+                          <impuestos>
+                            <impuesto>
+                              <codigo>2</codigo>
+                              <codigoPorcentaje>2</codigoPorcentaje>
+                              <tarifa>0.0</tarifa>
+                              <baseImponible>0.85</baseImponible>
+                              <valor>0.0</valor>
+                            </impuesto>
+                          </impuestos>
+                        </detalle>
+                                                    <detalle>
+                          <codigoPrincipal>7861012505456</codigoPrincipal>
+                          <descripcion>YOGURT TONI MORA 200G</descripcion>
+                          <cantidad>1</cantidad>
+                          <precioUnitario>0.75</precioUnitario>
+                          <descuento>0</descuento>
+                          <precioTotalSinImpuesto>0.75</precioTotalSinImpuesto>
+                          <impuestos>
+                            <impuesto>
+                              <codigo>2</codigo>
+                              <codigoPorcentaje>2</codigoPorcentaje>
+                              <tarifa>0.0</tarifa>
+                              <baseImponible>0.75</baseImponible>
+                              <valor>0.0</valor>
+                            </impuesto>
+                          </impuestos>
+                        </detalle>
+                          </detalles> 
+ </factura>
+[se procesara : path12 ] > /root/026136109889562276.p12
+[se procesara : pwd ] > Fielec26..
+[enviador > ]
+{
+    'estado': 'DEVUELTA',
+    'comprobantes': {
+        'comprobante': [
+            {
+                'claveAcceso': '2204202001179184241300110010010000000001234567810',
+                'mensajes': {
+                    'mensaje': [
+                        {
+                            'identificador': '35',
+                            'mensaje': 'ARCHIVO NO CUMPLE ESTRUCTURA XML',
+                            'informacionAdicional': "Se encontró el siguiente error en la estructura del comprobante: cvc-pattern-valid: Value '00001' is not facet-valid with respect to pattern '[0-9]{3}' for type 'puntoEmision'..",
+                            'tipo': 'ERROR'
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
+{
+    'estado': 'DEVUELTA',
+    'comprobantes': {
+        'comprobante': [
+            {
+                'claveAcceso': '2204202001179184241300110010010000000001234567810',
+                'mensajes': {
+                    'mensaje': [
+                        {
+                            'identificador': '35',
+                            'mensaje': 'ARCHIVO NO CUMPLE ESTRUCTURA XML',
+                            'informacionAdicional': "Se encontró el siguiente error en la estructura del comprobante: cvc-pattern-valid: Value '00001' is not facet-valid with respect to pattern '[0-9]{3}' for type 'puntoEmision'..",
+                            'tipo': 'ERROR'
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
+[get secuencial] >> [('0000000000', )]
+0000000000
+https://docs.google.com/uc?id=1XRZf492B5xYf2A5srACW7j_sZAuf4gC9&export=download
+[path de centiifcado] > /root/5566232867585472.p12
+[se procesara : xml ] > <?xml version="1.0" encoding="UTF-8"?>
+<factura id="comprobante" version="1.0.0">
+    <infoTributaria>
+    <ambiente>1</ambiente>
+    <tipoEmision>1</tipoEmision>
+    <razonSocial>MATADERO Y CARNES FRIAS MACAFRI CIA. LTDA</razonSocial>
+    <ruc>1791842413001</ruc>
+    <claveAcceso>2204202001179184241300110010010000000001234567810</claveAcceso>
+    <codDoc>01</codDoc>
+    <estab>001</estab>
+    <ptoEmi>00001</ptoEmi>
+    <secuencial>000000000</secuencial>
+    <dirMatriz>Francelana, Guayacanes N58-118 y José Bustos.</dirMatriz>
+  </infoTributaria>
+        <infoFactura>
+    <fechaEmision>22/04/2020</fechaEmision>
+    <dirEstablecimiento>Francelana, Guayacanes N58-118 y José Bustos.</dirEstablecimiento>
+    <obligadoContabilidad>SI</obligadoContabilidad>
+    <tipoIdentificacionComprador>07</tipoIdentificacionComprador>
+    <razonSocialComprador>SUAREZ LETTY</razonSocialComprador>
+    <identificacionComprador>9999999999999</identificacionComprador>
+    <totalSinImpuestos>2.45</totalSinImpuestos>
+    <totalDescuento>0.00</totalDescuento>
+    <totalConImpuestos>
+      <totalImpuesto>
+        <codigo>2</codigo>
+        <codigoPorcentaje>2</codigoPorcentaje>
+        <baseImponible>2.45</baseImponible>
+        <tarifa>12</tarifa>
+        <valor>0.0</valor>
+      </totalImpuesto>
+    </totalConImpuestos>
+    <propina>0</propina>
+    <importeTotal>2.45</importeTotal>
+    <moneda>dolar</moneda>
+    <pagos>
+      <pago>
+        <formaPago>01</formaPago>
+        <total>2.45</total>
+      </pago>
+    </pagos>
+  </infoFactura>
+    <detalles>                          <detalle>
+                          <codigoPrincipal> 7861012509805</codigoPrincipal>
+                          <descripcion>YOGURT TONI MIX DURAZNO</descripcion>
+                          <cantidad>1</cantidad>
+                          <precioUnitario>0.85</precioUnitario>
+                          <descuento>0</descuento>
+                          <precioTotalSinImpuesto>0.85</precioTotalSinImpuesto>
+                          <impuestos>
+                            <impuesto>
+                              <codigo>2</codigo>
+                              <codigoPorcentaje>2</codigoPorcentaje>
+                              <tarifa>0.0</tarifa>
+                              <baseImponible>0.85</baseImponible>
+                              <valor>0.0</valor>
+                            </impuesto>
+                          </impuestos>
+                        </detalle>
+                                                    <detalle>
+                          <codigoPrincipal>7861012509782</codigoPrincipal>
+                          <descripcion>YOGURT TONI MIX FRUTILLA</descripcion>
+                          <cantidad>1</cantidad>
+                          <precioUnitario>0.85</precioUnitario>
+                          <descuento>0</descuento>
+                          <precioTotalSinImpuesto>0.85</precioTotalSinImpuesto>
+                          <impuestos>
+                            <impuesto>
+                              <codigo>2</codigo>
+                              <codigoPorcentaje>2</codigoPorcentaje>
+                              <tarifa>0.0</tarifa>
+                              <baseImponible>0.85</baseImponible>
+                              <valor>0.0</valor>
+                            </impuesto>
+                          </impuestos>
+                        </detalle>
+                                                    <detalle>
+                          <codigoPrincipal>7861012505456</codigoPrincipal>
+                          <descripcion>YOGURT TONI MORA 200G</descripcion>
+                          <cantidad>1</cantidad>
+                          <precioUnitario>0.75</precioUnitario>
+                          <descuento>0</descuento>
+                          <precioTotalSinImpuesto>0.75</precioTotalSinImpuesto>
+                          <impuestos>
+                            <impuesto>
+                              <codigo>2</codigo>
+                              <codigoPorcentaje>2</codigoPorcentaje>
+                              <tarifa>0.0</tarifa>
+                              <baseImponible>0.75</baseImponible>
+                              <valor>0.0</valor>
+                            </impuesto>
+                          </impuestos>
+                        </detalle>
+                          </detalles> 
+ </factura>
+[se procesara : path12 ] > /root/5566232867585472.p12
+[se procesara : pwd ] > Fielec26..
+[enviador > ]
+{
+    'estado': 'DEVUELTA',
+    'comprobantes': {
+        'comprobante': [
+            {
+                'claveAcceso': '2204202001179184241300110010010000000001234567810',
+                'mensajes': {
+                    'mensaje': [
+                        {
+                            'identificador': '35',
+                            'mensaje': 'ARCHIVO NO CUMPLE ESTRUCTURA XML',
+                            'informacionAdicional': "Se encontró el siguiente error en la estructura del comprobante: cvc-pattern-valid: Value '00001' is not facet-valid with respect to pattern '[0-9]{3}' for type 'puntoEmision'..",
+                            'tipo': 'ERROR'
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
+{
+    'estado': 'DEVUELTA',
+    'comprobantes': {
+        'comprobante': [
+            {
+                'claveAcceso': '2204202001179184241300110010010000000001234567810',
+                'mensajes': {
+                    'mensaje': [
+                        {
+                            'identificador': '35',
+                            'mensaje': 'ARCHIVO NO CUMPLE ESTRUCTURA XML',
+                            'informacionAdicional': "Se encontró el siguiente error en la estructura del comprobante: cvc-pattern-valid: Value '00001' is not facet-valid with respect to pattern '[0-9]{3}' for type 'puntoEmision'..",
+                            'tipo': 'ERROR'
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
+[get secuencial] >> [('0000000000', )]
+0000000000
+https://docs.google.com/uc?id=1XRZf492B5xYf2A5srACW7j_sZAuf4gC9&export=download
+[path de centiifcado] > /root/16474783045055819.p12
+[se procesara : xml ] > <?xml version="1.0" encoding="UTF-8"?>
+<factura id="comprobante" version="1.0.0">
+    <infoTributaria>
+    <ambiente>1</ambiente>
+    <tipoEmision>1</tipoEmision>
+    <razonSocial>MATADERO Y CARNES FRIAS MACAFRI CIA. LTDA</razonSocial>
+    <ruc>1791842413001</ruc>
+    <claveAcceso>2204202001179184241300110010010000000001234567810</claveAcceso>
+    <codDoc>01</codDoc>
+    <estab>001</estab>
+    <ptoEmi>00001</ptoEmi>
+    <secuencial>000000000</secuencial>
+    <dirMatriz>Francelana, Guayacanes N58-118 y José Bustos.</dirMatriz>
+  </infoTributaria>
+        <infoFactura>
+    <fechaEmision>22/04/2020</fechaEmision>
+    <dirEstablecimiento>Francelana, Guayacanes N58-118 y José Bustos.</dirEstablecimiento>
+    <obligadoContabilidad>SI</obligadoContabilidad>
+    <tipoIdentificacionComprador>07</tipoIdentificacionComprador>
+    <razonSocialComprador>SUAREZ LETTY</razonSocialComprador>
+    <identificacionComprador>9999999999999</identificacionComprador>
+    <totalSinImpuestos>2.45</totalSinImpuestos>
+    <totalDescuento>0.00</totalDescuento>
+    <totalConImpuestos>
+      <totalImpuesto>
+        <codigo>2</codigo>
+        <codigoPorcentaje>2</codigoPorcentaje>
+        <baseImponible>2.45</baseImponible>
+        <tarifa>12</tarifa>
+        <valor>0.0</valor>
+      </totalImpuesto>
+    </totalConImpuestos>
+    <propina>0</propina>
+    <importeTotal>2.45</importeTotal>
+    <moneda>dolar</moneda>
+    <pagos>
+      <pago>
+        <formaPago>01</formaPago>
+        <total>2.45</total>
+      </pago>
+    </pagos>
+  </infoFactura>
+    <detalles>                          <detalle>
+                          <codigoPrincipal> 7861012509805</codigoPrincipal>
+                          <descripcion>YOGURT TONI MIX DURAZNO</descripcion>
+                          <cantidad>1</cantidad>
+                          <precioUnitario>0.85</precioUnitario>
+                          <descuento>0</descuento>
+                          <precioTotalSinImpuesto>0.85</precioTotalSinImpuesto>
+                          <impuestos>
+                            <impuesto>
+                              <codigo>2</codigo>
+                              <codigoPorcentaje>2</codigoPorcentaje>
+                              <tarifa>0.0</tarifa>
+                              <baseImponible>0.85</baseImponible>
+                              <valor>0.0</valor>
+                            </impuesto>
+                          </impuestos>
+                        </detalle>
+                                                    <detalle>
+                          <codigoPrincipal>7861012509782</codigoPrincipal>
+                          <descripcion>YOGURT TONI MIX FRUTILLA</descripcion>
+                          <cantidad>1</cantidad>
+                          <precioUnitario>0.85</precioUnitario>
+                          <descuento>0</descuento>
+                          <precioTotalSinImpuesto>0.85</precioTotalSinImpuesto>
+                          <impuestos>
+                            <impuesto>
+                              <codigo>2</codigo>
+                              <codigoPorcentaje>2</codigoPorcentaje>
+                              <tarifa>0.0</tarifa>
+                              <baseImponible>0.85</baseImponible>
+                              <valor>0.0</valor>
+                            </impuesto>
+                          </impuestos>
+                        </detalle>
+                                                    <detalle>
+                          <codigoPrincipal>7861012505456</codigoPrincipal>
+                          <descripcion>YOGURT TONI MORA 200G</descripcion>
+                          <cantidad>1</cantidad>
+                          <precioUnitario>0.75</precioUnitario>
+                          <descuento>0</descuento>
+                          <precioTotalSinImpuesto>0.75</precioTotalSinImpuesto>
+                          <impuestos>
+                            <impuesto>
+                              <codigo>2</codigo>
+                              <codigoPorcentaje>2</codigoPorcentaje>
+                              <tarifa>0.0</tarifa>
+                              <baseImponible>0.75</baseImponible>
+                              <valor>0.0</valor>
+                            </impuesto>
+                          </impuestos>
+                        </detalle>
+                          </detalles> 
+ </factura>ERROR:testflask:Exception on /services/mssql/getusuari [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/testflask.py", line 173, in get_usuari
+    r = sql_test.get_usuari()
+  File "/root/sql_test.py", line 185, in get_usuari
+    with cursor.execute(command):
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: Error code 0x274C (10060) (SQLExecDirectW)')
+ERROR:testflask:Exception on /services/mssql/getusuari [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/testflask.py", line 173, in get_usuari
+    r = sql_test.get_usuari()
+  File "/root/sql_test.py", line 185, in get_usuari
+    with cursor.execute(command):
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLExecDirectW)')
+ERROR:testflask:Exception on /services/mssql/getusuari [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/testflask.py", line 173, in get_usuari
+    r = sql_test.get_usuari()
+  File "/root/sql_test.py", line 185, in get_usuari
+    with cursor.execute(command):
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLExecDirectW)')
+ERROR:testflask:Exception on /services/mssql/getusuari [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/testflask.py", line 173, in get_usuari
+    r = sql_test.get_usuari()
+  File "/root/sql_test.py", line 185, in get_usuari
+    with cursor.execute(command):
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLExecDirectW)')
+ERROR:testflask:Exception on /services/mssql/getusuari [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/testflask.py", line 173, in get_usuari
+    r = sql_test.get_usuari()
+  File "/root/sql_test.py", line 185, in get_usuari
+    with cursor.execute(command):
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLExecDirectW)')
+ERROR:testflask:Exception on /services/mssql/getusuari [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/testflask.py", line 173, in get_usuari
+    r = sql_test.get_usuari()
+  File "/root/sql_test.py", line 185, in get_usuari
+    with cursor.execute(command):
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLExecDirectW)')
+ERROR:testflask:Exception on /services/mssql/getusuari [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/testflask.py", line 173, in get_usuari
+    r = sql_test.get_usuari()
+  File "/root/sql_test.py", line 185, in get_usuari
+    with cursor.execute(command):
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLExecDirectW)')
+ERROR:testflask:Exception on /services/mssql/getusuari [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/testflask.py", line 173, in get_usuari
+    r = sql_test.get_usuari()
+  File "/root/sql_test.py", line 185, in get_usuari
+    with cursor.execute(command):
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLExecDirectW)')
+ERROR:testflask:Exception on /services/mssql/getusuari [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/testflask.py", line 173, in get_usuari
+    r = sql_test.get_usuari()
+  File "/root/sql_test.py", line 185, in get_usuari
+    with cursor.execute(command):
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLExecDirectW)')
+ERROR:testflask:Exception on /services/mssql/getusuari [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/testflask.py", line 173, in get_usuari
+    r = sql_test.get_usuari()
+  File "/root/sql_test.py", line 185, in get_usuari
+    with cursor.execute(command):
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLExecDirectW)')
+ERROR:testflask:Exception on /services/mssql/getusuari [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/testflask.py", line 173, in get_usuari
+    r = sql_test.get_usuari()
+  File "/root/sql_test.py", line 185, in get_usuari
+    with cursor.execute(command):
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLExecDirectW)')
+ERROR:testflask:Exception on /services/mssql/getusuari [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/testflask.py", line 173, in get_usuari
+    r = sql_test.get_usuari()
+  File "/root/sql_test.py", line 185, in get_usuari
+    with cursor.execute(command):
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLExecDirectW)')
+ERROR:testflask:Exception on /services/mssql/getusuari [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/testflask.py", line 173, in get_usuari
+    r = sql_test.get_usuari()
+  File "/root/sql_test.py", line 185, in get_usuari
+    with cursor.execute(command):
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLExecDirectW)')
+ERROR:testflask:Exception on /services/mssql/getusuari [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/testflask.py", line 173, in get_usuari
+    r = sql_test.get_usuari()
+  File "/root/sql_test.py", line 185, in get_usuari
+    with cursor.execute(command):
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLExecDirectW)')
+ERROR:testflask:Exception on /services/mssql/getusuari [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/testflask.py", line 173, in get_usuari
+    r = sql_test.get_usuari()
+  File "/root/sql_test.py", line 185, in get_usuari
+    with cursor.execute(command):
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLExecDirectW)')
+ERROR:testflask:Exception on /services/mssql/getusuari [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/testflask.py", line 173, in get_usuari
+    r = sql_test.get_usuari()
+  File "/root/sql_test.py", line 185, in get_usuari
+    with cursor.execute(command):
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLExecDirectW)')
+[2020-04-23 03:41:46 +0000] [630] [INFO] Handling signal: term
+[2020-04-23 03:41:46 +0000] [721] [INFO] Worker exiting (pid: 721)
+
+[se procesara : path12 ] > /root/16474783045055819.p12
+[se procesara : pwd ] > Fielec26..
+[enviador > ]
+{
+    'estado': 'DEVUELTA',
+    'comprobantes': {
+        'comprobante': [
+            {
+                'claveAcceso': '2204202001179184241300110010010000000001234567810',
+                'mensajes': {
+                    'mensaje': [
+                        {
+                            'identificador': '35',
+                            'mensaje': 'ARCHIVO NO CUMPLE ESTRUCTURA XML',
+                            'informacionAdicional': "Se encontró el siguiente error en la estructura del comprobante: cvc-pattern-valid: Value '00001' is not facet-valid with respect to pattern '[0-9]{3}' for type 'puntoEmision'..",
+                            'tipo': 'ERROR'
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
+{
+    'estado': 'DEVUELTA',
+    'comprobantes': {
+        'comprobante': [
+            {
+                'claveAcceso': '2204202001179184241300110010010000000001234567810',
+                'mensajes': {
+                    'mensaje': [
+                        {
+                            'identificador': '35',
+                            'mensaje': 'ARCHIVO NO CUMPLE ESTRUCTURA XML',
+                            'informacionAdicional': "Se encontró el siguiente error en la estructura del comprobante: cvc-pattern-valid: Value '00001' is not facet-valid with respect to pattern '[0-9]{3}' for type 'puntoEmision'..",
+                            'tipo': 'ERROR'
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
+10004
+SELECT agenci_id,direcc_age,nombre_age FROM agenci WHERE(empresa_id=10004)
+codigo es >  044695003809
+codigo es >  044695003793
+codigo es >  044695004219
+{'tipo_pdf': '1', 'empresa_id': '10004', 'ruc': '1791842413001', 'rucComprador': '', 'clave': '', 'secuencial': '', 'dirMatriz': 'Francelana, Guayacanes N58-118 y José Bustos.', 'fecha': '', 'factura_no': '002-null-', 'razonSocialComprador': '', 'razonSocial': 'MATADERO Y CARNES FRIAS MACAFRI CIA. LTDA', 'totalCon': '5.26', 'totalSin': '4.6899999999999995', 'conceptos': '[{"nombre":"FREJOL CON TOCINO FACUNDO 300GR","cantidad":"1","unitario":"1.92","total":"1.92","impuesto":"Iva 12%"},{"nombre":"FREJOL ROJO FACUNDO 300 GR","cantidad":"1","unitario":"1.21","total":"1.21","impuesto":"Iva 12%"},{"nombre":"FREJOL ROJO FACUNDO 150G.","cantidad":"1","unitario":"1.56","total":"1.56","impuesto":"Iva 12%"}]', 'total': '5.26'}
+[{'nombre': 'FREJOL CON TOCINO FACUNDO 300GR', 'cantidad': '1', 'unitario': '1.92', 'total': '1.92', 'impuesto': 'Iva 12%'}, {'nombre': 'FREJOL ROJO FACUNDO 300 GR', 'cantidad': '1', 'unitario': '1.21', 'total': '1.21', 'impuesto': 'Iva 12%'}, {'nombre': 'FREJOL ROJO FACUNDO 150G.', 'cantidad': '1', 'unitario': '1.56', 'total': '1.56', 'impuesto': 'Iva 12%'}]
+[pdf creator muestra] >> 
+{'nombre': 'FREJOL CON TOCINO FACUNDO 300GR', 'cantidad': '1', 'unitario': '1.92', 'total': '1.92', 'impuesto': 'Iva 12%'}
+07387719133300739.pdf
+{'tipo_pdf': '2', 'ambiente': '1', 'dirSucursal': '', 'empresa_id': '10004', 'ruc': '1791842413001', 'rucComprador': '', 'clave': '', 'secuencial': '', 'dirMatriz': 'Francelana, Guayacanes N58-118 y José Bustos.', 'fecha': '', 'razonSocialComprador': '', 'razonSocial': 'MATADERO Y CARNES FRIAS MACAFRI CIA. LTDA', 'totalCon': '5.26', 'totalSin': '4.6899999999999995', 'conceptos': '[{"nombre":"FREJOL CON TOCINO FACUNDO 300GR","unitario":"1.92","cantidad":"1","total":"1.92","impuesto":"Iva 12%","codigo":"044695003809"},{"nombre":"FREJOL ROJO FACUNDO 300 GR","unitario":"1.21","cantidad":"1","total":"1.21","impuesto":"Iva 12%","codigo":"044695003793"},{"nombre":"FREJOL ROJO FACUNDO 150G.","unitario":"1.56","cantidad":"1","total":"1.56","impuesto":"Iva 12%","codigo":"044695004219"}]', 'total': '5.26'}
+empresa imagen >> 10004
+07751682472123899.pdf
+[2020-04-23 03:41:46 +0000] [630] [INFO] Shutting down: Master
+[2020-04-23 03:41:51 +0000] [4263] [INFO] Starting gunicorn 20.0.4
+[2020-04-23 03:41:51 +0000] [4263] [INFO] Listening at: http://127.0.0.1:8000 (4263)
+[2020-04-23 03:41:51 +0000] [4263] [INFO] Using worker: sync
+[2020-04-23 03:41:51 +0000] [4266] [INFO] Booting worker with pid: 4266
+[2020-04-23 03:42:37 +0000] [4263] [INFO] Handling signal: term
+[2020-04-23 03:42:37 +0000] [4266] [INFO] Worker exiting (pid: 4266)
+<pyodbc.Connection object at 0x7f8f4f8e18a0>
+[2020-04-23 03:42:37 +0000] [4263] [INFO] Shutting down: Master
