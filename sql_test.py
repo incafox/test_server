@@ -1,5 +1,5 @@
 import pyodbc
-
+import email_server
 server = '186.46.45.30'
 database = 'desarrollo'
 username = 'sa'
@@ -19,6 +19,18 @@ with cursor.execute(tsql):
 	while row : 
 		#print(row[0])
 		row = cursor.fetchone()
+def send_factura_email(empresa_id,filename,receptor):
+    command = "select emaife_emp,passfe_emp,domife_emp,puerfe_emp,habssl_emp from empres where(empresa_id="+empresa_id+")"
+    row = ''
+    with cursor.execute(command):
+        row = cursor.fetchall()
+    print (row)
+    fila = row[0]
+    print(fila)
+    #ssl estado para mas adelante
+    email,password,smtp,puerto,use_ssl = fila[0],fila[1],fila[2],fila[3],fila[4]
+    email_server.send_email(puerto,filename,password,email,receptor,smtp)
+    pass
 
 def get_productos():
     command = "SELECT empresa_id,codigo_art,nombre_art FROM articu"

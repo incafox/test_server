@@ -4,121 +4,88 @@
     <tipoEmision>1</tipoEmision>
     <razonSocial>MATADERO Y CARNES FRIAS MACAFRI CIA. LTDA</razonSocial>
     <ruc>1791842413001</ruc>
-    <claveAcceso>2204202001179184241300110010010000000001234567810</claveAcceso>
+    <claveAcceso>0405202001179184241300110010010000000221234567810</claveAcceso>
     <codDoc>01</codDoc>
     <estab>001</estab>
-    <ptoEmi>00001</ptoEmi>
-    <secuencial>000000000</secuencial>
+    <ptoEmi>001</ptoEmi>
+    <secuencial>000000022</secuencial>
     <dirMatriz>Francelana, Guayacanes N58-118 y José Bustos.</dirMatriz>
   </infoTributaria>
         <infoFactura>
-    <fechaEmision>22/04/2020</fechaEmision>
+    <fechaEmision>04/05/2020</fechaEmision>
     <dirEstablecimiento>Francelana, Guayacanes N58-118 y José Bustos.</dirEstablecimiento>
     <obligadoContabilidad>SI</obligadoContabilidad>
     <tipoIdentificacionComprador>07</tipoIdentificacionComprador>
-    <razonSocialComprador>SUAREZ LETTY</razonSocialComprador>
-    <identificacionComprador>9999999999999</identificacionComprador>
-    <totalSinImpuestos>2.45</totalSinImpuestos>
+    <guiaRemision>001-001-000000001</guiaRemision>
+    <razonSocialComprador>BRIONES MUENTES LUIS ALBERTO</razonSocialComprador>
+    <identificacionComprador>0703428557001</identificacionComprador>
+    <direccionComprador>salinas y santiago</direccionComprador> 
+    <totalSinImpuestos>4.63</totalSinImpuestos>
     <totalDescuento>0.00</totalDescuento>
     <totalConImpuestos>
       <totalImpuesto>
         <codigo>2</codigo>
         <codigoPorcentaje>2</codigoPorcentaje>
-        <baseImponible>2.45</baseImponible>
+        <baseImponible>4.63</baseImponible>
         <tarifa>12</tarifa>
-        <valor>0.0</valor>
+        <valor>0.56</valor>
       </totalImpuesto>
     </totalConImpuestos>
     <propina>0</propina>
-    <importeTotal>2.45</importeTotal>
+    <importeTotal>5.19</importeTotal>
     <moneda>dolar</moneda>
     <pagos>
       <pago>
         <formaPago>01</formaPago>
-        <total>2.45</total>
+        <total>5.19</total>
       </pago>
     </pagos>
   </infoFactura>
     <detalles>                          <detalle>
-                          <codigoPrincipal> 7861012509805</codigoPrincipal>
-                          <descripcion>YOGURT TONI MIX DURAZNO</descripcion>
+                          <codigoPrincipal>044695002918</codigoPrincipal>
+                          <descripcion>COCTEL FRUTAS FAC 800GR</descripcion>
                           <cantidad>1</cantidad>
-                          <precioUnitario>0.85</precioUnitario>
+                          <precioUnitario>4.63</precioUnitario>
                           <descuento>0</descuento>
-                          <precioTotalSinImpuesto>0.85</precioTotalSinImpuesto>
+                          <precioTotalSinImpuesto>4.63</precioTotalSinImpuesto>
                           <impuestos>
                             <impuesto>
                               <codigo>2</codigo>
                               <codigoPorcentaje>2</codigoPorcentaje>
-                              <tarifa>0.0</tarifa>
-                              <baseImponible>0.85</baseImponible>
-                              <valor>0.0</valor>
+                              <tarifa>12.0</tarifa>
+                              <baseImponible>4.63</baseImponible>
+                              <valor>0.56</valor>
                             </impuesto>
                           </impuestos>
                         </detalle>
-                                                    <detalle>
-                          <codigoPrincipal>7861012509782</codigoPrincipal>
-                          <descripcion>YOGURT TONI MIX FRUTILLA</descripcion>
-                          <cantidad>1</cantidad>
-                          <precioUnitario>0.85</precioUnitario>
-                          <descuento>0</descuento>
-                          <precioTotalSinImpuesto>0.85</precioTotalSinImpuesto>
-                          <impuestos>
-                            <impuesto>
-                              <codigo>2</codigo>
-                              <codigoPorcentaje>2</codigoPorcentaje>
-                              <tarifa>0.0</tarifa>
-                              <baseImponible>0.85</baseImponible>
-                              <valor>0.0</valor>
-                            </impuesto>
-                          </impuestos>
-                        </detalle>
-                                                    <detalle>
-                          <codigoPrincipal>7861012505456</codigoPrincipal>
-                          <descripcion>YOGURT TONI MORA 200G</descripcion>
-                          <cantidad>1</cantidad>
-                          <precioUnitario>0.75</precioUnitario>
-                          <descuento>0</descuento>
-                          <precioTotalSinImpuesto>0.75</precioTotalSinImpuesto>
-                          <impuestos>
-                            <impuesto>
-                              <codigo>2</codigo>
-                              <codigoPorcentaje>2</codigoPorcentaje>
-                              <tarifa>0.0</tarifa>
-                              <baseImponible>0.75</baseImponible>
-                              <valor>0.0</valor>
-                            </impuesto>
-                          </impuestos>
-                        </detalle>
-                          </detalles> 
- <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:etsi="http://uri.etsi.org/01903/v1.3.2#" Id="Signature163431">
-<ds:SignedInfo Id="Signature-SignedInfo805381">
+                          </detalles><ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:etsi="http://uri.etsi.org/01903/v1.3.2#" Id="Signature779564">
+<ds:SignedInfo Id="Signature-SignedInfo246219">
 <ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
 <ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
-<ds:Reference Id="SignedPropertiesID619598" Type="http://uri.etsi.org/01903#SignedProperties" URI="#Signature163431-SignedProperties121810">
+<ds:Reference Id="SignedPropertiesID608018" Type="http://uri.etsi.org/01903#SignedProperties" URI="#Signature779564-SignedProperties899919">
 <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
-<ds:DigestValue>oRv37z0eKDw6cmakze80vsps1mE=</ds:DigestValue>
+<ds:DigestValue>Ggpvy5TGNdj8ybVrxqkCIp9f/a4=</ds:DigestValue>
 </ds:Reference>
-<ds:Reference URI="#Certificate1902353">
+<ds:Reference URI="#Certificate1796373">
 <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
-<ds:DigestValue>7GKEEIpFH72mslxKhgofJ2QKhFM=</ds:DigestValue>
+<ds:DigestValue>1qz+5E1gpMTdKFlDjuRnZMVVF2M=</ds:DigestValue>
 </ds:Reference>
-<ds:Reference Id="Reference-ID-471580" URI="#comprobante">
+<ds:Reference Id="Reference-ID-939120" URI="#comprobante">
 <ds:Transforms>
 <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
 </ds:Transforms>
 <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
-<ds:DigestValue>UM/99jlAGova0/nf0ldgHsOHeag=</ds:DigestValue>
+<ds:DigestValue>+a1MtF5gCgD8kQNmBGI+oGaMvI0=</ds:DigestValue>
 </ds:Reference>
 </ds:SignedInfo>
-<ds:SignatureValue Id="SignatureValue922400">
-U+SQh92VwMHopaxx0/B6V09xPYydy8771UQ8p03sXuusTNvqRNhQ/uD0hQCsJ2oUwPQs9b3IRgIe
-aTpPHoWM/LyxLw0W34Zz+mPS/R58YdVSR5biU91sHZ9p6RSrIMAazxH5FnSlZGut56/bKpDc1q1Z
-Ydpq+bEi5WWnUHUr9OaHMd4x3Iz6T7ccL8tiok3zSIrMkytgpKV/6lEqGN8zWoUbq4XMPN0J8nUs
-ue41rz2wYAq1upSIST9t/lnGfGKSxx+ZLV02liT1oddzqns9up2Q54BuQVVJsRsAh5GoBbre6Gfd
-IdpBB5U0CSlHI0z22Bio1G0vqfVW+Dn4A0bxFQ==
+<ds:SignatureValue Id="SignatureValue222189">
+vZ/9u5kJB1PGOW8juRM6BFONoWaqAxSikn4fR1x53++7KhTaxlkHRAy7QZzjipu5bHDboC84DcyV
++D9GTB9KvwnuvOC/xZ2hi7KqS1TVigIgHkFm43p7uX87CBrkX/bOas4i2RB8OBqevsV2VSZZ7BdI
+peWpL5WOdRgiIL1xW57HR56P2HPJYDHixpKjlVVki0kc4Bev+dQ8ygR+eS/003ACNlMuChWw9R24
+HS+2i5iS3n4hQ4ESR12Lwobhbq+QKA166qhKtMWjwPdmHSRYblIHtJt1ft7V+CIjr/d1+mJOTfxz
+TVJNhZknV30Nf5lns7j1K20rzZzi7ByyT+fydQ==
 </ds:SignatureValue>
-<ds:KeyInfo Id="Certificate1902353">
+<ds:KeyInfo Id="Certificate1796373">
 <ds:X509Data>
 <ds:X509Certificate>
 MIIJWDCCB0CgAwIBAgIEW17h4zANBgkqhkiG9w0BAQsFADCBoTELMAkGA1UEBhMCRUMxIjAgBgNV
@@ -179,4 +146,4 @@ p5uSO1kwD8Z8GTMVNMVI4Z6C4C0yLj712nhvvw==
 </ds:RSAKeyValue>
 </ds:KeyValue>
 </ds:KeyInfo>
-<ds:Object Id="Signature163431-Object845040"><etsi:QualifyingProperties Target="#Signature163431"><etsi:SignedProperties Id="Signature163431-SignedProperties121810"><etsi:SignedSignatureProperties><etsi:SigningTime>2020-04-22T05:35:31+00:00</etsi:SigningTime><etsi:SigningCertificate><etsi:Cert><etsi:CertDigest><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><ds:DigestValue>C8nnxXUuG9sLK2m2BKyOVJQqt6w=</ds:DigestValue></etsi:CertDigest><etsi:IssuerSerial><ds:X509IssuerName>CN=AC BANCO CENTRAL DEL ECUADOR,L=QUITO,OU=ENTIDAD DE CERTIFICACION DE INFORMACION-ECIBCE,O=BANCO CENTRAL DEL ECUADOR,C=EC</ds:X509IssuerName><ds:X509SerialNumber>1532944867</ds:X509SerialNumber></etsi:IssuerSerial></etsi:Cert></etsi:SigningCertificate></etsi:SignedSignatureProperties><etsi:SignedDataObjectProperties><etsi:DataObjectFormat ObjectReference="#Reference-ID-471580"><etsi:Description>contenido comprobante</etsi:Description><etsi:MimeType>text/xml</etsi:MimeType></etsi:DataObjectFormat></etsi:SignedDataObjectProperties></etsi:SignedProperties></etsi:QualifyingProperties></ds:Object></ds:Signature></factura>
+<ds:Object Id="Signature779564-Object993386"><etsi:QualifyingProperties Target="#Signature779564"><etsi:SignedProperties Id="Signature779564-SignedProperties899919"><etsi:SignedSignatureProperties><etsi:SigningTime>2020-05-04T17:41:58+00:00</etsi:SigningTime><etsi:SigningCertificate><etsi:Cert><etsi:CertDigest><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><ds:DigestValue>C8nnxXUuG9sLK2m2BKyOVJQqt6w=</ds:DigestValue></etsi:CertDigest><etsi:IssuerSerial><ds:X509IssuerName>CN=AC BANCO CENTRAL DEL ECUADOR,L=QUITO,OU=ENTIDAD DE CERTIFICACION DE INFORMACION-ECIBCE,O=BANCO CENTRAL DEL ECUADOR,C=EC</ds:X509IssuerName><ds:X509SerialNumber>1532944867</ds:X509SerialNumber></etsi:IssuerSerial></etsi:Cert></etsi:SigningCertificate></etsi:SignedSignatureProperties><etsi:SignedDataObjectProperties><etsi:DataObjectFormat ObjectReference="#Reference-ID-939120"><etsi:Description>contenido comprobante</etsi:Description><etsi:MimeType>text/xml</etsi:MimeType></etsi:DataObjectFormat></etsi:SignedDataObjectProperties></etsi:SignedProperties></etsi:QualifyingProperties></ds:Object></ds:Signature></factura>

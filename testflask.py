@@ -50,6 +50,19 @@ def get_productos():
     return json.dumps(res)  #str(res)
 
 
+@app.route("/services/mssql/send_email", methods=["GET","POST"])
+def send_email():
+    empresa = request.json['empresa_id']
+    filename = request.json['filename']
+    receptor = request.json['receptor']
+    print (request.json)
+    #receptor = "lubeck05@gmail.com"
+    resultado = sql_test.send_factura_email(empresa,filename,receptor)
+    #retorna true o false
+    return str(resultado)
+
+
+
 @app.route("/services/mssql/getprice", methods=["GET","POST"])
 def get_price():
     cod = request.json['codigo']
@@ -111,8 +124,8 @@ def send_xml():
     archivo.write(xml)
     cod = str(cod)
     xml = str(xml)
-    #print(cod)
-    #print(xml)
+    print(cod)
+    print(xml)
     # print("codigo es >  " + cod)
     y = str(random.random())
     y = y[2:]
@@ -134,12 +147,13 @@ def send_xml():
     xml_firmado = helpersigner.firmador(xml,"/root/"+y+".p12", url_pwd)
     archivo2 = open("ultimo-firmado.xml", "w+")
     archivo2.write(xml_firmado.decode())
+    print(xml_firmado.decode())
     #sql_test.update_secuencial()#en db sql server
     #respuesta=helpersigner.enviador(xml_firmado, ambiente) #envia a sri
     #res.append(temp)
     #procede a enviar
-    respuesta = helpersigner.enviador(xml_firmado.decode(), ambiente)
-    #print (respuesta)
+    respuesta = helpersigner.enviador(xml_firmado, ambiente)
+    print (respuesta)
     return str(respuesta)
 
 
@@ -334,6 +348,7 @@ def get_client():
 @app.route("/services/mssql/get_secuencial", methods=["GET","POST"])
 def get_secuencial(): 
     secuencial = ""
+    #print(request.json)
     codDoc = request.json['codDoc']
     empresa = request.json['empresa_id']
     agencia = request.json['agenci_id']
@@ -344,9 +359,6 @@ def get_secuencial():
         final = str(e [0])
     #print (final)
     return final
-    #if (request.method == 'POST'):
-        ##prcesa
-    #    pass
     """
     r = sql_test.get_client(cliente, empresaid)
     res = []
@@ -382,12 +394,8 @@ def add_user():
     res = sql_test.add_user(data)
     return str(res)
  
-@app.route("/services/mssql/send_email", methods=["GET","POST"])
-def send_email(): 
-    data = request.json
-    res = sql_test.add_user(data)
-    return str(res)
- 
 
+if __name__ == '__main__':
+    app.run()
 #if __name__ == "__main__":
 #    app.run(host='0.0.0.0')

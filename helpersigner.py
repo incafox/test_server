@@ -138,8 +138,10 @@ def enviador(xmlcadena, ambiente):
         #print ("[enviador > ]")
         #return (client_1_r.service.validarComprobante(xmlcadena.encode()))
         r =  (client_1_r.service.validarComprobante(str(xmlcadena).encode()))
+        #r =  (client_1_r.service.validarComprobante(xmlcadena))
         #print (r)
         respuesta =  r
+        print("[tmr] > "+str(r))
     elif (ambiente == '2'):
         #wsdl = 'https://celcer.sri.gob.ec/comprobantes-electronicos-ws/RecepcionComprobantesOffline?wsdl'
         client_2_r = zeep.Client(wsdl=wsdl_produccion_recepcion)
@@ -151,7 +153,7 @@ def enviador(xmlcadena, ambiente):
 def firmador(xml, pathP12, pwd):
     pwd_t = pwd
     pathP12_t =  pathP12
-    #print ("[path de centiifcado] > " + pathP12_t)
+    #print ("[path de centificado] > " + pathP12_t)
 
     pwd_enc = pwd_t.encode('ascii')
     pathP12_enc = pathP12_t.encode('ascii')

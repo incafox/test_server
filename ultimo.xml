@@ -5,91 +5,58 @@
     <tipoEmision>1</tipoEmision>
     <razonSocial>MATADERO Y CARNES FRIAS MACAFRI CIA. LTDA</razonSocial>
     <ruc>1791842413001</ruc>
-    <claveAcceso>2204202001179184241300110010010000000001234567810</claveAcceso>
+    <claveAcceso>0405202001179184241300110010010000000221234567810</claveAcceso>
     <codDoc>01</codDoc>
     <estab>001</estab>
-    <ptoEmi>00001</ptoEmi>
-    <secuencial>000000000</secuencial>
+    <ptoEmi>001</ptoEmi>
+    <secuencial>000000022</secuencial>
     <dirMatriz>Francelana, Guayacanes N58-118 y José Bustos.</dirMatriz>
   </infoTributaria>
         <infoFactura>
-    <fechaEmision>22/04/2020</fechaEmision>
+    <fechaEmision>04/05/2020</fechaEmision>
     <dirEstablecimiento>Francelana, Guayacanes N58-118 y José Bustos.</dirEstablecimiento>
     <obligadoContabilidad>SI</obligadoContabilidad>
     <tipoIdentificacionComprador>07</tipoIdentificacionComprador>
-    <razonSocialComprador>SUAREZ LETTY</razonSocialComprador>
-    <identificacionComprador>9999999999999</identificacionComprador>
-    <totalSinImpuestos>2.45</totalSinImpuestos>
+    <guiaRemision>001-001-000000001</guiaRemision>
+    <razonSocialComprador>BRIONES MUENTES LUIS ALBERTO</razonSocialComprador>
+    <identificacionComprador>0703428557001</identificacionComprador>
+    <direccionComprador>salinas y santiago</direccionComprador> 
+    <totalSinImpuestos>4.63</totalSinImpuestos>
     <totalDescuento>0.00</totalDescuento>
     <totalConImpuestos>
       <totalImpuesto>
         <codigo>2</codigo>
         <codigoPorcentaje>2</codigoPorcentaje>
-        <baseImponible>2.45</baseImponible>
+        <baseImponible>4.63</baseImponible>
         <tarifa>12</tarifa>
-        <valor>0.0</valor>
+        <valor>0.56</valor>
       </totalImpuesto>
     </totalConImpuestos>
     <propina>0</propina>
-    <importeTotal>2.45</importeTotal>
+    <importeTotal>5.19</importeTotal>
     <moneda>dolar</moneda>
     <pagos>
       <pago>
         <formaPago>01</formaPago>
-        <total>2.45</total>
+        <total>5.19</total>
       </pago>
     </pagos>
   </infoFactura>
     <detalles>                          <detalle>
-                          <codigoPrincipal> 7861012509805</codigoPrincipal>
-                          <descripcion>YOGURT TONI MIX DURAZNO</descripcion>
+                          <codigoPrincipal>044695002918</codigoPrincipal>
+                          <descripcion>COCTEL FRUTAS FAC 800GR</descripcion>
                           <cantidad>1</cantidad>
-                          <precioUnitario>0.85</precioUnitario>
+                          <precioUnitario>4.63</precioUnitario>
                           <descuento>0</descuento>
-                          <precioTotalSinImpuesto>0.85</precioTotalSinImpuesto>
+                          <precioTotalSinImpuesto>4.63</precioTotalSinImpuesto>
                           <impuestos>
                             <impuesto>
                               <codigo>2</codigo>
                               <codigoPorcentaje>2</codigoPorcentaje>
-                              <tarifa>0.0</tarifa>
-                              <baseImponible>0.85</baseImponible>
-                              <valor>0.0</valor>
+                              <tarifa>12.0</tarifa>
+                              <baseImponible>4.63</baseImponible>
+                              <valor>0.56</valor>
                             </impuesto>
                           </impuestos>
                         </detalle>
-                                                    <detalle>
-                          <codigoPrincipal>7861012509782</codigoPrincipal>
-                          <descripcion>YOGURT TONI MIX FRUTILLA</descripcion>
-                          <cantidad>1</cantidad>
-                          <precioUnitario>0.85</precioUnitario>
-                          <descuento>0</descuento>
-                          <precioTotalSinImpuesto>0.85</precioTotalSinImpuesto>
-                          <impuestos>
-                            <impuesto>
-                              <codigo>2</codigo>
-                              <codigoPorcentaje>2</codigoPorcentaje>
-                              <tarifa>0.0</tarifa>
-                              <baseImponible>0.85</baseImponible>
-                              <valor>0.0</valor>
-                            </impuesto>
-                          </impuestos>
-                        </detalle>
-                                                    <detalle>
-                          <codigoPrincipal>7861012505456</codigoPrincipal>
-                          <descripcion>YOGURT TONI MORA 200G</descripcion>
-                          <cantidad>1</cantidad>
-                          <precioUnitario>0.75</precioUnitario>
-                          <descuento>0</descuento>
-                          <precioTotalSinImpuesto>0.75</precioTotalSinImpuesto>
-                          <impuestos>
-                            <impuesto>
-                              <codigo>2</codigo>
-                              <codigoPorcentaje>2</codigoPorcentaje>
-                              <tarifa>0.0</tarifa>
-                              <baseImponible>0.75</baseImponible>
-                              <valor>0.0</valor>
-                            </impuesto>
-                          </impuestos>
-                        </detalle>
-                          </detalles> 
- </factura>
+                          </detalles></factura>
